@@ -21,6 +21,53 @@
     //default is studentMode
     loginModeSelected = 0;
     [self updateLayouToCurrentLoginMode];
+    
+    //setup view
+    [self setupView];
+}
+
+-(void)setupView{
+    [self.facebookButton applyFacebookStyle];
+    [self.linkedinButton applyLinkedInStyle];
+    [self.googleButton applyGoogleStyle];
+    
+    [self setupLabel];
+    [self setupImageView];
+}
+
+-(void)setupLabel{
+    [self.studentLabel setFont:[UIFont boldSystemFontOfSize:16.0f]];
+    [self.studentLabel setTextColor:[UIColor whiteColor]];
+    
+    [self.profressorLabel setFont:[UIFont boldSystemFontOfSize:16.0f]];
+    [self.profressorLabel setTextColor:[UIColor whiteColor]];
+}
+
+-(void)setupImageView{
+    //ImageView
+    self.studentImage = [UIImage imageNamed:@"student_login_icon"];
+    [self.studentImageView setImage:self.studentImage];
+    self.studentImageView.layer.cornerRadius = self.studentImageView.frame.size.width / 2;
+    self.studentImageView.clipsToBounds = YES;
+    self.studentImageView.layer.borderWidth = 2;
+    self.studentImageView.layer.borderColor = [UIColor whiteColor].CGColor;
+    
+    //action
+    UITapGestureRecognizer *studentTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(studentButtonTouched:)];
+    [self.studentImageView setUserInteractionEnabled:YES];
+    [self.studentImageView addGestureRecognizer:studentTap];
+    
+    self.profressorImage = [UIImage imageNamed:@"profressor_login_icon"];
+    [self.profressorImageView setImage:self.profressorImage];
+    self.profressorImageView.layer.cornerRadius = self.profressorImageView.frame.size.width/2;
+    self.profressorImageView.layer.masksToBounds = YES;
+    self.profressorImageView.layer.borderWidth = 2;
+    self.profressorImageView.layer.borderColor = [UIColor whiteColor].CGColor;
+    
+    //action
+    UITapGestureRecognizer *profressorTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(teacherButtonTouched:)];
+    [self.profressorImageView setUserInteractionEnabled:YES];
+    [self.profressorImageView addGestureRecognizer:profressorTap];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -40,11 +87,25 @@
 
 - (IBAction)studentButtonTouched:(id)sender {
     loginModeSelected = 0;
+    
+    self.backgroundImageView.alpha = 0;
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:1];
+    self.backgroundImageView.alpha = 1.0;
+    [self.backgroundImageView setImage:[UIImage imageNamed:@"student_login_nocolor_icon"]];
+    [UIView commitAnimations];
     [self updateLayouToCurrentLoginMode];
 }
 
 - (IBAction)teacherButtonTouched:(id)sender {
     loginModeSelected = 1;
+    
+    self.backgroundImageView.alpha = 0;
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:1];
+    self.backgroundImageView.alpha = 1.0;
+    [self.backgroundImageView setImage:[UIImage imageNamed:@"profressor_login_nocolor_icon"]];
+    [UIView commitAnimations];
     [self updateLayouToCurrentLoginMode];
 }
 
