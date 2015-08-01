@@ -45,7 +45,9 @@
     self.phoneLB.text = info.phone;
     self.schoolLB.text = info.school;
     self.addressLB.text = info.address;
-//    [self.avatarView ]
+    [self.avatarView setImageWithURL:[NSURL URLWithString:info.imageLink] placeholderImage:[UIImage imageNamed:@"placeholder"]];
+    self.avatarView.contentMode = UIViewContentModeScaleAspectFill;
+    
 }
 
 @end

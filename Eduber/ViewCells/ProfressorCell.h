@@ -8,6 +8,7 @@
 #import "UIView+Shadow.h"
 #import "UIButton+Style.h"
 #import "Professor.h"
+#import <AFNetworking/AFNetworking.h>
 
 @interface ProfressorCell : UITableViewCell
 

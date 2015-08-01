@@ -41,7 +41,7 @@
     pro2.address = @"Office Address: Rubenstein-316";
     
     Professor *pro3 = [[Professor alloc] init];
-    pro3.name = @"";
+    pro3.name = @"Pham Vu Thanh Thong";
     pro3.imageLink = @"http://cache.boston.com/bonzai-fba/Third_Party_Photo/2009/06/29/ryanmccann10__1246309912_8938.jpg";
     pro3.school = @"Harvard Kennedy School";
     pro3.phone = @"Phone: 617-496-4547";
