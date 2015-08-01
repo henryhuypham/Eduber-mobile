@@ -129,10 +129,8 @@
     UIStoryboard *sb = nil;
     UIViewController *viewController = nil;
     if(loginModeSelected == 0){
-//        sb = [UIStoryboard storyboardWithName:@"Student" bundle:nil];
-//        viewController=(StudentStudyFieldsViewController *)[sb instantiateViewControllerWithIdentifier:@"studentStudyFieldsViewController"];
-        sb = [UIStoryboard storyboardWithName:@"Teacher" bundle:nil];
-        viewController=(TeacherRegisterClassViewController *)[sb instantiateViewControllerWithIdentifier:@"teacherRegisterClassViewController"];
+        sb = [UIStoryboard storyboardWithName:@"Student" bundle:nil];
+        viewController=(StudentStudyFieldsViewController *)[sb instantiateViewControllerWithIdentifier:@"studentStudyFieldsViewController"];
     }else{
         sb = [UIStoryboard storyboardWithName:@"Teacher" bundle:nil];
         viewController=(TeacherRegisterClassViewController *)[sb instantiateViewControllerWithIdentifier:@"teacherRegisterClassViewController"];
