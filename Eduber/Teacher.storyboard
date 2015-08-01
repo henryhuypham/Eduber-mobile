@@ -3,25 +3,5 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
-    <scenes>
-        <!--Teacher Register Class View Controller-->
-        <scene sceneID="97p-SK-h9l">
-            <objects>
-                <viewController storyboardIdentifier="teacherRegisterClassViewController" id="gIr-bv-Hi8" customClass="TeacherRegisterClassViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="b11-CY-A13"/>
-                        <viewControllerLayoutGuide type="bottom" id="L4p-r8-cqy"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="3of-V9-Bls">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YwK-Q7-3vH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="751" y="268"/>
-        </scene>
-    </scenes>
+    <scenes/>
 </document>

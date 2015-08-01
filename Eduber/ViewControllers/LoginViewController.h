@@ -26,7 +26,9 @@
 @property (weak, nonatomic) UIImage *profressorImage;
 @property (weak, nonatomic) IBOutlet UIImageView *studentImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *profressorImageView;
-@property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
+
+@property (weak, nonatomic) IBOutlet UIImageView *studentBackgroundImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *professorBackgroundImageView;
 
 @property (weak, nonatomic) IBOutlet UILabel *studentLabel;
 @property (weak, nonatomic) IBOutlet UILabel *profressorLabel;

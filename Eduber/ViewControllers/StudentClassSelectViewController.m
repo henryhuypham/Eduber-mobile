@@ -1,22 +1,24 @@
 //
-//  TeacherRegisterClassViewController.m
+//  StudentClassSelectViewController.m
 //  Eduber
 //
-//  Created by LocNguyen on 8/1/15.
+//  Created by Huy Pham on 08/01/15.
 //  Copyright (c) 2015 RTH. All rights reserved.
 //
 
-#import "TeacherRegisterClassViewController.h"
+#import "StudentClassSelectViewController.h"
 
-@interface TeacherRegisterClassViewController ()
+@interface StudentClassSelectViewController ()
 
 @end
 
-@implementation TeacherRegisterClassViewController
+@implementation StudentClassSelectViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view.
+    self.scrollviewWidth.constant = self.view.bounds.size.width - 2 * self.scrollviewSidePadding.constant;
 }
 
 - (void)didReceiveMemoryWarning {

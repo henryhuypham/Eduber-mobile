@@ -12,6 +12,8 @@
 #import "TeacherRegisterClassViewController.h"
 #import "StudentStudyFieldsViewController.h"
 
+#define kHeaderView @"LeftMenuHeaderView"
+
 @interface LeftMenuViewController ()
 
 @end
@@ -49,8 +51,25 @@
  // Pass the selected object to the new view controller.
  }
  */
+
+#pragma mark - UITableView Delegate
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+   UIView *headerView = [[[NSBundle mainBundle] loadNibNamed:kHeaderView owner:self options:nil] lastObject];
+    return headerView;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 170;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 50;
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 4;
+    return 5;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -59,18 +78,28 @@
     if (cell == nil) {
         cell = [[LeftMenuTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
+    cell.titleLabel.textColor = [UIColor darkGrayColor];
+    
     switch ([indexPath row]) {
         case 0:
-            cell.titleLabel.text = @"Main Page";
+            cell.titleLabel.text = @"Home";
+            [cell.imgView setImage:[UIImage imageNamed:@"home_icon"]];
             break;
         case 1:
             cell.titleLabel.text = @"Profile";
+            [cell.imgView setImage:[UIImage imageNamed:@"user_icon"]];
             break;
         case 2:
             cell.titleLabel.text = @"News";
+            [cell.imgView setImage:[UIImage imageNamed:@"news_icon"]];
             break;
         case 3:
-            cell.titleLabel.text = @"Test Result";
+            cell.titleLabel.text = @"Exam";
+            [cell.imgView setImage:[UIImage imageNamed:@"exam_icon"]];
+            break;
+        case 4:
+            cell.titleLabel.text = @"Sign Out";
+            [cell.imgView setImage:[UIImage imageNamed:@"signout_icon"]];
             break;
         default:
             break;

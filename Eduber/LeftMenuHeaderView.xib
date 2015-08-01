@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LeftMenuHeaderView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="LeftMenuHeaderView" id="iN0-l3-epB" customClass="LeftMenuHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ucx-i4-Zft">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="obama" translatesAutoresizingMaskIntoConstraints="NO" id="RfQ-Z2-ZZ1">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="LzL-7K-R2f">
+                            <variation key="heightClass=regular-widthClass=compact" constant="80"/>
+                        </constraint>
+                        <constraint firstAttribute="height" constant="100" id="fqO-Yf-esR">
+                            <variation key="heightClass=regular-widthClass=compact" constant="80"/>
+                        </constraint>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="LzL-7K-R2f"/>
+                            <exclude reference="fqO-Yf-esR"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="LzL-7K-R2f"/>
+                            <include reference="fqO-Yf-esR"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Obama" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ysa-FT-9Sm">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="obama@gmail.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i49-fb-djQ">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="i49-fb-djQ" firstAttribute="top" secondItem="Ysa-FT-9Sm" secondAttribute="bottom" constant="2.5" id="0Ng-iP-SGT"/>
+                <constraint firstItem="Ysa-FT-9Sm" firstAttribute="centerX" secondItem="RfQ-Z2-ZZ1" secondAttribute="centerX" id="0tq-fY-Pg3"/>
+                <constraint firstItem="ucx-i4-Zft" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="0wT-nm-nbv"/>
+                <constraint firstItem="Ysa-FT-9Sm" firstAttribute="leading" secondItem="RfQ-Z2-ZZ1" secondAttribute="trailing" constant="28" id="1SB-fN-5OC"/>
+                <constraint firstItem="Ysa-FT-9Sm" firstAttribute="leading" secondItem="RfQ-Z2-ZZ1" secondAttribute="trailing" constant="28" id="At8-KL-Vlq">
+                    <variation key="heightClass=regular-widthClass=compact" constant="10"/>
+                </constraint>
+                <constraint firstAttribute="centerY" secondItem="RfQ-Z2-ZZ1" secondAttribute="centerY" constant="0.5" id="EQq-A5-L2O">
+                    <variation key="heightClass=regular-widthClass=compact" constant="20"/>
+                </constraint>
+                <constraint firstAttribute="bottom" secondItem="ucx-i4-Zft" secondAttribute="bottom" id="M0Y-DM-0s0"/>
+                <constraint firstItem="Ysa-FT-9Sm" firstAttribute="centerX" secondItem="i49-fb-djQ" secondAttribute="centerX" id="QBa-Ve-EQJ"/>
+                <constraint firstAttribute="trailing" secondItem="Ysa-FT-9Sm" secondAttribute="trailing" constant="222" id="TCm-W9-NKy">
+                    <variation key="heightClass=regular-widthClass=compact" constant="100"/>
+                </constraint>
+                <constraint firstItem="ucx-i4-Zft" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fV2-82-zeu"/>
+                <constraint firstItem="RfQ-Z2-ZZ1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="ftk-E5-if9"/>
+                <constraint firstAttribute="centerX" secondItem="RfQ-Z2-ZZ1" secondAttribute="centerX" constant="152" id="jeC-6a-XQC">
+                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                </constraint>
+                <constraint firstItem="Ysa-FT-9Sm" firstAttribute="centerY" secondItem="RfQ-Z2-ZZ1" secondAttribute="centerY" constant="0.5" id="lRe-89-Haa">
+                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                </constraint>
+                <constraint firstAttribute="trailing" secondItem="ucx-i4-Zft" secondAttribute="trailing" id="mdh-dW-ylB"/>
+                <constraint firstItem="Ysa-FT-9Sm" firstAttribute="top" secondItem="RfQ-Z2-ZZ1" secondAttribute="bottom" constant="8" id="qlz-Yf-QTe">
+                    <variation key="heightClass=regular-widthClass=compact" constant="10"/>
+                </constraint>
+                <constraint firstItem="Ysa-FT-9Sm" firstAttribute="leading" secondItem="RfQ-Z2-ZZ1" secondAttribute="trailing" constant="28" id="zss-Ka-udf"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="ucx-i4-Zft"/>
+                    <exclude reference="RfQ-Z2-ZZ1"/>
+                    <exclude reference="Ysa-FT-9Sm"/>
+                    <exclude reference="i49-fb-djQ"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="0wT-nm-nbv"/>
+                    <exclude reference="M0Y-DM-0s0"/>
+                    <exclude reference="fV2-82-zeu"/>
+                    <exclude reference="mdh-dW-ylB"/>
+                    <exclude reference="0tq-fY-Pg3"/>
+                    <exclude reference="1SB-fN-5OC"/>
+                    <exclude reference="At8-KL-Vlq"/>
+                    <exclude reference="QBa-Ve-EQJ"/>
+                    <exclude reference="TCm-W9-NKy"/>
+                    <exclude reference="lRe-89-Haa"/>
+                    <exclude reference="qlz-Yf-QTe"/>
+                    <exclude reference="zss-Ka-udf"/>
+                    <exclude reference="EQq-A5-L2O"/>
+                    <exclude reference="ftk-E5-if9"/>
+                    <exclude reference="jeC-6a-XQC"/>
+                    <exclude reference="0Ng-iP-SGT"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="ucx-i4-Zft"/>
+                    <include reference="RfQ-Z2-ZZ1"/>
+                    <include reference="Ysa-FT-9Sm"/>
+                    <include reference="i49-fb-djQ"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="0wT-nm-nbv"/>
+                    <include reference="M0Y-DM-0s0"/>
+                    <include reference="fV2-82-zeu"/>
+                    <include reference="mdh-dW-ylB"/>
+                    <include reference="0tq-fY-Pg3"/>
+                    <exclude reference="1SB-fN-5OC"/>
+                    <exclude reference="At8-KL-Vlq"/>
+                    <include reference="QBa-Ve-EQJ"/>
+                    <exclude reference="TCm-W9-NKy"/>
+                    <exclude reference="lRe-89-Haa"/>
+                    <include reference="qlz-Yf-QTe"/>
+                    <exclude reference="zss-Ka-udf"/>
+                    <include reference="EQq-A5-L2O"/>
+                    <exclude reference="ftk-E5-if9"/>
+                    <include reference="jeC-6a-XQC"/>
+                    <include reference="0Ng-iP-SGT"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="avatarView" destination="RfQ-Z2-ZZ1" id="uva-ac-V0E"/>
+                <outlet property="backgroundView" destination="ucx-i4-Zft" id="oAc-Lx-97U"/>
+                <outlet property="emailLabel" destination="i49-fb-djQ" id="aHg-f9-eD2"/>
+                <outlet property="nameLabel" destination="Ysa-FT-9Sm" id="9mj-KF-Ulq"/>
+            </connections>
+            <point key="canvasLocation" x="266" y="526"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="obama" width="311" height="311"/>
+    </resources>
+</document>
