@@ -9,7 +9,6 @@
 #import "LeftMenuViewController.h"
 #import "LeftMenuTableViewCell.h"
 #import "SWRevealViewController.h"
-#import "TeacherRegisterClassViewController.h"
 #import "StudentStudyFieldsViewController.h"
 
 #define kHeaderView @"LeftMenuHeaderView"
@@ -124,7 +123,7 @@
             if(_loginModeSelected == 0){
                 rootViewController =  (StudentStudyFieldsViewController *)[sb instantiateViewControllerWithIdentifier:@"studentStudyFieldsViewController"];
             }else{
-                rootViewController =  (TeacherRegisterClassViewController *)[sb instantiateViewControllerWithIdentifier:@"teacherRegisterClassViewController"];
+//                rootViewController =  (TeacherRegisterClassViewController *)[sb instantiateViewControllerWithIdentifier:@"teacherRegisterClassViewController"];
             }
             break;
         case 1:
