@@ -8,7 +8,6 @@
 
 #import "LoginViewController.h"
 #import "StudentStudyFieldsViewController.h"
-#import "TeacherRegisterClassViewController.h"
 #import "LeftMenuViewController.h"
 #import "SWRevealViewController.h"
 #import "CustomNavigationBar.h"
@@ -167,8 +166,8 @@
         sb = [UIStoryboard storyboardWithName:@"Student" bundle:nil];
         viewController=(StudentStudyFieldsViewController *)[sb instantiateViewControllerWithIdentifier:@"studentStudyFieldsViewController"];
     }else{
-        sb = [UIStoryboard storyboardWithName:@"Teacher" bundle:nil];
-        viewController=(TeacherRegisterClassViewController *)[sb instantiateViewControllerWithIdentifier:@"teacherRegisterClassViewController"];
+//        sb = [UIStoryboard storyboardWithName:@"Teacher" bundle:nil];
+//        viewController=(TeacherRegisterClassViewController *)[sb instantiateViewControllerWithIdentifier:@"teacherRegisterClassViewController"];
     }
     sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     LeftMenuViewController *leftMenuViewController = (LeftMenuViewController *)[sb instantiateViewControllerWithIdentifier:@"leftMenuViewController"];
@@ -184,6 +183,7 @@
     mainRevealController.rearViewRevealOverdraw=0.0f;
     [navigationBar.toggleButton addTarget:mainRevealController action: @selector( revealToggle: ) forControlEvents:UIControlEventTouchUpInside];
     [navigationBar addGestureRecognizer:mainRevealController.panGestureRecognizer];
+    self.navigationController.navigationBar.translucent = NO;
     [self.navigationController pushViewController:mainRevealController animated:YES];
     
 

@@ -7,7 +7,7 @@
 //
 
 #import "CustomNavigationBar.h"
-const CGFloat VFSNavigationBarHeightIncrease = 12.f;
+const CGFloat VFSNavigationBarHeightIncrease = 0.0f;
 @implementation CustomNavigationBar
 
 
@@ -38,7 +38,7 @@ const CGFloat VFSNavigationBarHeightIncrease = 12.f;
     
     borderView=[[UIView alloc]init];
     borderView.backgroundColor=[UIColor colorWithRed:((float) 235.0f / 255.0f)   green:((float) 235.0f / 255.0f)   blue:((float) 235.0f / 255.0f)   alpha:1.0f];
-    [self addSubview:borderView];
+//    [self addSubview:borderView];
     
     self.toggleButton=[[UIButton alloc] init];
     [self.toggleButton setImage:[UIImage imageNamed:@"btn_toggle.png"] forState:UIControlStateNormal];
@@ -76,6 +76,9 @@ const CGFloat VFSNavigationBarHeightIncrease = 12.f;
             [view setFrame:frame];
         }
     }
+    
+    //background colors
+    self.backgroundColor = [UIColor colorWithRed:234.0/255.0f green:76.0/255.0f blue:137.0/255.0f alpha:1.0];
 }
 
 
