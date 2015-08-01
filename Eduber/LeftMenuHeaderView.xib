@@ -136,6 +136,7 @@
             <connections>
                 <outlet property="avatarView" destination="RfQ-Z2-ZZ1" id="uva-ac-V0E"/>
                 <outlet property="backgroundView" destination="ucx-i4-Zft" id="oAc-Lx-97U"/>
+                <outlet property="emailLabel" destination="i49-fb-djQ" id="aHg-f9-eD2"/>
                 <outlet property="nameLabel" destination="Ysa-FT-9Sm" id="9mj-KF-Ulq"/>
             </connections>
             <point key="canvasLocation" x="266" y="526"/>

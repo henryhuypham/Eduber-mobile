@@ -12,6 +12,7 @@
 
 -(void)awakeFromNib{
     [self setupAvatar];
+    [self setupLabel];
 }
 
 -(void)setupAvatar{
@@ -28,6 +29,15 @@
     backgroundImage = [backgroundImage applyLightEffectAtFrame:frame];
     [self.backgroundView setImage:backgroundImage];
     self.backgroundView.layer.masksToBounds = YES;
+}
+
+-(void)setupLabel{
+    //label
+    [self.nameLabel setTextColor:[UIColor whiteColor]];
+    [self.nameLabel setFont:[UIFont  boldSystemFontOfSize:16.0f]];
+    
+    [self.emailLabel setTextColor:[UIColor whiteColor]];
+
 }
 
 /*
