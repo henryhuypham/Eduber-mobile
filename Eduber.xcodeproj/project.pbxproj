@@ -14,6 +14,7 @@
 		8708A3D51B6C86860012484E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8708A3D31B6C86860012484E /* LaunchScreen.xib */; };
 		8708A3E11B6C86860012484E /* EduberTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8708A3E01B6C86860012484E /* EduberTests.m */; };
 		878B3E7C1B6C8DB6006B8710 /* Teacher.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 878B3E7B1B6C8DB6006B8710 /* Teacher.storyboard */; };
+		878B3E7F1B6C968F006B8710 /* StudyFieldsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 878B3E7E1B6C968F006B8710 /* StudyFieldsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,8 @@
 		8708A3DF1B6C86860012484E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8708A3E01B6C86860012484E /* EduberTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EduberTests.m; sourceTree = "<group>"; };
 		878B3E7B1B6C8DB6006B8710 /* Teacher.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Teacher.storyboard; sourceTree = "<group>"; };
+		878B3E7D1B6C968F006B8710 /* StudyFieldsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StudyFieldsViewController.h; path = ViewControllers/StudyFieldsViewController.h; sourceTree = "<group>"; };
+		878B3E7E1B6C968F006B8710 /* StudyFieldsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StudyFieldsViewController.m; path = ViewControllers/StudyFieldsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +83,7 @@
 		8708A3C31B6C86860012484E /* Eduber */ = {
 			isa = PBXGroup;
 			children = (
+				878B3E801B6C9693006B8710 /* ViewControllers */,
 				8708A3C81B6C86860012484E /* AppDelegate.h */,
 				8708A3C91B6C86860012484E /* AppDelegate.m */,
 				878B3E7B1B6C8DB6006B8710 /* Teacher.storyboard */,
@@ -115,6 +119,15 @@
 				8708A3DF1B6C86860012484E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		878B3E801B6C9693006B8710 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				878B3E7D1B6C968F006B8710 /* StudyFieldsViewController.h */,
+				878B3E7E1B6C968F006B8710 /* StudyFieldsViewController.m */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8708A3CA1B6C86860012484E /* AppDelegate.m in Sources */,
+				878B3E7F1B6C968F006B8710 /* StudyFieldsViewController.m in Sources */,
 				8708A3C71B6C86860012484E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,6 +362,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Eduber/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -358,6 +373,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Eduber/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
