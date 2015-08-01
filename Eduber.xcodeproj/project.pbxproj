@@ -13,11 +13,11 @@
 		4C5DE23B1B6CCE3A00B85BB8 /* LeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5DE23A1B6CCE3A00B85BB8 /* LeftMenuViewController.m */; };
 		4C5DE23E1B6CCE4500B85BB8 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5DE23D1B6CCE4500B85BB8 /* SWRevealViewController.m */; };
 		4C5DE2411B6CCE6000B85BB8 /* LeftMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5DE2401B6CCE6000B85BB8 /* LeftMenuTableViewCell.m */; };
-		4C5DE2451B6CD21800B85BB8 /* CustomNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5DE2441B6CD21800B85BB8 /* CustomNavigationBar.m */; };
 		842266121B6CB05F00AABFB6 /* UIButton+Style.m in Sources */ = {isa = PBXBuildFile; fileRef = 842266111B6CB05F00AABFB6 /* UIButton+Style.m */; };
 		842266151B6CB12400AABFB6 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 842266141B6CB12400AABFB6 /* UIImage+Color.m */; };
 		842266201B6CC55300AABFB6 /* UIImage+BlurredFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 8422661D1B6CC55300AABFB6 /* UIImage+BlurredFrame.m */; };
 		842266211B6CC55300AABFB6 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 8422661F1B6CC55300AABFB6 /* UIImage+ImageEffects.m */; };
+		842266251B6CE30F00AABFB6 /* CustomNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 842266241B6CE30F00AABFB6 /* CustomNavigationBar.m */; };
 		8708A3C71B6C86860012484E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8708A3C61B6C86860012484E /* main.m */; };
 		8708A3CA1B6C86860012484E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8708A3C91B6C86860012484E /* AppDelegate.m */; };
 		8708A3D01B6C86860012484E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8708A3CE1B6C86860012484E /* Main.storyboard */; };
@@ -28,10 +28,6 @@
 		878B3E871B6CA39E006B8710 /* Student.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 878B3E861B6CA39E006B8710 /* Student.storyboard */; };
 		878B3E8A1B6CA3F3006B8710 /* StudentStudyFieldsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 878B3E891B6CA3F3006B8710 /* StudentStudyFieldsViewController.m */; };
 		878B3E8D1B6CA7CC006B8710 /* StudyFieldCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 878B3E8C1B6CA7CC006B8710 /* StudyFieldCollectionViewCell.m */; };
-		878B3E8D1B6CA7CC006B8710 /* StudyFieldCellCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 878B3E8C1B6CA7CC006B8710 /* StudyFieldCellCollectionViewCell.m */; };
-		878B3E901B6CA7FE006B8710 /* StudyFieldCellCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 878B3E8F1B6CA7FE006B8710 /* StudyFieldCellCollectionViewCell.xib */; };
-		878B3E961B6CD61B006B8710 /* TestInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 878B3E951B6CD61B006B8710 /* TestInfoViewController.m */; };
->>>>>>> f5ec5de9c4955429018812b6d9c4cf50e83096bd
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,8 +52,6 @@
 		4C5DE23D1B6CCE4500B85BB8 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = ViewControllers/SWRevealViewController/SWRevealViewController.m; sourceTree = "<group>"; };
 		4C5DE23F1B6CCE6000B85BB8 /* LeftMenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMenuTableViewCell.h; sourceTree = "<group>"; };
 		4C5DE2401B6CCE6000B85BB8 /* LeftMenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuTableViewCell.m; sourceTree = "<group>"; };
-		4C5DE2431B6CD21800B85BB8 /* CustomNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavigationBar.h; sourceTree = "<group>"; };
-		4C5DE2441B6CD21800B85BB8 /* CustomNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationBar.m; sourceTree = "<group>"; };
 		7AAAF699BC1C757B5D3D8778 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		842266101B6CB05F00AABFB6 /* UIButton+Style.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Style.h"; sourceTree = "<group>"; };
 		842266111B6CB05F00AABFB6 /* UIButton+Style.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Style.m"; sourceTree = "<group>"; };
@@ -69,6 +63,8 @@
 		8422661D1B6CC55300AABFB6 /* UIImage+BlurredFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BlurredFrame.m"; sourceTree = "<group>"; };
 		8422661E1B6CC55300AABFB6 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
 		8422661F1B6CC55300AABFB6 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		842266231B6CE30F00AABFB6 /* CustomNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavigationBar.h; sourceTree = "<group>"; };
+		842266241B6CE30F00AABFB6 /* CustomNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationBar.m; sourceTree = "<group>"; };
 		8708A3C11B6C86860012484E /* Eduber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eduber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8708A3C51B6C86860012484E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8708A3C61B6C86860012484E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -86,12 +82,6 @@
 		878B3E891B6CA3F3006B8710 /* StudentStudyFieldsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StudentStudyFieldsViewController.m; path = ViewControllers/StudentStudyFieldsViewController.m; sourceTree = "<group>"; };
 		878B3E8B1B6CA7CC006B8710 /* StudyFieldCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StudyFieldCollectionViewCell.h; path = ViewCells/StudyFieldCollectionViewCell.h; sourceTree = "<group>"; };
 		878B3E8C1B6CA7CC006B8710 /* StudyFieldCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StudyFieldCollectionViewCell.m; path = ViewCells/StudyFieldCollectionViewCell.m; sourceTree = "<group>"; };
-		878B3E8B1B6CA7CC006B8710 /* StudyFieldCellCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StudyFieldCellCollectionViewCell.h; path = ViewCells/StudyFieldCellCollectionViewCell.h; sourceTree = "<group>"; };
-		878B3E8C1B6CA7CC006B8710 /* StudyFieldCellCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StudyFieldCellCollectionViewCell.m; path = ViewCells/StudyFieldCellCollectionViewCell.m; sourceTree = "<group>"; };
-		878B3E8F1B6CA7FE006B8710 /* StudyFieldCellCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = StudyFieldCellCollectionViewCell.xib; path = ViewCells/StudyFieldCellCollectionViewCell.xib; sourceTree = "<group>"; };
-		878B3E941B6CD61B006B8710 /* TestInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestInfoViewController.h; path = ViewControllers/TestInfoViewController.h; sourceTree = "<group>"; };
-		878B3E951B6CD61B006B8710 /* TestInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestInfoViewController.m; path = ViewControllers/TestInfoViewController.m; sourceTree = "<group>"; };
->>>>>>> f5ec5de9c4955429018812b6d9c4cf50e83096bd
 		FCB3AB03E3CF78806BC3AED2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -125,8 +115,6 @@
 		4C5DE21A1B6C994900B85BB8 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				878B3E941B6CD61B006B8710 /* TestInfoViewController.h */,
-				878B3E951B6CD61B006B8710 /* TestInfoViewController.m */,
 				4C5DE2391B6CCE3A00B85BB8 /* LeftMenuViewController.h */,
 				4C5DE23A1B6CCE3A00B85BB8 /* LeftMenuViewController.m */,
 				4C5DE21E1B6CA77100B85BB8 /* LoginViewController.h */,
@@ -139,15 +127,6 @@
 				4C5DE23D1B6CCE4500B85BB8 /* SWRevealViewController.m */,
 			);
 			name = ViewControllers;
-			sourceTree = "<group>";
-		};
-		4C5DE2421B6CD20D00B85BB8 /* CustomView */ = {
-			isa = PBXGroup;
-			children = (
-				4C5DE2431B6CD21800B85BB8 /* CustomNavigationBar.h */,
-				4C5DE2441B6CD21800B85BB8 /* CustomNavigationBar.m */,
-			);
-			name = CustomView;
 			sourceTree = "<group>";
 		};
 		8422660F1B6CB05F00AABFB6 /* Category */ = {
@@ -163,6 +142,15 @@
 				842266111B6CB05F00AABFB6 /* UIButton+Style.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		842266221B6CE30200AABFB6 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				842266231B6CE30F00AABFB6 /* CustomNavigationBar.h */,
+				842266241B6CE30F00AABFB6 /* CustomNavigationBar.m */,
+			);
+			name = CustomView;
 			sourceTree = "<group>";
 		};
 		8708A3B81B6C86860012484E = {
@@ -188,7 +176,7 @@
 		8708A3C31B6C86860012484E /* Eduber */ = {
 			isa = PBXGroup;
 			children = (
-				4C5DE2421B6CD20D00B85BB8 /* CustomView */,
+				842266221B6CE30200AABFB6 /* CustomView */,
 				8422660F1B6CB05F00AABFB6 /* Category */,
 				878B3E8E1B6CA7D0006B8710 /* ViewCells */,
 				4C5DE21A1B6C994900B85BB8 /* ViewControllers */,
@@ -389,14 +377,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				878B3E961B6CD61B006B8710 /* TestInfoViewController.m in Sources */,
 				4C5DE2411B6CCE6000B85BB8 /* LeftMenuTableViewCell.m in Sources */,
 				842266201B6CC55300AABFB6 /* UIImage+BlurredFrame.m in Sources */,
 				8708A3CA1B6C86860012484E /* AppDelegate.m in Sources */,
 				878B3E8D1B6CA7CC006B8710 /* StudyFieldCollectionViewCell.m in Sources */,
 				842266151B6CB12400AABFB6 /* UIImage+Color.m in Sources */,
 				8708A3C71B6C86860012484E /* main.m in Sources */,
-				4C5DE2451B6CD21800B85BB8 /* CustomNavigationBar.m in Sources */,
+				842266251B6CE30F00AABFB6 /* CustomNavigationBar.m in Sources */,
 				842266211B6CC55300AABFB6 /* UIImage+ImageEffects.m in Sources */,
 				4C5DE2231B6CB3D900B85BB8 /* TeacherRegisterClassViewController.m in Sources */,
 				4C5DE2201B6CA77100B85BB8 /* LoginViewController.m in Sources */,
