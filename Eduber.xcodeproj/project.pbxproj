@@ -21,6 +21,7 @@
 		878B3E8A1B6CA3F3006B8710 /* StudentStudyFieldsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 878B3E891B6CA3F3006B8710 /* StudentStudyFieldsViewController.m */; };
 		878B3E8D1B6CA7CC006B8710 /* StudyFieldCellCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 878B3E8C1B6CA7CC006B8710 /* StudyFieldCellCollectionViewCell.m */; };
 		878B3E901B6CA7FE006B8710 /* StudyFieldCellCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 878B3E8F1B6CA7FE006B8710 /* StudyFieldCellCollectionViewCell.xib */; };
+		878B3E931B6CD4ED006B8710 /* TestInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 878B3E921B6CD4ED006B8710 /* TestInfoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		878B3E8B1B6CA7CC006B8710 /* StudyFieldCellCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StudyFieldCellCollectionViewCell.h; path = ViewCells/StudyFieldCellCollectionViewCell.h; sourceTree = "<group>"; };
 		878B3E8C1B6CA7CC006B8710 /* StudyFieldCellCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StudyFieldCellCollectionViewCell.m; path = ViewCells/StudyFieldCellCollectionViewCell.m; sourceTree = "<group>"; };
 		878B3E8F1B6CA7FE006B8710 /* StudyFieldCellCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = StudyFieldCellCollectionViewCell.xib; path = ViewCells/StudyFieldCellCollectionViewCell.xib; sourceTree = "<group>"; };
+		878B3E911B6CD4ED006B8710 /* TestInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestInfoViewController.h; path = ViewControllers/TestInfoViewController.h; sourceTree = "<group>"; };
+		878B3E921B6CD4ED006B8710 /* TestInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestInfoViewController.m; path = ViewControllers/TestInfoViewController.m; sourceTree = "<group>"; };
 		FCB3AB03E3CF78806BC3AED2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -97,6 +100,8 @@
 				878B3E891B6CA3F3006B8710 /* StudentStudyFieldsViewController.m */,
 				4C5DE2211B6CB3D900B85BB8 /* TeacherRegisterClassViewController.h */,
 				4C5DE2221B6CB3D900B85BB8 /* TeacherRegisterClassViewController.m */,
+				878B3E911B6CD4ED006B8710 /* TestInfoViewController.h */,
+				878B3E921B6CD4ED006B8710 /* TestInfoViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -321,6 +326,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				878B3E931B6CD4ED006B8710 /* TestInfoViewController.m in Sources */,
 				8708A3CA1B6C86860012484E /* AppDelegate.m in Sources */,
 				878B3E8D1B6CA7CC006B8710 /* StudyFieldCellCollectionViewCell.m in Sources */,
 				8708A3C71B6C86860012484E /* main.m in Sources */,
