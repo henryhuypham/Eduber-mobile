@@ -13,5 +13,16 @@
     UIView* borderView;
 }
 @property (strong, nonatomic) UIButton *toggleButton;
+@property (strong, nonatomic) UIButton *backButton;
+@property (strong, nonatomic) UILabel *titleLabel;
+-(void)showBackButton;
+-(void)hideBackButton;
 
+@end
+
+@interface UIViewController(CustomNavigationBar)
+
+-(void)showBackButton;
+-(void)hideBackButton;
+-(void)setTitle:(NSString*)title;
 @end

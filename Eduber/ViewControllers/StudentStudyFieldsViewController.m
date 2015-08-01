@@ -8,6 +8,7 @@
 
 #import "StudentStudyFieldsViewController.h"
 #import "StudyFieldCollectionViewCell.h"
+#import "CustomNavigationBar.h"
 
 #define kCollectionViewCell @"StudyFieldCollectionViewCell"
 
@@ -17,6 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self setupView];
+    [self setTitle:@"Subjects"];
 }
 
 -(void)setupView{
