@@ -8,6 +8,7 @@
 
 #import "StudentClassSelectViewController.h"
 #import "TestInfoViewController.h"
+#import "ClassRecommendationViewController.h"
 
 @implementation StudentClassSelectViewController
 
@@ -135,7 +136,8 @@
 
 -(IBAction)toeicAction:(id)sender {
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Student" bundle:nil];
-    TestInfoViewController *viewController = (TestInfoViewController *)[sb instantiateViewControllerWithIdentifier:@"testInfoViewController"];
+//    TestInfoViewController *viewController = (TestInfoViewController *)[sb instantiateViewControllerWithIdentifier:@"testInfoViewController"];
+    ClassRecommendationViewController *viewController = (ClassRecommendationViewController *)[sb instantiateViewControllerWithIdentifier:@"classRecommendationViewController"];
     [self.navigationController  pushViewController:viewController animated:YES];
 }
 
