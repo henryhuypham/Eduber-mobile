@@ -10,4 +10,10 @@
 
 @interface ClassInfo : NSObject
 
+@property(nonatomic)double identify;
+@property(nonatomic,retain)NSString* className;
+@property(nonatomic)double numberStudent;
+@property(nonatomic,retain)NSString* schedule;
+@property(nonatomic,retain)NSString* location;
+
 @end

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -9,7 +9,7 @@
         <!--Teacher Class List View Controller-->
         <scene sceneID="jKA-cG-gEf">
             <objects>
-                <viewController id="g6E-jm-NTv" customClass="TeacherClassListViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="teacherClassListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="g6E-jm-NTv" customClass="TeacherClassListViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lHd-2E-8Rx"/>
                         <viewControllerLayoutGuide type="bottom" id="0e3-QN-Dv8"/>
@@ -22,13 +22,13 @@
                                 <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="108" id="bsg-zF-B0h">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TeacherClassCell" rowHeight="108" id="bsg-zF-B0h" customClass="TeacherClassCell">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bsg-zF-B0h" id="qW0-DY-Vjs">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UXV-o5-AUn" userLabel="Header">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="29.5"/>
+                                                    <rect key="frame" x="-8" y="0.0" width="336" height="29.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Class Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DzA-t3-zHj">
                                                             <rect key="frame" x="16" y="5" width="84" height="18"/>
@@ -37,7 +37,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CVd-N1-k8Y" userLabel="Student Count group">
-                                                            <rect key="frame" x="274" y="0.0" width="30" height="29.5"/>
+                                                            <rect key="frame" x="290" y="0.0" width="30" height="29.5"/>
                                                             <subviews>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_user_white" translatesAutoresizingMaskIntoConstraints="NO" id="K0B-sH-JgQ">
                                                                     <rect key="frame" x="0.0" y="7" width="14" height="14"/>
@@ -132,30 +132,55 @@
                                                 <constraint firstItem="zKv-dy-iRD" firstAttribute="trailing" secondItem="qW0-DY-Vjs" secondAttribute="trailingMargin" constant="8" id="8pA-dv-yPZ"/>
                                                 <constraint firstItem="G9f-qL-3y2" firstAttribute="top" secondItem="UXV-o5-AUn" secondAttribute="bottom" id="J95-hB-0ZY"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="G9f-qL-3y2" secondAttribute="trailing" constant="8" id="ZZk-58-khZ"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="UXV-o5-AUn" secondAttribute="trailing" constant="-8" id="dYd-qH-EVG"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="UXV-o5-AUn" secondAttribute="trailing" constant="-16" id="dYd-qH-EVG"/>
                                                 <constraint firstItem="zKv-dy-iRD" firstAttribute="top" secondItem="G9f-qL-3y2" secondAttribute="bottom" id="duw-QP-bdy"/>
-                                                <constraint firstItem="UXV-o5-AUn" firstAttribute="leading" secondItem="qW0-DY-Vjs" secondAttribute="leadingMargin" constant="-8" id="i7s-ac-jJ6"/>
+                                                <constraint firstItem="UXV-o5-AUn" firstAttribute="leading" secondItem="qW0-DY-Vjs" secondAttribute="leadingMargin" constant="-16" id="i7s-ac-jJ6"/>
                                                 <constraint firstItem="zKv-dy-iRD" firstAttribute="leading" secondItem="qW0-DY-Vjs" secondAttribute="leadingMargin" constant="8" id="r3j-fG-HzC"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="classnameLB" destination="DzA-t3-zHj" id="dhg-uJ-d0L"/>
+                                            <outlet property="locationLB" destination="Mxp-pr-uVT" id="Ev6-ae-h8C"/>
+                                            <outlet property="numberLB" destination="Aae-2u-Ew9" id="YsE-3i-LWq"/>
+                                            <outlet property="scheduleLB" destination="co6-hN-gST" id="EqG-Qg-jAE"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="g6E-jm-NTv" id="2BF-3q-xTb"/>
-                                    <outlet property="delegate" destination="g6E-jm-NTv" id="VgO-mh-6RO"/>
+                                    <outlet property="dataSource" destination="g6E-jm-NTv" id="hsf-ab-YdJ"/>
+                                    <outlet property="delegate" destination="g6E-jm-NTv" id="zvr-7o-upU"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHV-gZ-wa1">
+                                <rect key="frame" x="230" y="470" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="n4V-jb-Z9G"/>
+                                    <constraint firstAttribute="height" constant="60" id="tyA-VH-sUh"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="add_new_icon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addNewActon:" destination="g6E-jm-NTv" eventType="touchUpInside" id="hZH-OX-3A7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="YkF-qz-cyg" firstAttribute="top" secondItem="lHd-2E-8Rx" secondAttribute="bottom" id="2YG-zv-28d"/>
+                            <constraint firstItem="cHV-gZ-wa1" firstAttribute="top" secondItem="YkF-qz-cyg" secondAttribute="bottom" constant="-98" id="4Do-P2-mZW"/>
                             <constraint firstItem="YkF-qz-cyg" firstAttribute="leading" secondItem="Khg-fu-9cG" secondAttribute="leadingMargin" constant="-16" id="8ou-Ag-tja"/>
+                            <constraint firstItem="cHV-gZ-wa1" firstAttribute="leading" secondItem="YkF-qz-cyg" secondAttribute="trailing" constant="-90" id="fg3-kD-XlG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="YkF-qz-cyg" secondAttribute="trailing" constant="-16" id="h7S-v0-4cl"/>
                             <constraint firstItem="0e3-QN-Dv8" firstAttribute="top" secondItem="YkF-qz-cyg" secondAttribute="bottom" id="r3N-Py-4Fb"/>
                         </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="568"/>
+                    <connections>
+                        <outlet property="addNewButton" destination="cHV-gZ-wa1" id="wVN-vz-jz4"/>
+                        <outlet property="tableView" destination="YkF-qz-cyg" id="so0-dX-GIU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QEe-j9-3TS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -163,6 +188,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="add_new_icon" width="400" height="400"/>
         <image name="ico_user_white" width="48" height="48"/>
     </resources>
 </document>

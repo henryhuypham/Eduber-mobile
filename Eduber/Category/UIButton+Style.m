@@ -12,10 +12,12 @@
 {
     self.titleLabel.font = kFontBold(16);
     [self setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [self setBackgroundImage:[[UIImage alloc] initWithSize:self.frame.size andColor:kBlueColor] forState:UIControlStateNormal];
-    [self setBackgroundImage:[[UIImage alloc] initWithSize:self.frame.size andColor:kBrightBlueColor] forState:UIControlStateHighlighted];
+    [self setBackgroundImage:[[UIImage alloc] initWithSize:self.frame.size andColor:[UIColor clearColor]] forState:UIControlStateNormal];
+    [self setBackgroundImage:[[UIImage alloc] initWithSize:self.frame.size andColor:[UIColor clearColor]] forState:UIControlStateHighlighted];
     
     //corner
+    self.layer.borderColor = [[UIColor whiteColor] CGColor];
+    self.layer.borderWidth = 2;
     self.layer.cornerRadius = 3;
     self.clipsToBounds = YES;
 }
@@ -29,8 +31,14 @@
     imageView.image = [UIImage imageNamed:@"fb_icon.png"];
     [self addSubview:imageView];
     //----------
-    [self setBackgroundImage:[[UIImage alloc] initWithSize:self.frame.size andColor:kBlueFacebookColor] forState:UIControlStateNormal];
-    [self setBackgroundImage:[[UIImage alloc] initWithSize:self.frame.size andColor:kBlueFacebookColor] forState:UIControlStateHighlighted];
+//    [self setBackgroundImage:[[UIImage alloc] initWithSize:self.frame.size andColor:kBlueFacebookColor] forState:UIControlStateNormal];
+//    [self setBackgroundImage:[[UIImage alloc] initWithSize:self.frame.size andColor:kBlueFacebookColor] forState:UIControlStateHighlighted];
+    
+    CALayer *layer = self.layer;
+    layer.backgroundColor = [[UIColor clearColor] CGColor];
+    layer.borderColor = [[UIColor whiteColor] CGColor];
+    layer.cornerRadius = 8.0f;
+    layer.borderWidth = 1.0f;
     
     //corner
     self.layer.cornerRadius = 3;
@@ -46,8 +54,14 @@
     imageView.image = [UIImage imageNamed:@"google_icon"];
     [self addSubview:imageView];
     //----------
-    [self setBackgroundImage:[[UIImage alloc] initWithSize:self.frame.size andColor:kRedGoogleColor] forState:UIControlStateNormal];
-    [self setBackgroundImage:[[UIImage alloc] initWithSize:self.frame.size andColor:kRedGoogleColor] forState:UIControlStateHighlighted];
+//    [self setBackgroundImage:[[UIImage alloc] initWithSize:self.frame.size andColor:kRedGoogleColor] forState:UIControlStateNormal];
+//    [self setBackgroundImage:[[UIImage alloc] initWithSize:self.frame.size andColor:kRedGoogleColor] forState:UIControlStateHighlighted];
+    
+    CALayer *layer = self.layer;
+    layer.backgroundColor = [[UIColor clearColor] CGColor];
+    layer.borderColor = [[UIColor whiteColor] CGColor];
+    layer.cornerRadius = 8.0f;
+    layer.borderWidth = 1.0f;
     
     //corner
     self.layer.cornerRadius = 3;
@@ -63,8 +77,14 @@
     imageView.image = [UIImage imageNamed:@"linkedin_icon"];
     [self addSubview:imageView];
     //----------
-    [self setBackgroundImage:[[UIImage alloc] initWithSize:self.frame.size andColor:kBlueLinkedInColor] forState:UIControlStateNormal];
-    [self setBackgroundImage:[[UIImage alloc] initWithSize:self.frame.size andColor:kBlueLinkedInColor] forState:UIControlStateHighlighted];
+//    [self setBackgroundImage:[[UIImage alloc] initWithSize:self.frame.size andColor:kBlueLinkedInColor] forState:UIControlStateNormal];
+//    [self setBackgroundImage:[[UIImage alloc] initWithSize:self.frame.size andColor:kBlueLinkedInColor] forState:UIControlStateHighlighted];
+    
+    CALayer *layer = self.layer;
+    layer.backgroundColor = [[UIColor clearColor] CGColor];
+    layer.borderColor = [[UIColor whiteColor] CGColor];
+    layer.cornerRadius = 8.0f;
+    layer.borderWidth = 1.0f;
     
     //corner
     self.layer.cornerRadius = 3;

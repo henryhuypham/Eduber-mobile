@@ -23,6 +23,7 @@
 		842266291B6CFDA500AABFB6 /* LeftMenuHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 842266281B6CFDA500AABFB6 /* LeftMenuHeaderView.m */; };
 		8422662B1B6CFDBA00AABFB6 /* LeftMenuHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8422662A1B6CFDBA00AABFB6 /* LeftMenuHeaderView.xib */; };
 		8427E0851B6D1E1B00EF96D5 /* UIView+Shadow.m in Sources */ = {isa = PBXBuildFile; fileRef = 8427E0841B6D1E1B00EF96D5 /* UIView+Shadow.m */; };
+		8427E08C1B6D3EF500EF96D5 /* TeacherClassCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8427E08B1B6D3EF500EF96D5 /* TeacherClassCell.m */; };
 		8708A3C71B6C86860012484E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8708A3C61B6C86860012484E /* main.m */; };
 		8708A3CA1B6C86860012484E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8708A3C91B6C86860012484E /* AppDelegate.m */; };
 		8708A3D01B6C86860012484E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8708A3CE1B6C86860012484E /* Main.storyboard */; };
@@ -82,6 +83,8 @@
 		8422662A1B6CFDBA00AABFB6 /* LeftMenuHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftMenuHeaderView.xib; sourceTree = "<group>"; };
 		8427E0831B6D1E1B00EF96D5 /* UIView+Shadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Shadow.h"; sourceTree = "<group>"; };
 		8427E0841B6D1E1B00EF96D5 /* UIView+Shadow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Shadow.m"; sourceTree = "<group>"; };
+		8427E08A1B6D3EF500EF96D5 /* TeacherClassCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TeacherClassCell.h; path = ViewCells/TeacherClassCell.h; sourceTree = "<group>"; };
+		8427E08B1B6D3EF500EF96D5 /* TeacherClassCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TeacherClassCell.m; path = ViewCells/TeacherClassCell.m; sourceTree = "<group>"; };
 		8708A3C11B6C86860012484E /* Eduber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eduber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8708A3C51B6C86860012484E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8708A3C61B6C86860012484E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -269,6 +272,8 @@
 		878B3E8E1B6CA7D0006B8710 /* ViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				8427E08A1B6D3EF500EF96D5 /* TeacherClassCell.h */,
+				8427E08B1B6D3EF500EF96D5 /* TeacherClassCell.m */,
 				4C5DE23F1B6CCE6000B85BB8 /* LeftMenuTableViewCell.h */,
 				4C5DE2401B6CCE6000B85BB8 /* LeftMenuTableViewCell.m */,
 				878B3E8B1B6CA7CC006B8710 /* StudyFieldCollectionViewCell.h */,
@@ -441,6 +446,7 @@
 				4C76DEF31B6D0C870052FD48 /* TestResultViewController.m in Sources */,
 				842266201B6CC55300AABFB6 /* UIImage+BlurredFrame.m in Sources */,
 				8708A3CA1B6C86860012484E /* AppDelegate.m in Sources */,
+				8427E08C1B6D3EF500EF96D5 /* TeacherClassCell.m in Sources */,
 				878B3E8D1B6CA7CC006B8710 /* StudyFieldCollectionViewCell.m in Sources */,
 				842266151B6CB12400AABFB6 /* UIImage+Color.m in Sources */,
 				4C76DEF61B6D110D0052FD48 /* TestResultTableViewCell.m in Sources */,

@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TeacherClassCell.h"
+#import "ClassInfo.h"
 
 @interface TeacherClassListViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
+
+@property (nonatomic,retain)NSMutableArray *classList;
+
+@property (nonatomic,retain)IBOutlet UITableView *tableView;
+@property (nonatomic,retain)IBOutlet UIButton *addNewButton;
+
+-(IBAction)addNewActon:(id)sender;
 
 @end

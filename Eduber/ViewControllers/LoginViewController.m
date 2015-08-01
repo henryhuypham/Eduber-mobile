@@ -7,10 +7,7 @@
 //
 
 #import "LoginViewController.h"
-#import "StudentStudyFieldsViewController.h"
-#import "LeftMenuViewController.h"
-#import "SWRevealViewController.h"
-#import "CustomNavigationBar.h"
+
 
 @interface LoginViewController ()
 
@@ -166,8 +163,8 @@
         sb = [UIStoryboard storyboardWithName:@"Student" bundle:nil];
         viewController=(StudentStudyFieldsViewController *)[sb instantiateViewControllerWithIdentifier:@"studentStudyFieldsViewController"];
     }else{
-        //        sb = [UIStoryboard storyboardWithName:@"Teacher" bundle:nil];
-        //        viewController=(TeacherRegisterClassViewController *)[sb instantiateViewControllerWithIdentifier:@"teacherRegisterClassViewController"];
+                sb = [UIStoryboard storyboardWithName:@"Teacher" bundle:nil];
+                viewController=(TeacherClassListViewController *)[sb instantiateViewControllerWithIdentifier:@"teacherClassListViewController"];
     }
     
     sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];

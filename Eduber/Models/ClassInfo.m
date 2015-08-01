@@ -10,4 +10,17 @@
 
 @implementation ClassInfo
 
+- (id)init
+{
+    self = [super init];
+    if (self) {
+        _identify = 0;
+        _className = @"";
+        _numberStudent = 0;
+        _schedule = @"";
+        _location = @"";
+    }
+    return self;
+}
+
 @end

@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
+
 #import "UIButton+Style.h"
 #import "UIImage+BlurredFrame.h"
-#import <QuartzCore/QuartzCore.h>
+#import "StudentStudyFieldsViewController.h"
+#import "TeacherClassListViewController.h"
+#import "LeftMenuViewController.h"
+#import "SWRevealViewController.h"
+#import "CustomNavigationBar.h"
 
 @interface LoginViewController : UIViewController{
     int loginModeSelected;
