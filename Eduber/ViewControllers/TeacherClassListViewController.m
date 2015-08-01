@@ -54,7 +54,9 @@
     }
 }
 
+
 -(void)setupView{
+
     //title
     [self setTitle:@"Class"];
     
@@ -65,6 +67,9 @@
     UIView* view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 20.0)];
     view.backgroundColor= [UIColor colorWithRed:234.0/255.0f green:76.0/255.0f blue:137.0/255.0f alpha:1.0];
     [self.view addSubview:view];
+    
+    //table view
+    self.tableView.separatorColor = [UIColor clearColor];
     
 }
 
@@ -102,7 +107,7 @@
     //Open screen according to selected item
     switch (indexPath.section) {
         case 0:
-            NSLog(@"Click Order History");
+            NSLog(@"Click class");
 //            selectOrder = self.orderHistoryArr[indexPath.row];
 //            [self performSegueWithIdentifier:@"FromOrderHistoryListToOrderHistory" sender:self];
             break;
@@ -114,12 +119,12 @@
 #pragma mark - TableView DataSource
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-
     TeacherClassCell*cell = [tableView dequeueReusableCellWithIdentifier:kCellID];
 
     if (!cell) {
          cell = [[TeacherClassCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kCellID];
     }
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
     ClassInfo *info = self.classList[indexPath.row];
     [cell setInfo:info];
@@ -130,7 +135,7 @@
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     switch (indexPath.section) {
         case 0:
-            return 108;
+            return 115;
         default:
             break;
     }

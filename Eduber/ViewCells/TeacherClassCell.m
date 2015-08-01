@@ -19,6 +19,7 @@
 
 - (void)awakeFromNib {
     // Initialization code
+    [self.containerView applyShadow];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
