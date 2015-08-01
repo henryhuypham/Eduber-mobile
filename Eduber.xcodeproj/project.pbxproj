@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		4C5DE2201B6CA77100B85BB8 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5DE21F1B6CA77100B85BB8 /* LoginViewController.m */; };
+		842266121B6CB05F00AABFB6 /* UIButton+Style.m in Sources */ = {isa = PBXBuildFile; fileRef = 842266111B6CB05F00AABFB6 /* UIButton+Style.m */; };
+		842266151B6CB12400AABFB6 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 842266141B6CB12400AABFB6 /* UIImage+Color.m */; };
+		842266201B6CC55300AABFB6 /* UIImage+BlurredFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 8422661D1B6CC55300AABFB6 /* UIImage+BlurredFrame.m */; };
+		842266211B6CC55300AABFB6 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 8422661F1B6CC55300AABFB6 /* UIImage+ImageEffects.m */; };
 		8708A3C71B6C86860012484E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8708A3C61B6C86860012484E /* main.m */; };
 		8708A3CA1B6C86860012484E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8708A3C91B6C86860012484E /* AppDelegate.m */; };
 		8708A3D01B6C86860012484E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8708A3CE1B6C86860012484E /* Main.storyboard */; };
@@ -34,6 +38,16 @@
 /* Begin PBXFileReference section */
 		4C5DE21E1B6CA77100B85BB8 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = ViewControllers/LoginViewController.h; sourceTree = "<group>"; };
 		4C5DE21F1B6CA77100B85BB8 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = ViewControllers/LoginViewController.m; sourceTree = "<group>"; };
+		842266101B6CB05F00AABFB6 /* UIButton+Style.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Style.h"; sourceTree = "<group>"; };
+		842266111B6CB05F00AABFB6 /* UIButton+Style.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Style.m"; sourceTree = "<group>"; };
+		842266131B6CB12400AABFB6 /* UIImage+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
+		842266141B6CB12400AABFB6 /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
+		8422661A1B6CB33C00AABFB6 /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		8422661B1B6CB34C00AABFB6 /* Eduber-prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Eduber-prefix.pch"; sourceTree = "<group>"; };
+		8422661C1B6CC55300AABFB6 /* UIImage+BlurredFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BlurredFrame.h"; sourceTree = "<group>"; };
+		8422661D1B6CC55300AABFB6 /* UIImage+BlurredFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BlurredFrame.m"; sourceTree = "<group>"; };
+		8422661E1B6CC55300AABFB6 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		8422661F1B6CC55300AABFB6 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		8708A3C11B6C86860012484E /* Eduber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eduber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8708A3C51B6C86860012484E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8708A3C61B6C86860012484E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -83,6 +97,21 @@
 			name = ViewControllers;
 			sourceTree = "<group>";
 		};
+		8422660F1B6CB05F00AABFB6 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				8422661C1B6CC55300AABFB6 /* UIImage+BlurredFrame.h */,
+				8422661D1B6CC55300AABFB6 /* UIImage+BlurredFrame.m */,
+				8422661E1B6CC55300AABFB6 /* UIImage+ImageEffects.h */,
+				8422661F1B6CC55300AABFB6 /* UIImage+ImageEffects.m */,
+				842266131B6CB12400AABFB6 /* UIImage+Color.h */,
+				842266141B6CB12400AABFB6 /* UIImage+Color.m */,
+				842266101B6CB05F00AABFB6 /* UIButton+Style.h */,
+				842266111B6CB05F00AABFB6 /* UIButton+Style.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		8708A3B81B6C86860012484E = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +133,7 @@
 		8708A3C31B6C86860012484E /* Eduber */ = {
 			isa = PBXGroup;
 			children = (
+				8422660F1B6CB05F00AABFB6 /* Category */,
 				878B3E8E1B6CA7D0006B8710 /* ViewCells */,
 				4C5DE21A1B6C994900B85BB8 /* ViewControllers */,
 				8708A3C81B6C86860012484E /* AppDelegate.h */,
@@ -121,8 +151,10 @@
 		8708A3C41B6C86860012484E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8422661A1B6CB33C00AABFB6 /* Constant.h */,
 				8708A3C51B6C86860012484E /* Info.plist */,
 				8708A3C61B6C86860012484E /* main.m */,
+				8422661B1B6CB34C00AABFB6 /* Eduber-prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -257,11 +289,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				842266201B6CC55300AABFB6 /* UIImage+BlurredFrame.m in Sources */,
 				8708A3CA1B6C86860012484E /* AppDelegate.m in Sources */,
 				878B3E8D1B6CA7CC006B8710 /* StudyFieldCellCollectionViewCell.m in Sources */,
+				842266151B6CB12400AABFB6 /* UIImage+Color.m in Sources */,
 				8708A3C71B6C86860012484E /* main.m in Sources */,
+				842266211B6CC55300AABFB6 /* UIImage+ImageEffects.m in Sources */,
 				4C5DE2201B6CA77100B85BB8 /* LoginViewController.m in Sources */,
 				878B3E8A1B6CA3F3006B8710 /* StudentStudyFieldsViewController.m in Sources */,
+				842266121B6CB05F00AABFB6 /* UIButton+Style.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,7 +375,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -377,7 +413,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -389,6 +425,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "Eduber/Eduber-prefix.pch";
 				INFOPLIST_FILE = Eduber/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -399,6 +436,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "Eduber/Eduber-prefix.pch";
 				INFOPLIST_FILE = Eduber/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
