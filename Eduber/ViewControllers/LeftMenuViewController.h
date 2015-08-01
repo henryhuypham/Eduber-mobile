@@ -11,12 +11,8 @@
 @interface LeftMenuViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>{
     NSInteger _presentedRow;
 }
-@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
-@property (weak, nonatomic) IBOutlet UITableView *menuTableView;
 
-@property (weak, nonatomic) IBOutlet UILabel *emailLabel;
-@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
-@property (weak, nonatomic) IBOutlet UIImageView *avatarImgView;
+@property (weak, nonatomic) IBOutlet UITableView *menuTableView;
 @property (assign,atomic) int loginModeSelected;
 - (IBAction)signoutTouched:(id)sender;
 
