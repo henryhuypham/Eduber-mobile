@@ -7,10 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CustomNavigationBar.h"
 
 @interface StudentClassSelectViewController : UIViewController
 
+
+@property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *scrollviewWidth;
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *scrollviewSidePadding;
+
+
+-(IBAction)toeicAction:(id)sender;
 
 @end

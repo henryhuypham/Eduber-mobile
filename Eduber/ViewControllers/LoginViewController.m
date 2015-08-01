@@ -108,7 +108,7 @@
     //label
     self.studentLabel.layer.borderWidth = 2;
     self.profressorLabel.layer.borderWidth = 0;
-
+    
 }
 
 - (IBAction)teacherButtonTouched:(id)sender {
@@ -126,7 +126,7 @@
         [UIView commitAnimations];
         [self updateLayouToCurrentLoginMode];
     }
-
+    
     loginModeSelected = 1;
     
     
@@ -166,15 +166,17 @@
         sb = [UIStoryboard storyboardWithName:@"Student" bundle:nil];
         viewController=(StudentStudyFieldsViewController *)[sb instantiateViewControllerWithIdentifier:@"studentStudyFieldsViewController"];
     }else{
-//        sb = [UIStoryboard storyboardWithName:@"Teacher" bundle:nil];
-//        viewController=(TeacherRegisterClassViewController *)[sb instantiateViewControllerWithIdentifier:@"teacherRegisterClassViewController"];
+        //        sb = [UIStoryboard storyboardWithName:@"Teacher" bundle:nil];
+        //        viewController=(TeacherRegisterClassViewController *)[sb instantiateViewControllerWithIdentifier:@"teacherRegisterClassViewController"];
     }
+    
     sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     LeftMenuViewController *leftMenuViewController = (LeftMenuViewController *)[sb instantiateViewControllerWithIdentifier:@"leftMenuViewController"];
     UINavigationController *frontNavigationController = [[UINavigationController alloc] initWithNavigationBarClass:[CustomNavigationBar class] toolbarClass:nil];
     leftMenuViewController.loginModeSelected = loginModeSelected;
     [frontNavigationController setViewControllers:@[viewController] animated:NO];
-      UIViewController *viewController2 =(LoginViewController *)[sb instantiateViewControllerWithIdentifier:@"loginViewController"];
+    
+    UIViewController *viewController2 =(LoginViewController *)[sb instantiateViewControllerWithIdentifier:@"loginViewController"];
     SWRevealViewController *mainRevealController = [[SWRevealViewController alloc]
                                                     initWithRearViewController:leftMenuViewController frontViewController:frontNavigationController];
     //settup navigation bar touch
@@ -186,7 +188,7 @@
     self.navigationController.navigationBar.translucent = NO;
     [self.navigationController pushViewController:mainRevealController animated:YES];
     
-
+    
     
     
     

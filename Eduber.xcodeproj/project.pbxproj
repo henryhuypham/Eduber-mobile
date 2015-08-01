@@ -12,6 +12,9 @@
 		4C5DE23B1B6CCE3A00B85BB8 /* LeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5DE23A1B6CCE3A00B85BB8 /* LeftMenuViewController.m */; };
 		4C5DE23E1B6CCE4500B85BB8 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5DE23D1B6CCE4500B85BB8 /* SWRevealViewController.m */; };
 		4C5DE2411B6CCE6000B85BB8 /* LeftMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5DE2401B6CCE6000B85BB8 /* LeftMenuTableViewCell.m */; };
+		4C76DEF01B6D06840052FD48 /* temp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C76DEEF1B6D06840052FD48 /* temp.storyboard */; };
+		4C76DEF31B6D0C870052FD48 /* TestResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C76DEF21B6D0C870052FD48 /* TestResultViewController.m */; };
+		4C76DEF61B6D110D0052FD48 /* TestResultTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C76DEF51B6D110D0052FD48 /* TestResultTableViewCell.m */; };
 		842266121B6CB05F00AABFB6 /* UIButton+Style.m in Sources */ = {isa = PBXBuildFile; fileRef = 842266111B6CB05F00AABFB6 /* UIButton+Style.m */; };
 		842266151B6CB12400AABFB6 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 842266141B6CB12400AABFB6 /* UIImage+Color.m */; };
 		842266201B6CC55300AABFB6 /* UIImage+BlurredFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 8422661D1B6CC55300AABFB6 /* UIImage+BlurredFrame.m */; };
@@ -31,8 +34,9 @@
 		878B3E8A1B6CA3F3006B8710 /* StudentStudyFieldsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 878B3E891B6CA3F3006B8710 /* StudentStudyFieldsViewController.m */; };
 		878B3E8D1B6CA7CC006B8710 /* StudyFieldCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 878B3E8C1B6CA7CC006B8710 /* StudyFieldCollectionViewCell.m */; };
 		878B3E9C1B6D17D0006B8710 /* StudentClassSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 878B3E9B1B6D17D0006B8710 /* StudentClassSelectViewController.m */; };
-		878B3E9F1B6D2141006B8710 /* TeacherClassListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 878B3E9E1B6D2141006B8710 /* TeacherClassListViewController.m */; };
-		878B3EA21B6D3B2A006B8710 /* ClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 878B3EA11B6D3B2A006B8710 /* ClassInfo.m */; };
+		878B3EB21B6D3D23006B8710 /* TeacherClassListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 878B3EAF1B6D3D23006B8710 /* TeacherClassListViewController.m */; };
+		878B3EB31B6D3D23006B8710 /* TestInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 878B3EB11B6D3D23006B8710 /* TestInfoViewController.m */; };
+		878B3EB71B6D3D38006B8710 /* ClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 878B3EB61B6D3D38006B8710 /* ClassInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,11 @@
 		4C5DE23D1B6CCE4500B85BB8 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = ViewControllers/SWRevealViewController/SWRevealViewController.m; sourceTree = "<group>"; };
 		4C5DE23F1B6CCE6000B85BB8 /* LeftMenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMenuTableViewCell.h; sourceTree = "<group>"; };
 		4C5DE2401B6CCE6000B85BB8 /* LeftMenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuTableViewCell.m; sourceTree = "<group>"; };
+		4C76DEEF1B6D06840052FD48 /* temp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = temp.storyboard; sourceTree = "<group>"; };
+		4C76DEF11B6D0C870052FD48 /* TestResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestResultViewController.h; path = ViewControllers/TestResultViewController.h; sourceTree = "<group>"; };
+		4C76DEF21B6D0C870052FD48 /* TestResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestResultViewController.m; path = ViewControllers/TestResultViewController.m; sourceTree = "<group>"; };
+		4C76DEF41B6D110D0052FD48 /* TestResultTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestResultTableViewCell.h; path = ViewCells/TestResultTableViewCell.h; sourceTree = "<group>"; };
+		4C76DEF51B6D110D0052FD48 /* TestResultTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestResultTableViewCell.m; path = ViewCells/TestResultTableViewCell.m; sourceTree = "<group>"; };
 		7AAAF699BC1C757B5D3D8778 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		842266101B6CB05F00AABFB6 /* UIButton+Style.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Style.h"; sourceTree = "<group>"; };
 		842266111B6CB05F00AABFB6 /* UIButton+Style.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Style.m"; sourceTree = "<group>"; };
@@ -92,10 +101,12 @@
 		878B3E8C1B6CA7CC006B8710 /* StudyFieldCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StudyFieldCollectionViewCell.m; path = ViewCells/StudyFieldCollectionViewCell.m; sourceTree = "<group>"; };
 		878B3E9A1B6D17D0006B8710 /* StudentClassSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StudentClassSelectViewController.h; path = ViewControllers/StudentClassSelectViewController.h; sourceTree = "<group>"; };
 		878B3E9B1B6D17D0006B8710 /* StudentClassSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StudentClassSelectViewController.m; path = ViewControllers/StudentClassSelectViewController.m; sourceTree = "<group>"; };
-		878B3E9D1B6D2141006B8710 /* TeacherClassListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TeacherClassListViewController.h; path = ViewControllers/TeacherClassListViewController.h; sourceTree = "<group>"; };
-		878B3E9E1B6D2141006B8710 /* TeacherClassListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TeacherClassListViewController.m; path = ViewControllers/TeacherClassListViewController.m; sourceTree = "<group>"; };
-		878B3EA01B6D3B2A006B8710 /* ClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClassInfo.h; path = Models/ClassInfo.h; sourceTree = "<group>"; };
-		878B3EA11B6D3B2A006B8710 /* ClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClassInfo.m; path = Models/ClassInfo.m; sourceTree = "<group>"; };
+		878B3EAE1B6D3D23006B8710 /* TeacherClassListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TeacherClassListViewController.h; path = ViewControllers/TeacherClassListViewController.h; sourceTree = "<group>"; };
+		878B3EAF1B6D3D23006B8710 /* TeacherClassListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TeacherClassListViewController.m; path = ViewControllers/TeacherClassListViewController.m; sourceTree = "<group>"; };
+		878B3EB01B6D3D23006B8710 /* TestInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestInfoViewController.h; path = ViewControllers/TestInfoViewController.h; sourceTree = "<group>"; };
+		878B3EB11B6D3D23006B8710 /* TestInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestInfoViewController.m; path = ViewControllers/TestInfoViewController.m; sourceTree = "<group>"; };
+		878B3EB51B6D3D38006B8710 /* ClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClassInfo.h; path = Models/ClassInfo.h; sourceTree = "<group>"; };
+		878B3EB61B6D3D38006B8710 /* ClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClassInfo.m; path = Models/ClassInfo.m; sourceTree = "<group>"; };
 		FCB3AB03E3CF78806BC3AED2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -129,6 +140,10 @@
 		4C5DE21A1B6C994900B85BB8 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				878B3EAE1B6D3D23006B8710 /* TeacherClassListViewController.h */,
+				878B3EAF1B6D3D23006B8710 /* TeacherClassListViewController.m */,
+				878B3EB01B6D3D23006B8710 /* TestInfoViewController.h */,
+				878B3EB11B6D3D23006B8710 /* TestInfoViewController.m */,
 				842266261B6CFD5800AABFB6 /* LeftMenu */,
 				4C5DE21E1B6CA77100B85BB8 /* LoginViewController.h */,
 				4C5DE21F1B6CA77100B85BB8 /* LoginViewController.m */,
@@ -138,8 +153,8 @@
 				878B3E9B1B6D17D0006B8710 /* StudentClassSelectViewController.m */,
 				4C5DE23C1B6CCE4500B85BB8 /* SWRevealViewController.h */,
 				4C5DE23D1B6CCE4500B85BB8 /* SWRevealViewController.m */,
-				878B3E9D1B6D2141006B8710 /* TeacherClassListViewController.h */,
-				878B3E9E1B6D2141006B8710 /* TeacherClassListViewController.m */,
+				4C76DEF11B6D0C870052FD48 /* TestResultViewController.h */,
+				4C76DEF21B6D0C870052FD48 /* TestResultViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -205,7 +220,7 @@
 		8708A3C31B6C86860012484E /* Eduber */ = {
 			isa = PBXGroup;
 			children = (
-				878B3EA31B6D3B2F006B8710 /* Models */,
+				878B3EB41B6D3D2D006B8710 /* Models */,
 				842266221B6CE30200AABFB6 /* CustomView */,
 				8422660F1B6CB05F00AABFB6 /* Category */,
 				878B3E8E1B6CA7D0006B8710 /* ViewCells */,
@@ -214,6 +229,7 @@
 				8708A3C91B6C86860012484E /* AppDelegate.m */,
 				878B3E7B1B6C8DB6006B8710 /* Teacher.storyboard */,
 				878B3E861B6CA39E006B8710 /* Student.storyboard */,
+				4C76DEEF1B6D06840052FD48 /* temp.storyboard */,
 				8708A3CE1B6C86860012484E /* Main.storyboard */,
 				8708A3D31B6C86860012484E /* LaunchScreen.xib */,
 				8708A3D11B6C86860012484E /* Images.xcassets */,
@@ -257,15 +273,17 @@
 				4C5DE2401B6CCE6000B85BB8 /* LeftMenuTableViewCell.m */,
 				878B3E8B1B6CA7CC006B8710 /* StudyFieldCollectionViewCell.h */,
 				878B3E8C1B6CA7CC006B8710 /* StudyFieldCollectionViewCell.m */,
+				4C76DEF41B6D110D0052FD48 /* TestResultTableViewCell.h */,
+				4C76DEF51B6D110D0052FD48 /* TestResultTableViewCell.m */,
 			);
 			name = ViewCells;
 			sourceTree = "<group>";
 		};
-		878B3EA31B6D3B2F006B8710 /* Models */ = {
+		878B3EB41B6D3D2D006B8710 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				878B3EA01B6D3B2A006B8710 /* ClassInfo.h */,
-				878B3EA11B6D3B2A006B8710 /* ClassInfo.m */,
+				878B3EB51B6D3D38006B8710 /* ClassInfo.h */,
+				878B3EB61B6D3D38006B8710 /* ClassInfo.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -363,6 +381,7 @@
 			files = (
 				8708A3D01B6C86860012484E /* Main.storyboard in Resources */,
 				878B3E7C1B6C8DB6006B8710 /* Teacher.storyboard in Resources */,
+				4C76DEF01B6D06840052FD48 /* temp.storyboard in Resources */,
 				8708A3D51B6C86860012484E /* LaunchScreen.xib in Resources */,
 				8708A3D21B6C86860012484E /* Images.xcassets in Resources */,
 				878B3E871B6CA39E006B8710 /* Student.storyboard in Resources */,
@@ -417,22 +436,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				878B3EA21B6D3B2A006B8710 /* ClassInfo.m in Sources */,
 				842266291B6CFDA500AABFB6 /* LeftMenuHeaderView.m in Sources */,
 				4C5DE2411B6CCE6000B85BB8 /* LeftMenuTableViewCell.m in Sources */,
+				4C76DEF31B6D0C870052FD48 /* TestResultViewController.m in Sources */,
 				842266201B6CC55300AABFB6 /* UIImage+BlurredFrame.m in Sources */,
 				8708A3CA1B6C86860012484E /* AppDelegate.m in Sources */,
 				878B3E8D1B6CA7CC006B8710 /* StudyFieldCollectionViewCell.m in Sources */,
 				842266151B6CB12400AABFB6 /* UIImage+Color.m in Sources */,
+				4C76DEF61B6D110D0052FD48 /* TestResultTableViewCell.m in Sources */,
 				8708A3C71B6C86860012484E /* main.m in Sources */,
-				878B3E9F1B6D2141006B8710 /* TeacherClassListViewController.m in Sources */,
+				878B3EB71B6D3D38006B8710 /* ClassInfo.m in Sources */,
 				842266251B6CE30F00AABFB6 /* CustomNavigationBar.m in Sources */,
+				878B3EB31B6D3D23006B8710 /* TestInfoViewController.m in Sources */,
 				878B3E9C1B6D17D0006B8710 /* StudentClassSelectViewController.m in Sources */,
 				842266211B6CC55300AABFB6 /* UIImage+ImageEffects.m in Sources */,
 				4C5DE2201B6CA77100B85BB8 /* LoginViewController.m in Sources */,
 				878B3E8A1B6CA3F3006B8710 /* StudentStudyFieldsViewController.m in Sources */,
 				8427E0851B6D1E1B00EF96D5 /* UIView+Shadow.m in Sources */,
 				842266121B6CB05F00AABFB6 /* UIButton+Style.m in Sources */,
+				878B3EB21B6D3D23006B8710 /* TeacherClassListViewController.m in Sources */,
 				4C5DE23B1B6CCE3A00B85BB8 /* LeftMenuViewController.m in Sources */,
 				4C5DE23E1B6CCE4500B85BB8 /* SWRevealViewController.m in Sources */,
 			);
