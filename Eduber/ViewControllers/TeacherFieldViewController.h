@@ -10,4 +10,7 @@
 
 @interface TeacherFieldViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *scrollviewWidth;
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *scrollviewSidePadding;
+
 @end

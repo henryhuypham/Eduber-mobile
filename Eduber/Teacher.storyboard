@@ -354,7 +354,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9yK-d6-SdR">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9yK-d6-SdR">
                                 <rect key="frame" x="8" y="20" width="304" height="548"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6K2-X0-j9a" userLabel="Scrol Content">
@@ -668,12 +668,16 @@
                         <constraints>
                             <constraint firstItem="9yK-d6-SdR" firstAttribute="top" secondItem="eJr-BD-uj3" secondAttribute="bottom" id="SkL-JN-nSP"/>
                             <constraint firstAttribute="bottomMargin" secondItem="9yK-d6-SdR" secondAttribute="bottom" id="WQv-Xj-i67"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="9yK-d6-SdR" secondAttribute="trailing" constant="-8" id="fg1-uG-eEo"/>
-                            <constraint firstItem="9yK-d6-SdR" firstAttribute="leading" secondItem="ONV-Tf-qfa" secondAttribute="leadingMargin" constant="-8" id="gck-Xw-VJN"/>
+                            <constraint firstItem="9yK-d6-SdR" firstAttribute="trailing" secondItem="ONV-Tf-qfa" secondAttribute="trailingMargin" constant="8" id="fg1-uG-eEo"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="9yK-d6-SdR" secondAttribute="leading" constant="8" id="gck-Xw-VJN"/>
                         </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="568"/>
+                    <connections>
+                        <outlet property="scrollviewSidePadding" destination="fg1-uG-eEo" id="CEm-2D-ra8"/>
+                        <outlet property="scrollviewWidth" destination="PvI-XV-rUR" id="HZy-wP-eYq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c0g-0A-71k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
