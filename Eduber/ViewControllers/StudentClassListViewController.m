@@ -129,6 +129,7 @@
     
     StudentClassInfo *info = self.classList[indexPath.row];
     [cell setInfo:info];
+    cell.delegate = self;
     
     return cell;
 }
@@ -136,7 +137,7 @@
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     switch (indexPath.section) {
         case 0:
-            return 115;
+            return 160;
         default:
             break;
     }
@@ -146,6 +147,31 @@
 #pragma mark - add new action
 -(IBAction)addNewActon:(id)sender{
     NSLog(@"Add New Action");
+}
+
+- (void) allPreChatFieldsOptional{
+    
+    //setup data
+        // before starting the chat set the visitor data
+        [ZDCChat updateVisitor:^(ZDCVisitorInfo *visitor) {
+            //            visitor.phone = [NSString stringWithFormat:@"%lu", (long)[[NSDate date] timeIntervalSince1970]];
+            visitor.name = [NSString stringWithFormat:@"%@", @"Thông Phạm"];
+            visitor.email = [NSString stringWithFormat:@"%@",@"mr.bamboo.vn@gmail.com"];
+        }];
+    
+    // start a chat in a new modal
+    [ZDCChat startChat:^(ZDCSessionConfig *config) {
+        config.preChatDataRequirements.name = ZDCPreChatDataNotRequired;
+        config.preChatDataRequirements.email = ZDCPreChatDataNotRequired;
+        config.preChatDataRequirements.phone = ZDCPreChatDataNotRequired;
+        config.preChatDataRequirements.department = ZDCPreChatDataNotRequired;
+        config.preChatDataRequirements.message = ZDCPreChatDataNotRequired;
+    }];
+}
+
+#pragma mark - Chat Delegate
+-(void)chatWithTeacher{
+    [self allPreChatFieldsOptional];
 }
 
 @end

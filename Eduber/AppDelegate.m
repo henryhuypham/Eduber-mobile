@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ChatStyling.h"
 
 @interface AppDelegate ()
 
@@ -18,6 +19,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    
+    //init zopim
+    [self initZopim];
     
     return YES;
 }
@@ -43,5 +47,81 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+#pragma - Init ZoPim
+-(void)initZopim{
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+    // Chat setup
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+    
+    // apply appearance styling first if you want to customise the look of the chat
+    [ChatStyling applyStyling];
+    
+    // configure account key and pre-chat form
+    [ZDCChat configure:^(ZDCConfig *defaults) {
+        defaults.accountKey = @"3AEk35sXwOA4Tdy7MhhzuIxCVoL5H3kf";
+        defaults.preChatDataRequirements.name = ZDCPreChatDataOptional;
+        defaults.preChatDataRequirements.email = ZDCPreChatDataOptional;
+        defaults.preChatDataRequirements.phone = ZDCPreChatDataOptional;
+        defaults.preChatDataRequirements.department = ZDCPreChatDataOptional;
+        defaults.preChatDataRequirements.message = ZDCPreChatDataOptional;
+    }];
+    
+    // To override the default avatar uncomment and complete the image name
+    //    [[ZDCChatAvatar appearance] setDefaultAvatar:@"your_avatar_name_here"];
+    
+    // Uncomment to disable visitor data persistence between application runs
+    //[[ZDCChat instance].session visitorInfo].shouldPersist = NO;
+    
+    // Uncomment if you don't want open chat sessions to be automatically resumed on application launch
+    [ZDCChat instance].shouldResumeOnLaunch = NO;
+    
+    // remember to switch off debug logging before app store submission!
+    [ZDCLog enable:YES];
+    [ZDCLog setLogLevel:ZDCLogLevelWarn];
+    
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+}
+
+
+
+- (void) styleAppChat{
+    if ([ZDUUtil isVersionOrNewer:@(7)]) {
+        
+        // status bar
+        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+        
+        // nav bar
+        NSDictionary *navbarAttributes = [NSDictionary dictionaryWithObjectsAndKeys:
+                                          [UIColor whiteColor] ,UITextAttributeTextColor, nil];
+        [[UINavigationBar appearance] setTintColor:[UIColor redColor]];
+        [[UINavigationBar appearance] setTitleTextAttributes:navbarAttributes];
+        
+//        //Set style for navigation bar
+//        UIImage *navigationBackground = [[UIImage imageNamed:@"navigation_background"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 6, 0)];
+//        [[UINavigationBar appearance] setBackgroundImage:navigationBackground forBarMetrics:UIBarMetricsDefault];
+        
+        if ([ZDUUtil isVersionOrNewer:@(8)]) {
+            
+            // For translucent nav bars set YES
+            [[UINavigationBar appearance] setTranslucent:NO];
+        }
+        
+        // For a completely transparent nav bar uncomment this and set 'translucent' above to YES
+        // (you may also want to change the title text and tint colors above since they are white by default)
+        //[[UINavigationBar appearance] setBarStyle:UIBarStyleDefault];
+        //[[UINavigationBar appearance] setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+        //[[UINavigationBar appearance] setShadowImage:[UIImage new]];
+        //[[UINavigationBar appearance] setBackgroundColor:[UIColor clearColor]];
+        
+    } else {
+        //Set style for navigation bar
+        //Set style for navigation bar
+        UIImage *navigationBackground = [[UIImage imageNamed:@"navigation_background"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 6, 0)];
+        [[UINavigationBar appearance] setBackgroundImage:navigationBackground forBarMetrics:UIBarMetricsDefault];
+    }
+    
+}
+
 
 @end

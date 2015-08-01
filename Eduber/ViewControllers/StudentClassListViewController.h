@@ -10,7 +10,7 @@
 #import "StudentClassCell.h"
 #import "StudentClassInfo.h"
 
-@interface StudentClassListViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
+@interface StudentClassListViewController : UIViewController<UITableViewDataSource, UITableViewDelegate,StudentClassCellDelegate>
 
 @property (nonatomic,retain)NSMutableArray *classList;
 
