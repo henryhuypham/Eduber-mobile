@@ -31,18 +31,18 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="148" height="163"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JoD-SI-RlA" userLabel="Subject">
-                                                                <rect key="frame" x="0.0" y="139" width="148" height="24"/>
+                                                                <rect key="frame" x="0.0" y="133" width="148" height="30"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="English" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WmM-gK-JYX">
-                                                                        <rect key="frame" x="10" y="0.0" width="128" height="24"/>
-                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                                        <rect key="frame" x="10" y="0.0" width="128" height="30"/>
+                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
                                                                 <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="24" id="CCW-11-1vA"/>
+                                                                    <constraint firstAttribute="height" constant="30" id="CCW-11-1vA"/>
                                                                     <constraint firstAttribute="trailing" secondItem="WmM-gK-JYX" secondAttribute="trailing" constant="10" id="OGy-Sw-nBE"/>
                                                                     <constraint firstAttribute="bottom" secondItem="WmM-gK-JYX" secondAttribute="bottom" id="cUk-aC-dhZ"/>
                                                                     <constraint firstItem="WmM-gK-JYX" firstAttribute="top" secondItem="JoD-SI-RlA" secondAttribute="top" id="fer-ZO-P2N"/>
@@ -50,7 +50,7 @@
                                                                 </constraints>
                                                             </view>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_english" translatesAutoresizingMaskIntoConstraints="NO" id="cfr-Bl-2gf">
-                                                                <rect key="frame" x="0.0" y="0.0" width="148" height="139"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="148" height="133"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             </imageView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2rn-h1-HEf">
@@ -80,11 +80,11 @@
                                                         <rect key="frame" x="156" y="0.0" width="148" height="163"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XVX-uc-Hhu" userLabel="Subject">
-                                                                <rect key="frame" x="0.0" y="139" width="148" height="24"/>
+                                                                <rect key="frame" x="0.0" y="133" width="148" height="30"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maths" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2M-FI-AXK">
-                                                                        <rect key="frame" x="10" y="0.0" width="128" height="24"/>
-                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                                        <rect key="frame" x="10" y="0.0" width="128" height="30"/>
+                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
@@ -95,11 +95,11 @@
                                                                     <constraint firstItem="g2M-FI-AXK" firstAttribute="top" secondItem="XVX-uc-Hhu" secondAttribute="top" id="MsO-oC-iwe"/>
                                                                     <constraint firstItem="g2M-FI-AXK" firstAttribute="leading" secondItem="XVX-uc-Hhu" secondAttribute="leading" constant="10" id="Txu-iv-HNm"/>
                                                                     <constraint firstAttribute="trailing" secondItem="g2M-FI-AXK" secondAttribute="trailing" constant="10" id="mOo-1o-pwC"/>
-                                                                    <constraint firstAttribute="height" constant="24" id="vzD-5w-JIY"/>
+                                                                    <constraint firstAttribute="height" constant="30" id="vzD-5w-JIY"/>
                                                                 </constraints>
                                                             </view>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_math" translatesAutoresizingMaskIntoConstraints="NO" id="oxK-is-AeL">
-                                                                <rect key="frame" x="0.0" y="0.0" width="148" height="139"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="148" height="133"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             </imageView>
                                                         </subviews>
@@ -134,11 +134,11 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="148" height="163"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xMg-LB-sSn" userLabel="Subject">
-                                                                <rect key="frame" x="0.0" y="139" width="148" height="24"/>
+                                                                <rect key="frame" x="0.0" y="133" width="148" height="30"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Physics" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="om9-WE-dTX">
-                                                                        <rect key="frame" x="10" y="0.0" width="128" height="24"/>
-                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                                        <rect key="frame" x="10" y="0.0" width="128" height="30"/>
+                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
@@ -148,12 +148,12 @@
                                                                     <constraint firstAttribute="trailing" secondItem="om9-WE-dTX" secondAttribute="trailing" constant="10" id="9Ro-GF-2xL"/>
                                                                     <constraint firstAttribute="bottom" secondItem="om9-WE-dTX" secondAttribute="bottom" id="PT0-dY-dHR"/>
                                                                     <constraint firstItem="om9-WE-dTX" firstAttribute="leading" secondItem="xMg-LB-sSn" secondAttribute="leading" constant="10" id="RUK-Pq-X1c"/>
-                                                                    <constraint firstAttribute="height" constant="24" id="Y9A-Tj-vZl"/>
+                                                                    <constraint firstAttribute="height" constant="30" id="Y9A-Tj-vZl"/>
                                                                     <constraint firstItem="om9-WE-dTX" firstAttribute="top" secondItem="xMg-LB-sSn" secondAttribute="top" id="orP-ZD-HlJ"/>
                                                                 </constraints>
                                                             </view>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_physics" translatesAutoresizingMaskIntoConstraints="NO" id="XAc-1P-592">
-                                                                <rect key="frame" x="0.0" y="0.0" width="148" height="139"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="148" height="133"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             </imageView>
                                                         </subviews>
@@ -173,11 +173,11 @@
                                                         <rect key="frame" x="156" y="0.0" width="148" height="163"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8gh-rP-b6E" userLabel="Subject">
-                                                                <rect key="frame" x="0.0" y="139" width="148" height="24"/>
+                                                                <rect key="frame" x="0.0" y="133" width="148" height="30"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chemistry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qo8-OP-Q86">
-                                                                        <rect key="frame" x="10" y="0.0" width="128" height="24"/>
-                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                                        <rect key="frame" x="10" y="0.0" width="128" height="30"/>
+                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
@@ -188,11 +188,11 @@
                                                                     <constraint firstAttribute="trailing" secondItem="Qo8-OP-Q86" secondAttribute="trailing" constant="10" id="8vW-Jd-UYV"/>
                                                                     <constraint firstAttribute="bottom" secondItem="Qo8-OP-Q86" secondAttribute="bottom" id="QUc-4D-Hej"/>
                                                                     <constraint firstItem="Qo8-OP-Q86" firstAttribute="top" secondItem="8gh-rP-b6E" secondAttribute="top" id="fpD-hO-KDS"/>
-                                                                    <constraint firstAttribute="height" constant="24" id="i7j-A7-Yfc"/>
+                                                                    <constraint firstAttribute="height" constant="30" id="i7j-A7-Yfc"/>
                                                                 </constraints>
                                                             </view>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_chemistry" translatesAutoresizingMaskIntoConstraints="NO" id="7PG-HE-qts">
-                                                                <rect key="frame" x="0.0" y="0.0" width="148" height="139"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="148" height="133"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             </imageView>
                                                         </subviews>
@@ -227,18 +227,18 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="148" height="163"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GUa-jz-Tpc" userLabel="Subject">
-                                                                <rect key="frame" x="0.0" y="139" width="148" height="24"/>
+                                                                <rect key="frame" x="0.0" y="133" width="148" height="30"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Geography" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dlv-R3-lw0">
-                                                                        <rect key="frame" x="10" y="0.0" width="128" height="24"/>
-                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                                        <rect key="frame" x="10" y="0.0" width="128" height="30"/>
+                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
                                                                 <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="24" id="9xe-Cy-VWn"/>
+                                                                    <constraint firstAttribute="height" constant="30" id="9xe-Cy-VWn"/>
                                                                     <constraint firstAttribute="bottom" secondItem="dlv-R3-lw0" secondAttribute="bottom" id="BKf-MT-maQ"/>
                                                                     <constraint firstAttribute="trailing" secondItem="dlv-R3-lw0" secondAttribute="trailing" constant="10" id="MHq-bt-r1V"/>
                                                                     <constraint firstItem="dlv-R3-lw0" firstAttribute="top" secondItem="GUa-jz-Tpc" secondAttribute="top" id="MKB-8J-nat"/>
@@ -246,7 +246,7 @@
                                                                 </constraints>
                                                             </view>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_geography" translatesAutoresizingMaskIntoConstraints="NO" id="CDh-1H-42Q">
-                                                                <rect key="frame" x="0.0" y="0.0" width="148" height="139"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="148" height="133"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             </imageView>
                                                         </subviews>
@@ -266,11 +266,11 @@
                                                         <rect key="frame" x="156" y="0.0" width="148" height="163"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8EM-FE-Ork" userLabel="Subject">
-                                                                <rect key="frame" x="0.0" y="139" width="148" height="24"/>
+                                                                <rect key="frame" x="0.0" y="133" width="148" height="30"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="History" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="POd-PT-n7q">
-                                                                        <rect key="frame" x="10" y="0.0" width="128" height="24"/>
-                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                                        <rect key="frame" x="10" y="0.0" width="128" height="30"/>
+                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
@@ -278,14 +278,14 @@
                                                                 <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="trailing" secondItem="POd-PT-n7q" secondAttribute="trailing" constant="10" id="5tT-NM-hKi"/>
-                                                                    <constraint firstAttribute="height" constant="24" id="Kh1-oh-WoP"/>
+                                                                    <constraint firstAttribute="height" constant="30" id="Kh1-oh-WoP"/>
                                                                     <constraint firstAttribute="bottom" secondItem="POd-PT-n7q" secondAttribute="bottom" id="MqJ-K3-SpC"/>
                                                                     <constraint firstItem="POd-PT-n7q" firstAttribute="leading" secondItem="8EM-FE-Ork" secondAttribute="leading" constant="10" id="UsC-hg-KnE"/>
                                                                     <constraint firstItem="POd-PT-n7q" firstAttribute="top" secondItem="8EM-FE-Ork" secondAttribute="top" id="eTL-HT-OcA"/>
                                                                 </constraints>
                                                             </view>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_history" translatesAutoresizingMaskIntoConstraints="NO" id="VxW-PG-VyL">
-                                                                <rect key="frame" x="0.0" y="0.0" width="148" height="139"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="148" height="133"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             </imageView>
                                                         </subviews>
@@ -349,6 +349,12 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="548"/>
                     <connections>
+                        <outlet property="chemistryView" destination="bcY-6K-wHC" id="LIZ-Te-J2s"/>
+                        <outlet property="englishView" destination="kU3-BQ-4xN" id="Ir6-q7-lCN"/>
+                        <outlet property="geographicView" destination="UQv-BG-wbj" id="yew-ce-8jA"/>
+                        <outlet property="historyView" destination="MKT-5t-Cfj" id="Xfd-j6-OEn"/>
+                        <outlet property="mathView" destination="Aol-jV-tH5" id="dnV-c6-UH6"/>
+                        <outlet property="physicView" destination="dN1-3Y-7JT" id="GiP-be-Dya"/>
                         <outlet property="scrollView" destination="17T-Bv-UEV" id="bGQ-ga-gWD"/>
                         <outlet property="scrollviewSidePadding" destination="pcZ-sh-y56" id="fnS-02-MVy"/>
                         <outlet property="scrollviewWidth" destination="dqI-N1-IQo" id="hjf-nR-PSN"/>
@@ -356,7 +362,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0WW-YZ-psQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="208" y="277"/>
+            <point key="canvasLocation" x="239" y="264"/>
         </scene>
         <!--Student Class Select View Controller-->
         <scene sceneID="zpQ-oS-Yei">

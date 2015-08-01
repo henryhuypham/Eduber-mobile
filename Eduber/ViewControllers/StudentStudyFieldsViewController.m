@@ -15,12 +15,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     // Do any additional setup after loading the view.
+    [self setupView];
+}
+
+-(void)setupView{
+    //scrollView
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.scrollView.contentInset = UIEdgeInsetsMake(0,0,0,0);
     self.scrollviewWidth.constant = self.view.bounds.size.width - 2 * self.scrollviewSidePadding.constant;
+    
+    //apply shadow
+    [self.englishView applyShadow];
+    [self.mathView applyShadow];
+    [self.physicView applyShadow];
+    [self.chemistryView applyShadow];
+    [self.geographicView applyShadow];
+    [self.historyView applyShadow];
+    
 }
-
 
 @end
