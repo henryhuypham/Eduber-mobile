@@ -13,10 +13,16 @@
 -(void)awakeFromNib{
     [self setupAvatar];
     [self setupLabel];
+    [self setupData];
+}
+
+-(void)setupData{
+    self.nameLabel.text = @"Ngọc Trinh";
+    self.emailLabel.text = @"ngoctrinh@gmail.com";
 }
 
 -(void)setupAvatar{
-    UIImage *image = [UIImage imageNamed:@"obama"];
+    UIImage *image = [UIImage imageNamed:@"ngoctrinh"];
     [self.avatarView setImage:image];
     self.avatarView.layer.cornerRadius = 10;
     self.avatarView.layer.masksToBounds = YES;
@@ -24,7 +30,7 @@
     self.avatarView.layer.borderColor = [UIColor whiteColor].CGColor;
     
     //background imageview
-    UIImage *backgroundImage = [UIImage imageNamed:@"obama"];
+    UIImage *backgroundImage = [UIImage imageNamed:@"ngoctrinh"];
         CGRect frame = CGRectMake(0,0, backgroundImage.size.width,backgroundImage.size.height);
     backgroundImage = [backgroundImage applyLightEffectAtFrame:frame];
     [self.backgroundView setImage:backgroundImage];

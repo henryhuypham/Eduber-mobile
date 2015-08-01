@@ -89,7 +89,7 @@
             [cell.imgView setImage:[UIImage imageNamed:@"user_icon"]];
             break;
         case 2:
-            cell.titleLabel.text = @"News";
+            cell.titleLabel.text = @"Class";
             [cell.imgView setImage:[UIImage imageNamed:@"news_icon"]];
             break;
         case 3:
