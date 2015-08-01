@@ -24,6 +24,9 @@
 		8422662B1B6CFDBA00AABFB6 /* LeftMenuHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8422662A1B6CFDBA00AABFB6 /* LeftMenuHeaderView.xib */; };
 		8427E0851B6D1E1B00EF96D5 /* UIView+Shadow.m in Sources */ = {isa = PBXBuildFile; fileRef = 8427E0841B6D1E1B00EF96D5 /* UIView+Shadow.m */; };
 		8427E08C1B6D3EF500EF96D5 /* TeacherClassCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8427E08B1B6D3EF500EF96D5 /* TeacherClassCell.m */; };
+		8427E08F1B6D59D400EF96D5 /* ProfressorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8427E08E1B6D59D400EF96D5 /* ProfressorCell.m */; };
+		8427E0921B6D5A8100EF96D5 /* ProfessorListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8427E0911B6D5A8100EF96D5 /* ProfessorListViewController.m */; };
+		8427E0951B6D5F1700EF96D5 /* Professor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8427E0941B6D5F1700EF96D5 /* Professor.m */; };
 		8708A3C71B6C86860012484E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8708A3C61B6C86860012484E /* main.m */; };
 		8708A3CA1B6C86860012484E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8708A3C91B6C86860012484E /* AppDelegate.m */; };
 		8708A3D01B6C86860012484E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8708A3CE1B6C86860012484E /* Main.storyboard */; };
@@ -85,6 +88,12 @@
 		8427E0841B6D1E1B00EF96D5 /* UIView+Shadow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Shadow.m"; sourceTree = "<group>"; };
 		8427E08A1B6D3EF500EF96D5 /* TeacherClassCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TeacherClassCell.h; path = ViewCells/TeacherClassCell.h; sourceTree = "<group>"; };
 		8427E08B1B6D3EF500EF96D5 /* TeacherClassCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TeacherClassCell.m; path = ViewCells/TeacherClassCell.m; sourceTree = "<group>"; };
+		8427E08D1B6D59D400EF96D5 /* ProfressorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProfressorCell.h; path = ViewCells/ProfressorCell.h; sourceTree = "<group>"; };
+		8427E08E1B6D59D400EF96D5 /* ProfressorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfressorCell.m; path = ViewCells/ProfressorCell.m; sourceTree = "<group>"; };
+		8427E0901B6D5A8100EF96D5 /* ProfessorListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProfessorListViewController.h; path = ViewControllers/ProfessorListViewController.h; sourceTree = "<group>"; };
+		8427E0911B6D5A8100EF96D5 /* ProfessorListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfessorListViewController.m; path = ViewControllers/ProfessorListViewController.m; sourceTree = "<group>"; };
+		8427E0931B6D5F1700EF96D5 /* Professor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Professor.h; path = Models/Professor.h; sourceTree = "<group>"; };
+		8427E0941B6D5F1700EF96D5 /* Professor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Professor.m; path = Models/Professor.m; sourceTree = "<group>"; };
 		8708A3C11B6C86860012484E /* Eduber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eduber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8708A3C51B6C86860012484E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8708A3C61B6C86860012484E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -143,6 +152,8 @@
 		4C5DE21A1B6C994900B85BB8 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				8427E0901B6D5A8100EF96D5 /* ProfessorListViewController.h */,
+				8427E0911B6D5A8100EF96D5 /* ProfessorListViewController.m */,
 				842266261B6CFD5800AABFB6 /* LeftMenu */,
 				878B3EAE1B6D3D23006B8710 /* TeacherClassListViewController.h */,
 				878B3EAF1B6D3D23006B8710 /* TeacherClassListViewController.m */,
@@ -272,6 +283,8 @@
 		878B3E8E1B6CA7D0006B8710 /* ViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				8427E08D1B6D59D400EF96D5 /* ProfressorCell.h */,
+				8427E08E1B6D59D400EF96D5 /* ProfressorCell.m */,
 				8427E08A1B6D3EF500EF96D5 /* TeacherClassCell.h */,
 				8427E08B1B6D3EF500EF96D5 /* TeacherClassCell.m */,
 				4C5DE23F1B6CCE6000B85BB8 /* LeftMenuTableViewCell.h */,
@@ -287,6 +300,8 @@
 		878B3EB41B6D3D2D006B8710 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8427E0931B6D5F1700EF96D5 /* Professor.h */,
+				8427E0941B6D5F1700EF96D5 /* Professor.m */,
 				878B3EB51B6D3D38006B8710 /* ClassInfo.h */,
 				878B3EB61B6D3D38006B8710 /* ClassInfo.m */,
 			);
@@ -452,17 +467,20 @@
 				4C76DEF61B6D110D0052FD48 /* TestResultTableViewCell.m in Sources */,
 				8708A3C71B6C86860012484E /* main.m in Sources */,
 				878B3EB71B6D3D38006B8710 /* ClassInfo.m in Sources */,
+				8427E0951B6D5F1700EF96D5 /* Professor.m in Sources */,
 				842266251B6CE30F00AABFB6 /* CustomNavigationBar.m in Sources */,
 				878B3EB31B6D3D23006B8710 /* TestInfoViewController.m in Sources */,
 				878B3E9C1B6D17D0006B8710 /* StudentClassSelectViewController.m in Sources */,
 				842266211B6CC55300AABFB6 /* UIImage+ImageEffects.m in Sources */,
 				4C5DE2201B6CA77100B85BB8 /* LoginViewController.m in Sources */,
+				8427E0921B6D5A8100EF96D5 /* ProfessorListViewController.m in Sources */,
 				878B3E8A1B6CA3F3006B8710 /* StudentStudyFieldsViewController.m in Sources */,
 				8427E0851B6D1E1B00EF96D5 /* UIView+Shadow.m in Sources */,
 				842266121B6CB05F00AABFB6 /* UIButton+Style.m in Sources */,
 				878B3EB21B6D3D23006B8710 /* TeacherClassListViewController.m in Sources */,
 				4C5DE23B1B6CCE3A00B85BB8 /* LeftMenuViewController.m in Sources */,
 				4C5DE23E1B6CCE4500B85BB8 /* SWRevealViewController.m in Sources */,
+				8427E08F1B6D59D400EF96D5 /* ProfressorCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,8 +12,8 @@
 {
     self.titleLabel.font = kFontBold(16);
     [self setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [self setBackgroundImage:[[UIImage alloc] initWithSize:self.frame.size andColor:[UIColor clearColor]] forState:UIControlStateNormal];
-    [self setBackgroundImage:[[UIImage alloc] initWithSize:self.frame.size andColor:[UIColor clearColor]] forState:UIControlStateHighlighted];
+    [self setBackgroundImage:[[UIImage alloc] initWithSize:self.frame.size andColor:kBlueFacebookColor] forState:UIControlStateNormal];
+    [self setBackgroundImage:[[UIImage alloc] initWithSize:self.frame.size andColor:kBlueFacebookColor] forState:UIControlStateHighlighted];
     
     //corner
     self.layer.borderColor = [[UIColor whiteColor] CGColor];

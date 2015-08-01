@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ProfessorListViewController.h"
 
 @interface TestInfoViewController : UIViewController
 
