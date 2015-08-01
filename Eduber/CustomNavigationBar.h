@@ -17,6 +17,7 @@
 @property (strong, nonatomic) UILabel *titleLabel;
 -(void)showBackButton;
 -(void)hideBackButton;
+-(void)hideMenuButton;
 
 @end
 

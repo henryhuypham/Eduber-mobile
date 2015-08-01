@@ -58,6 +58,9 @@
                                                                 <state key="normal">
                                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <action selector="englishDidTouch:" destination="Nl1-D2-HQF" eventType="touchUpInside" id="Yx1-ut-Lco"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -367,7 +370,7 @@
         <!--Student Class Select View Controller-->
         <scene sceneID="zpQ-oS-Yei">
             <objects>
-                <viewController id="G33-O6-mqK" customClass="StudentClassSelectViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="studentClassSelectViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="G33-O6-mqK" customClass="StudentClassSelectViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gtW-F1-66W"/>
                         <viewControllerLayoutGuide type="bottom" id="lM2-0b-vmP"/>
@@ -707,13 +710,14 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="548"/>
                     <connections>
+                        <outlet property="scrollView" destination="nW6-Rk-FNK" id="0DE-xe-tan"/>
                         <outlet property="scrollviewSidePadding" destination="s9T-BI-j9M" id="hv5-nF-8o2"/>
                         <outlet property="scrollviewWidth" destination="Jcl-gY-0JC" id="vzV-c9-AWe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jfy-K6-w1S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="590" y="277"/>
+            <point key="canvasLocation" x="595" y="264"/>
         </scene>
     </scenes>
     <resources>

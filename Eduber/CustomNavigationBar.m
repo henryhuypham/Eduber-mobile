@@ -102,6 +102,12 @@ const CGFloat VFSNavigationBarHeightIncrease = 8.f;
     _backButton.hidden = true;
     _toggleButton.hidden = false;
 }
+
+-(void)hideMenuButton{
+     _backButton.hidden = false;
+    _toggleButton.hidden = true;
+}
+
 @end
 
 @implementation UIViewController(CustomNavigationBar)
@@ -114,12 +120,19 @@ const CGFloat VFSNavigationBarHeightIncrease = 8.f;
     CustomNavigationBar* navigationBar = (CustomNavigationBar*) self.navigationController.navigationBar;
     [navigationBar hideBackButton];
 }
+
+-(void)hideMenuButton{
+    CustomNavigationBar* navigationBar = (CustomNavigationBar*) self.navigationController.navigationBar;
+    [navigationBar  hideMenuButton];
+}
+
 -(void)setTitle:(NSString*)title{
     CustomNavigationBar* navigationBar = (CustomNavigationBar*) self.navigationController.navigationBar;
     navigationBar.titleLabel.textColor = [UIColor whiteColor];
     navigationBar.titleLabel.font = [UIFont boldSystemFontOfSize:18.0f];
     navigationBar.titleLabel.text = title;
 }
+
 @end
 
 

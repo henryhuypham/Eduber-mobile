@@ -13,6 +13,18 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ucx-i4-Zft">
                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                 </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Obama" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ysa-FT-9Sm">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="obama@gmail.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i49-fb-djQ">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="obama" translatesAutoresizingMaskIntoConstraints="NO" id="RfQ-Z2-ZZ1">
                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                     <constraints>
@@ -36,18 +48,6 @@
                         </mask>
                     </variation>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Obama" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ysa-FT-9Sm">
-                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="obama@gmail.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i49-fb-djQ">
-                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
@@ -59,7 +59,7 @@
                     <variation key="heightClass=regular-widthClass=compact" constant="10"/>
                 </constraint>
                 <constraint firstAttribute="centerY" secondItem="RfQ-Z2-ZZ1" secondAttribute="centerY" constant="0.5" id="EQq-A5-L2O">
-                    <variation key="heightClass=regular-widthClass=compact" constant="20"/>
+                    <variation key="heightClass=regular-widthClass=compact" constant="30"/>
                 </constraint>
                 <constraint firstAttribute="bottom" secondItem="ucx-i4-Zft" secondAttribute="bottom" id="M0Y-DM-0s0"/>
                 <constraint firstItem="Ysa-FT-9Sm" firstAttribute="centerX" secondItem="i49-fb-djQ" secondAttribute="centerX" id="QBa-Ve-EQJ"/>
@@ -84,15 +84,11 @@
             <variation key="default">
                 <mask key="subviews">
                     <exclude reference="ucx-i4-Zft"/>
-                    <exclude reference="RfQ-Z2-ZZ1"/>
                     <exclude reference="Ysa-FT-9Sm"/>
                     <exclude reference="i49-fb-djQ"/>
+                    <exclude reference="RfQ-Z2-ZZ1"/>
                 </mask>
                 <mask key="constraints">
-                    <exclude reference="0wT-nm-nbv"/>
-                    <exclude reference="M0Y-DM-0s0"/>
-                    <exclude reference="fV2-82-zeu"/>
-                    <exclude reference="mdh-dW-ylB"/>
                     <exclude reference="0tq-fY-Pg3"/>
                     <exclude reference="1SB-fN-5OC"/>
                     <exclude reference="At8-KL-Vlq"/>
@@ -101,24 +97,24 @@
                     <exclude reference="lRe-89-Haa"/>
                     <exclude reference="qlz-Yf-QTe"/>
                     <exclude reference="zss-Ka-udf"/>
+                    <exclude reference="0Ng-iP-SGT"/>
                     <exclude reference="EQq-A5-L2O"/>
                     <exclude reference="ftk-E5-if9"/>
                     <exclude reference="jeC-6a-XQC"/>
-                    <exclude reference="0Ng-iP-SGT"/>
+                    <exclude reference="0wT-nm-nbv"/>
+                    <exclude reference="M0Y-DM-0s0"/>
+                    <exclude reference="fV2-82-zeu"/>
+                    <exclude reference="mdh-dW-ylB"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
                 <mask key="subviews">
                     <include reference="ucx-i4-Zft"/>
-                    <include reference="RfQ-Z2-ZZ1"/>
                     <include reference="Ysa-FT-9Sm"/>
                     <include reference="i49-fb-djQ"/>
+                    <include reference="RfQ-Z2-ZZ1"/>
                 </mask>
                 <mask key="constraints">
-                    <include reference="0wT-nm-nbv"/>
-                    <include reference="M0Y-DM-0s0"/>
-                    <include reference="fV2-82-zeu"/>
-                    <include reference="mdh-dW-ylB"/>
                     <include reference="0tq-fY-Pg3"/>
                     <exclude reference="1SB-fN-5OC"/>
                     <exclude reference="At8-KL-Vlq"/>
@@ -127,10 +123,14 @@
                     <exclude reference="lRe-89-Haa"/>
                     <include reference="qlz-Yf-QTe"/>
                     <exclude reference="zss-Ka-udf"/>
+                    <include reference="0Ng-iP-SGT"/>
                     <include reference="EQq-A5-L2O"/>
                     <exclude reference="ftk-E5-if9"/>
                     <include reference="jeC-6a-XQC"/>
-                    <include reference="0Ng-iP-SGT"/>
+                    <include reference="0wT-nm-nbv"/>
+                    <include reference="M0Y-DM-0s0"/>
+                    <include reference="fV2-82-zeu"/>
+                    <include reference="mdh-dW-ylB"/>
                 </mask>
             </variation>
             <connections>
