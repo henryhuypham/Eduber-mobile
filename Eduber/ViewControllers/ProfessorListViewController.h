@@ -10,12 +10,14 @@
 #import "ProfressorCell.h"
 #import "Professor.h"
 
-@interface ProfessorListViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
+@interface ProfessorListViewController : UIViewController<UITableViewDataSource, UITableViewDelegate,ProfressorCellDelegate>
 
 @property (nonatomic,retain)NSMutableArray *professorList;
 
 @property (nonatomic,retain)IBOutlet UITableView *tableView;
 
 -(IBAction)addNewActon:(id)sender;
+
+-(void)showalertView:(NSString *)title Description:(NSString *)description;
 
 @end

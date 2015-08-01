@@ -41,13 +41,19 @@
 }
 
 -(void)setInfo:(Professor *)info{
+    //select professor
+    professor = info;
+    
     self.nameLB.text = info.name;
     self.phoneLB.text = info.phone;
     self.schoolLB.text = info.school;
     self.addressLB.text = info.address;
     [self.avatarView setImageWithURL:[NSURL URLWithString:info.imageLink] placeholderImage:[UIImage imageNamed:@"placeholder"]];
     self.avatarView.contentMode = UIViewContentModeScaleAspectFill;
-    
+}
+
+-(IBAction)joinAction:(id)sender{
+    [self.delegate joinClass:professor];
 }
 
 @end

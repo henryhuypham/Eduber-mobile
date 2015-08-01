@@ -164,7 +164,7 @@
     
     Professor *info = self.professorList[indexPath.row];
     [cell setInfo:info];
-    
+    cell.delegate = self;
     return cell;
 }
 
@@ -178,9 +178,50 @@
     return 20;
 }
 
-#pragma mark - add new action
--(IBAction)addNewActon:(id)sender{
-    NSLog(@"Add New Action");
+#pragma mark - ProfessorCell Delegate
+- (void) joinClass:(Professor *)professor{
+    NSString *body = [NSString stringWithFormat:@"Are you sure to join this class : %@?",professor.name];
+    [self showalertView:@"Confirm" Description:body];
 }
+
+#pragma mark - join action
+-(IBAction)joinAction:(id)sender{
+    NSLog(@"Join Action");
+
+}
+
+-(void)showalertView:(NSString *)title Description:(NSString *)description{
+    SIAlertView *alertView = [[SIAlertView alloc] initWithTitle:title andMessage:description];
+    
+    [alertView addButtonWithTitle:@"OK"
+                             type:SIAlertViewButtonTypeDestructive
+                          handler:^(SIAlertView *alert) {
+                              NSLog(@"Button1 Clicked");
+                          }];
+    [alertView addButtonWithTitle:@"Cancel"
+                             type:SIAlertViewButtonTypeCancel
+                          handler:^(SIAlertView *alert) {
+                              NSLog(@"Button2 Clicked");
+                          }];
+    
+    alertView.willShowHandler = ^(SIAlertView *alertView) {
+        NSLog(@"%@, willShowHandler", alertView);
+    };
+    alertView.didShowHandler = ^(SIAlertView *alertView) {
+        NSLog(@"%@, didShowHandler", alertView);
+    };
+    alertView.willDismissHandler = ^(SIAlertView *alertView) {
+        NSLog(@"%@, willDismissHandler", alertView);
+    };
+    alertView.didDismissHandler = ^(SIAlertView *alertView) {
+        NSLog(@"%@, didDismissHandler", alertView);
+    };
+    
+    alertView.transitionStyle = SIAlertViewTransitionStyleBounce;
+    
+    [alertView show];
+
+}
+
 
 @end
