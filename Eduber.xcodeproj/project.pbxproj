@@ -15,6 +15,10 @@
 		8708A3D51B6C86860012484E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8708A3D31B6C86860012484E /* LaunchScreen.xib */; };
 		8708A3E11B6C86860012484E /* EduberTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8708A3E01B6C86860012484E /* EduberTests.m */; };
 		878B3E7C1B6C8DB6006B8710 /* Teacher.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 878B3E7B1B6C8DB6006B8710 /* Teacher.storyboard */; };
+		878B3E871B6CA39E006B8710 /* Student.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 878B3E861B6CA39E006B8710 /* Student.storyboard */; };
+		878B3E8A1B6CA3F3006B8710 /* StudentStudyFieldsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 878B3E891B6CA3F3006B8710 /* StudentStudyFieldsViewController.m */; };
+		878B3E8D1B6CA7CC006B8710 /* StudyFieldCellCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 878B3E8C1B6CA7CC006B8710 /* StudyFieldCellCollectionViewCell.m */; };
+		878B3E901B6CA7FE006B8710 /* StudyFieldCellCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 878B3E8F1B6CA7FE006B8710 /* StudyFieldCellCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +46,12 @@
 		8708A3DF1B6C86860012484E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8708A3E01B6C86860012484E /* EduberTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EduberTests.m; sourceTree = "<group>"; };
 		878B3E7B1B6C8DB6006B8710 /* Teacher.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Teacher.storyboard; sourceTree = "<group>"; };
+		878B3E861B6CA39E006B8710 /* Student.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Student.storyboard; sourceTree = "<group>"; };
+		878B3E881B6CA3F3006B8710 /* StudentStudyFieldsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StudentStudyFieldsViewController.h; path = ViewControllers/StudentStudyFieldsViewController.h; sourceTree = "<group>"; };
+		878B3E891B6CA3F3006B8710 /* StudentStudyFieldsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StudentStudyFieldsViewController.m; path = ViewControllers/StudentStudyFieldsViewController.m; sourceTree = "<group>"; };
+		878B3E8B1B6CA7CC006B8710 /* StudyFieldCellCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StudyFieldCellCollectionViewCell.h; path = ViewCells/StudyFieldCellCollectionViewCell.h; sourceTree = "<group>"; };
+		878B3E8C1B6CA7CC006B8710 /* StudyFieldCellCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StudyFieldCellCollectionViewCell.m; path = ViewCells/StudyFieldCellCollectionViewCell.m; sourceTree = "<group>"; };
+		878B3E8F1B6CA7FE006B8710 /* StudyFieldCellCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = StudyFieldCellCollectionViewCell.xib; path = ViewCells/StudyFieldCellCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +77,8 @@
 			children = (
 				4C5DE21B1B6C9AB900B85BB8 /* TeacherLoginViewController.h */,
 				4C5DE21C1B6C9AB900B85BB8 /* TeacherLoginViewController.m */,
+				878B3E881B6CA3F3006B8710 /* StudentStudyFieldsViewController.h */,
+				878B3E891B6CA3F3006B8710 /* StudentStudyFieldsViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -92,10 +104,12 @@
 		8708A3C31B6C86860012484E /* Eduber */ = {
 			isa = PBXGroup;
 			children = (
+				878B3E8E1B6CA7D0006B8710 /* ViewCells */,
 				4C5DE21A1B6C994900B85BB8 /* ViewControllers */,
 				8708A3C81B6C86860012484E /* AppDelegate.h */,
 				8708A3C91B6C86860012484E /* AppDelegate.m */,
 				878B3E7B1B6C8DB6006B8710 /* Teacher.storyboard */,
+				878B3E861B6CA39E006B8710 /* Student.storyboard */,
 				8708A3CE1B6C86860012484E /* Main.storyboard */,
 				8708A3D31B6C86860012484E /* LaunchScreen.xib */,
 				8708A3D11B6C86860012484E /* Images.xcassets */,
@@ -128,6 +142,16 @@
 				8708A3DF1B6C86860012484E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		878B3E8E1B6CA7D0006B8710 /* ViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				878B3E8B1B6CA7CC006B8710 /* StudyFieldCellCollectionViewCell.h */,
+				878B3E8C1B6CA7CC006B8710 /* StudyFieldCellCollectionViewCell.m */,
+				878B3E8F1B6CA7FE006B8710 /* StudyFieldCellCollectionViewCell.xib */,
+			);
+			name = ViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,8 +236,10 @@
 			files = (
 				8708A3D01B6C86860012484E /* Main.storyboard in Resources */,
 				878B3E7C1B6C8DB6006B8710 /* Teacher.storyboard in Resources */,
+				878B3E901B6CA7FE006B8710 /* StudyFieldCellCollectionViewCell.xib in Resources */,
 				8708A3D51B6C86860012484E /* LaunchScreen.xib in Resources */,
 				8708A3D21B6C86860012484E /* Images.xcassets in Resources */,
+				878B3E871B6CA39E006B8710 /* Student.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,7 +259,9 @@
 			files = (
 				4C5DE21D1B6C9AB900B85BB8 /* TeacherLoginViewController.m in Sources */,
 				8708A3CA1B6C86860012484E /* AppDelegate.m in Sources */,
+				878B3E8D1B6CA7CC006B8710 /* StudyFieldCellCollectionViewCell.m in Sources */,
 				8708A3C71B6C86860012484E /* main.m in Sources */,
+				878B3E8A1B6CA3F3006B8710 /* StudentStudyFieldsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
