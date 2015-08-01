@@ -40,16 +40,7 @@
         self.instructionView.hidden = YES;
         self.takeTestButton.hidden = YES;
         self.takeTestButton.enabled = NO;
-        
-        //test professor
-        [self goToProfessorAction:nil];
     });
-}
-
--(IBAction)goToProfessorAction:(id)sender {
-    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Student" bundle:nil];
-    ProfessorListViewController *viewController = (ProfessorListViewController *)[sb instantiateViewControllerWithIdentifier:@"professorListViewController"];
-    [self.navigationController  pushViewController:viewController animated:YES];
 }
 
 @end

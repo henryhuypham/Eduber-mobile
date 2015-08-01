@@ -41,7 +41,7 @@
 		878B3EB21B6D3D23006B8710 /* TeacherClassListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 878B3EAF1B6D3D23006B8710 /* TeacherClassListViewController.m */; };
 		878B3EB31B6D3D23006B8710 /* TestInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 878B3EB11B6D3D23006B8710 /* TestInfoViewController.m */; };
 		878B3EB71B6D3D38006B8710 /* ClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 878B3EB61B6D3D38006B8710 /* ClassInfo.m */; };
-		878B3EB91B6D5632006B8710 /* htmp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 878B3EB81B6D5632006B8710 /* htmp.storyboard */; };
+		878B3EBC1B6D6D3C006B8710 /* ClassRecommendationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 878B3EBB1B6D6D3C006B8710 /* ClassRecommendationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,7 +120,8 @@
 		878B3EB11B6D3D23006B8710 /* TestInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestInfoViewController.m; path = ViewControllers/TestInfoViewController.m; sourceTree = "<group>"; };
 		878B3EB51B6D3D38006B8710 /* ClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClassInfo.h; path = Models/ClassInfo.h; sourceTree = "<group>"; };
 		878B3EB61B6D3D38006B8710 /* ClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClassInfo.m; path = Models/ClassInfo.m; sourceTree = "<group>"; };
-		878B3EB81B6D5632006B8710 /* htmp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = htmp.storyboard; sourceTree = "<group>"; };
+		878B3EBA1B6D6D3C006B8710 /* ClassRecommendationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClassRecommendationViewController.h; path = ViewControllers/ClassRecommendationViewController.h; sourceTree = "<group>"; };
+		878B3EBB1B6D6D3C006B8710 /* ClassRecommendationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClassRecommendationViewController.m; path = ViewControllers/ClassRecommendationViewController.m; sourceTree = "<group>"; };
 		FCB3AB03E3CF78806BC3AED2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -161,6 +162,8 @@
 				878B3EAF1B6D3D23006B8710 /* TeacherClassListViewController.m */,
 				878B3EB01B6D3D23006B8710 /* TestInfoViewController.h */,
 				878B3EB11B6D3D23006B8710 /* TestInfoViewController.m */,
+				4C76DEF11B6D0C870052FD48 /* TestResultViewController.h */,
+				4C76DEF21B6D0C870052FD48 /* TestResultViewController.m */,
 				4C5DE21E1B6CA77100B85BB8 /* LoginViewController.h */,
 				4C5DE21F1B6CA77100B85BB8 /* LoginViewController.m */,
 				878B3E881B6CA3F3006B8710 /* StudentStudyFieldsViewController.h */,
@@ -169,8 +172,8 @@
 				878B3E9B1B6D17D0006B8710 /* StudentClassSelectViewController.m */,
 				4C5DE23C1B6CCE4500B85BB8 /* SWRevealViewController.h */,
 				4C5DE23D1B6CCE4500B85BB8 /* SWRevealViewController.m */,
-				4C76DEF11B6D0C870052FD48 /* TestResultViewController.h */,
-				4C76DEF21B6D0C870052FD48 /* TestResultViewController.m */,
+				878B3EBA1B6D6D3C006B8710 /* ClassRecommendationViewController.h */,
+				878B3EBB1B6D6D3C006B8710 /* ClassRecommendationViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -246,7 +249,6 @@
 				878B3E7B1B6C8DB6006B8710 /* Teacher.storyboard */,
 				878B3E861B6CA39E006B8710 /* Student.storyboard */,
 				4C76DEEF1B6D06840052FD48 /* temp.storyboard */,
-				878B3EB81B6D5632006B8710 /* htmp.storyboard */,
 				8708A3CE1B6C86860012484E /* Main.storyboard */,
 				8708A3D31B6C86860012484E /* LaunchScreen.xib */,
 				8708A3D11B6C86860012484E /* Images.xcassets */,
@@ -409,7 +411,6 @@
 				8708A3D21B6C86860012484E /* Images.xcassets in Resources */,
 				878B3E871B6CA39E006B8710 /* Student.storyboard in Resources */,
 				8422662B1B6CFDBA00AABFB6 /* LeftMenuHeaderView.xib in Resources */,
-				878B3EB91B6D5632006B8710 /* htmp.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,6 +463,7 @@
 			files = (
 				842266291B6CFDA500AABFB6 /* LeftMenuHeaderView.m in Sources */,
 				4C5DE2411B6CCE6000B85BB8 /* LeftMenuTableViewCell.m in Sources */,
+				878B3EBC1B6D6D3C006B8710 /* ClassRecommendationViewController.m in Sources */,
 				4C76DEF31B6D0C870052FD48 /* TestResultViewController.m in Sources */,
 				842266201B6CC55300AABFB6 /* UIImage+BlurredFrame.m in Sources */,
 				8708A3CA1B6C86860012484E /* AppDelegate.m in Sources */,
