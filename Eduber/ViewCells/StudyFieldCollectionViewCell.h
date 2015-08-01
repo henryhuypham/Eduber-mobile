@@ -8,9 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface StudyFieldCellCollectionViewCell : UICollectionViewCell
+@interface StudyFieldCollectionViewCell : UICollectionViewCell
 
-@property (strong, nonatomic) IBOutlet UIView   *parentView;
 @property (strong, nonatomic) IBOutlet UILabel  *studyFieldName;
 
 @end

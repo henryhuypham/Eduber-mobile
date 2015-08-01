@@ -11,5 +11,6 @@
 @interface StudentStudyFieldsViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate>
 
 @property (nonatomic, strong) NSMutableArray *studyFields;
+@property (nonatomic, strong)IBOutlet UICollectionView *collectionView;
 
 @end

@@ -7,7 +7,9 @@
 //
 
 #import "StudentStudyFieldsViewController.h"
-#import "StudyFieldCellCollectionViewCell.h"
+#import "StudyFieldCollectionViewCell.h"
+
+#define kCollectionViewCell @"StudyFieldCollectionViewCell"
 
 @implementation StudentStudyFieldsViewController
 
@@ -16,8 +18,10 @@
     
     // Do any additional setup after loading the view.
     self.studyFields = [[NSMutableArray alloc] initWithObjects: @"English", @"Math", @"Physics", @"Chemistry", @"Economics", nil];
+    
 }
 
+#pragma collectionview delegate
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     return 1;
 }
@@ -27,7 +31,12 @@
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    StudyFieldCellCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"StudentStudyFieldCell" forIndexPath:indexPath];
+    
+    StudyFieldCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kCollectionViewCell forIndexPath:indexPath];
+    
+    if (!cell) {
+        cell = [[StudyFieldCollectionViewCell alloc] init];
+    }
     
     cell.studyFieldName.text = [self.studyFields objectAtIndex:indexPath.row];
     
