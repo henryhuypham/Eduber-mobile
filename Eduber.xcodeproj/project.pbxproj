@@ -86,8 +86,8 @@
 				8708A3CB1B6C86860012484E /* ViewController.h */,
 				8708A3CC1B6C86860012484E /* ViewController.m */,
 				8708A3CE1B6C86860012484E /* Main.storyboard */,
-				8708A3D11B6C86860012484E /* Images.xcassets */,
 				8708A3D31B6C86860012484E /* LaunchScreen.xib */,
+				8708A3D11B6C86860012484E /* Images.xcassets */,
 				8708A3C41B6C86860012484E /* Supporting Files */,
 			);
 			path = Eduber;
