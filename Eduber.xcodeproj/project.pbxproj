@@ -30,6 +30,7 @@
 		8427E0A21B6D726F00EF96D5 /* StudentClassListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8427E0A11B6D726F00EF96D5 /* StudentClassListViewController.m */; };
 		8427E0A51B6D741000EF96D5 /* StudentClassCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8427E0A41B6D741000EF96D5 /* StudentClassCell.m */; };
 		8427E0A81B6D746B00EF96D5 /* StudentClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8427E0A71B6D746B00EF96D5 /* StudentClassInfo.m */; };
+		8427E0AB1B6D7A1B00EF96D5 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8427E0AA1B6D7A1B00EF96D5 /* UserInfo.m */; };
 		8708A3C71B6C86860012484E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8708A3C61B6C86860012484E /* main.m */; };
 		8708A3CA1B6C86860012484E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8708A3C91B6C86860012484E /* AppDelegate.m */; };
 		8708A3D01B6C86860012484E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8708A3CE1B6C86860012484E /* Main.storyboard */; };
@@ -104,6 +105,8 @@
 		8427E0A41B6D741000EF96D5 /* StudentClassCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StudentClassCell.m; path = ViewCells/StudentClassCell.m; sourceTree = "<group>"; };
 		8427E0A61B6D746B00EF96D5 /* StudentClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StudentClassInfo.h; path = Models/StudentClassInfo.h; sourceTree = "<group>"; };
 		8427E0A71B6D746B00EF96D5 /* StudentClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StudentClassInfo.m; path = Models/StudentClassInfo.m; sourceTree = "<group>"; };
+		8427E0A91B6D7A1B00EF96D5 /* UserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserInfo.h; path = Models/UserInfo.h; sourceTree = "<group>"; };
+		8427E0AA1B6D7A1B00EF96D5 /* UserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserInfo.m; path = Models/UserInfo.m; sourceTree = "<group>"; };
 		8708A3C11B6C86860012484E /* Eduber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eduber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8708A3C51B6C86860012484E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8708A3C61B6C86860012484E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -318,6 +321,8 @@
 		878B3EB41B6D3D2D006B8710 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8427E0A91B6D7A1B00EF96D5 /* UserInfo.h */,
+				8427E0AA1B6D7A1B00EF96D5 /* UserInfo.m */,
 				8427E0A61B6D746B00EF96D5 /* StudentClassInfo.h */,
 				8427E0A71B6D746B00EF96D5 /* StudentClassInfo.m */,
 				8427E0931B6D5F1700EF96D5 /* Professor.h */,
@@ -504,6 +509,7 @@
 				878B3EB21B6D3D23006B8710 /* TeacherClassListViewController.m in Sources */,
 				4C5DE23B1B6CCE3A00B85BB8 /* LeftMenuViewController.m in Sources */,
 				4C5DE23E1B6CCE4500B85BB8 /* SWRevealViewController.m in Sources */,
+				8427E0AB1B6D7A1B00EF96D5 /* UserInfo.m in Sources */,
 				8427E08F1B6D59D400EF96D5 /* ProfressorCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
