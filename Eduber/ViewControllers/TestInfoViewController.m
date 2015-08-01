@@ -7,6 +7,7 @@
 //
 
 #import "TestInfoViewController.h"
+#import <SVProgressHUD.h>
 
 @interface TestInfoViewController ()
 
@@ -19,19 +20,16 @@
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)takeTheTest:(id)sender {
+    [SVProgressHUD setBackgroundColor:[UIColor colorWithRed:0.7f green:0.7f blue:0.7f alpha:0.65f]];
+    [SVProgressHUD show];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 2 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+        [SVProgressHUD dismiss];
+        self.instructionView.hidden = YES;
+        self.takeTestButton.hidden = YES;
+        self.takeTestButton.enabled = NO;
+    });
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

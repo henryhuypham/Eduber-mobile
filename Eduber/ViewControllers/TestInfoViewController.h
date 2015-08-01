@@ -10,4 +10,9 @@
 
 @interface TestInfoViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UIView   *instructionView;
+@property (strong, nonatomic) IBOutlet UIButton *takeTestButton;
+
+- (IBAction)takeTheTest:(id)sender;
+
 @end

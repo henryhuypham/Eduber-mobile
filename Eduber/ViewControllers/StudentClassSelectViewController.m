@@ -7,10 +7,7 @@
 //
 
 #import "StudentClassSelectViewController.h"
-
-@interface StudentClassSelectViewController ()
-
-@end
+#import "TestInfoViewController.h"
 
 @implementation StudentClassSelectViewController
 
@@ -27,7 +24,6 @@
 }
 
 -(void)setupView{
-    
     //scrollView
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.scrollView.contentInset = UIEdgeInsetsMake(0,0,0,0);
@@ -44,17 +40,10 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(IBAction)toeicAction:(id)sender {
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Student" bundle:nil];
+    TestInfoViewController *viewController = (TestInfoViewController *)[sb instantiateViewControllerWithIdentifier:@"testInfoViewController"];
+    [self.navigationController  pushViewController:viewController animated:YES];
 }
-*/
 
--(IBAction)toeicAction:(id)sender{
-
-}
 @end

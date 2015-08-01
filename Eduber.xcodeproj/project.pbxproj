@@ -140,11 +140,11 @@
 		4C5DE21A1B6C994900B85BB8 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				842266261B6CFD5800AABFB6 /* LeftMenu */,
 				878B3EAE1B6D3D23006B8710 /* TeacherClassListViewController.h */,
 				878B3EAF1B6D3D23006B8710 /* TeacherClassListViewController.m */,
 				878B3EB01B6D3D23006B8710 /* TestInfoViewController.h */,
 				878B3EB11B6D3D23006B8710 /* TestInfoViewController.m */,
-				842266261B6CFD5800AABFB6 /* LeftMenu */,
 				4C5DE21E1B6CA77100B85BB8 /* LoginViewController.h */,
 				4C5DE21F1B6CA77100B85BB8 /* LoginViewController.m */,
 				878B3E881B6CA3F3006B8710 /* StudentStudyFieldsViewController.h */,
