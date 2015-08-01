@@ -40,9 +40,15 @@
 -(void)setupLabel{
     [self.studentLabel setFont:[UIFont boldSystemFontOfSize:16.0f]];
     [self.studentLabel setTextColor:[UIColor whiteColor]];
+    self.studentLabel.layer.borderWidth = 2;
+    self.studentLabel.layer.cornerRadius = 5;
+    self.studentLabel.layer.borderColor = [UIColor whiteColor].CGColor;
     
     [self.profressorLabel setFont:[UIFont boldSystemFontOfSize:16.0f]];
     [self.profressorLabel setTextColor:[UIColor whiteColor]];
+    self.profressorLabel.layer.borderWidth = 0;
+    self.profressorLabel.layer.cornerRadius = 5;
+    self.profressorLabel.layer.borderColor = [UIColor whiteColor].CGColor;
 }
 
 -(void)setupImageView{
@@ -88,27 +94,45 @@
  */
 
 - (IBAction)studentButtonTouched:(id)sender {
-    loginModeSelected = 0;
+    if(loginModeSelected == 1){
+        self.studentBackgroundImageView.alpha = 0.0;
+        [UIView beginAnimations:nil context:NULL];
+        [UIView setAnimationDuration:0.5];
+        self.studentBackgroundImageView.alpha = 1.0;
+        [UIView commitAnimations];
+    }
     
-    self.backgroundImageView.alpha = 0;
-    [UIView beginAnimations:nil context:NULL];
-    [UIView setAnimationDuration:1];
-    self.backgroundImageView.alpha = 1.0;
-    [self.backgroundImageView setImage:[UIImage imageNamed:@"student_login_nocolor_icon"]];
-    [UIView commitAnimations];
+    loginModeSelected = 0;
     [self updateLayouToCurrentLoginMode];
+    
+    //label
+    self.studentLabel.layer.borderWidth = 2;
+    self.profressorLabel.layer.borderWidth = 0;
+    
 }
 
 - (IBAction)teacherButtonTouched:(id)sender {
+    if(loginModeSelected == 0){
+        self.professorBackgroundImageView.alpha = 0;
+        [UIView beginAnimations:nil context:NULL];
+        [UIView setAnimationDuration:0.5];
+        self.professorBackgroundImageView.alpha = 1.0;
+        [UIView commitAnimations];
+        
+        self.studentBackgroundImageView.alpha = 1.0;
+        [UIView beginAnimations:nil context:NULL];
+        [UIView setAnimationDuration:0.5];
+        self.studentBackgroundImageView.alpha = 0;
+        [UIView commitAnimations];
+        [self updateLayouToCurrentLoginMode];
+    }
+    
     loginModeSelected = 1;
     
-    self.backgroundImageView.alpha = 0;
-    [UIView beginAnimations:nil context:NULL];
-    [UIView setAnimationDuration:1];
-    self.backgroundImageView.alpha = 1.0;
-    [self.backgroundImageView setImage:[UIImage imageNamed:@"profressor_login_nocolor_icon"]];
-    [UIView commitAnimations];
-    [self updateLayouToCurrentLoginMode];
+    
+    //label
+    self.studentLabel.layer.borderWidth = 0;
+    self.profressorLabel.layer.borderWidth = 2;
 }
 
 -(void)updateLayouToCurrentLoginMode{
@@ -142,14 +166,15 @@
         sb = [UIStoryboard storyboardWithName:@"Student" bundle:nil];
         viewController=(StudentStudyFieldsViewController *)[sb instantiateViewControllerWithIdentifier:@"studentStudyFieldsViewController"];
     }else{
-//        sb = [UIStoryboard storyboardWithName:@"Teacher" bundle:nil];
-//        viewController=(TeacherRegisterClassViewController *)[sb instantiateViewControllerWithIdentifier:@"teacherRegisterClassViewController"];
+        //        sb = [UIStoryboard storyboardWithName:@"Teacher" bundle:nil];
+        //        viewController=(TeacherRegisterClassViewController *)[sb instantiateViewControllerWithIdentifier:@"teacherRegisterClassViewController"];
     }
     sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    LeftMenuViewController *leftMenuViewController = (LeftMenuViewController *)[sb instantiateViewControllerWithIdentifier:@"leftMenuViewController"];    UINavigationController *frontNavigationController = [[UINavigationController alloc] initWithNavigationBarClass:[CustomNavigationBar class] toolbarClass:nil];
+    LeftMenuViewController *leftMenuViewController = (LeftMenuViewController *)[sb instantiateViewControllerWithIdentifier:@"leftMenuViewController"];
+    UINavigationController *frontNavigationController = [[UINavigationController alloc] initWithNavigationBarClass:[CustomNavigationBar class] toolbarClass:nil];
     leftMenuViewController.loginModeSelected = loginModeSelected;
     [frontNavigationController setViewControllers:@[viewController] animated:NO];
-      UIViewController *viewController2 =(LoginViewController *)[sb instantiateViewControllerWithIdentifier:@"loginViewController"];
+    UIViewController *viewController2 =(LoginViewController *)[sb instantiateViewControllerWithIdentifier:@"loginViewController"];
     SWRevealViewController *mainRevealController = [[SWRevealViewController alloc]
                                                     initWithRearViewController:leftMenuViewController frontViewController:frontNavigationController];
     //settup navigation bar touch
@@ -161,7 +186,7 @@
     self.navigationController.navigationBar.translucent = NO;
     [self.navigationController pushViewController:mainRevealController animated:YES];
     
-
+    
     
     
     

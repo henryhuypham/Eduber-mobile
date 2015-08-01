@@ -88,6 +88,9 @@ const CGFloat VFSNavigationBarHeightIncrease = 8.f;
             [view setFrame:frame];
         }
     }
+    
+    //background color
+    self.backgroundColor = [UIColor colorWithRed:234.0/255.0f green:76.0/255.0f blue:137.0/255.0f alpha:1.0];
 }
 
 -(void)showBackButton{
