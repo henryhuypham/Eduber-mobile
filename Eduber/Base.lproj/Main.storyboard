@@ -241,7 +241,9 @@
                             </constraint>
                             <constraint firstItem="xIp-zy-qzC" firstAttribute="top" secondItem="0Kn-CO-abf" secondAttribute="bottom" constant="20" id="pbS-Fx-mLj"/>
                             <constraint firstItem="6bG-bO-6aE" firstAttribute="top" secondItem="xIp-zy-qzC" secondAttribute="bottom" constant="100" id="qav-dx-Dqt"/>
-                            <constraint firstAttribute="centerY" secondItem="acZ-Yv-MMH" secondAttribute="centerY" constant="-10" id="rkv-4M-NNM"/>
+                            <constraint firstAttribute="centerY" secondItem="acZ-Yv-MMH" secondAttribute="centerY" constant="-10" id="rkv-4M-NNM">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
                             <constraint firstAttribute="centerX" secondItem="0Kn-CO-abf" secondAttribute="centerX" id="tMl-MR-8p2"/>
                             <constraint firstAttribute="centerX" secondItem="6bG-bO-6aE" secondAttribute="centerX" id="w3y-dt-aCH"/>
                         </constraints>
@@ -463,8 +465,8 @@
     </scenes>
     <resources>
         <image name="eduber_text" width="1300" height="551"/>
-        <image name="profressor_login_icon" width="258" height="255"/>
-        <image name="profressor_login_nocolor_icon" width="258" height="255"/>
+        <image name="profressor_login_icon" width="667" height="667"/>
+        <image name="profressor_login_nocolor_icon" width="667" height="667"/>
         <image name="student_login_icon" width="798" height="836"/>
         <image name="student_login_nocolor_icon" width="798" height="836"/>
     </resources>
