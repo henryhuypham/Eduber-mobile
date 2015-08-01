@@ -11,6 +11,12 @@
 
 @interface StudentClassSelectViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIView *toeicView;
+@property (weak, nonatomic) IBOutlet UIView *toeflView;
+@property (weak, nonatomic) IBOutlet UIView *ieltsView;
+@property (weak, nonatomic) IBOutlet UIView *chemistryView;
+@property (weak, nonatomic) IBOutlet UIView *geographicView;
+@property (weak, nonatomic) IBOutlet UIView *historyView;
 
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *scrollviewWidth;

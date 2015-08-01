@@ -33,6 +33,99 @@
     UIView* view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 20.0)];
     view.backgroundColor= [UIColor colorWithRed:234.0/255.0f green:76.0/255.0f blue:137.0/255.0f alpha:1.0];
     [self.view addSubview:view];
+    //apply shadow
+    [self.toeflView applyShadow];
+    [self.toeicView applyShadow];
+    [self.ieltsView applyShadow];
+    [self.chemistryView applyShadow];
+    [self.geographicView applyShadow];
+    [self.historyView applyShadow];
+    
+    //fade in
+    [self fadeInToeicView];
+    [self fadeInToefl];
+    [self fadeInIelts];
+    [self fadeInChemistry];
+    [self fadeInHistory];
+    [self fadeInGeography];
+}
+
+-(void)fadeInToeicView{
+    [self.toeicView setAlpha:0.0f];
+    
+    //fade in
+    [UIView animateWithDuration:0.5f animations:^{
+        
+        [self.toeicView setAlpha:1.0f];
+        
+    } completion:^(BOOL finished) {
+        
+    }];
+}
+
+-(void)fadeInToefl{
+    [self.toeflView setAlpha:0.0f];
+    
+    //fade in
+    [UIView animateWithDuration:0.5f animations:^{
+        
+        [self.toeflView setAlpha:1.0f];
+        
+    } completion:^(BOOL finished) {
+        
+    }];
+}
+
+-(void)fadeInIelts{
+    [self.ieltsView setAlpha:0.0f];
+    
+    //fade in
+    [UIView animateWithDuration:0.5f animations:^{
+        
+        [self.ieltsView setAlpha:1.0f];
+        
+    } completion:^(BOOL finished) {
+        
+    }];
+}
+
+-(void)fadeInChemistry{
+    [self.chemistryView setAlpha:0.0f];
+    
+    //fade in
+    [UIView animateWithDuration:0.5f animations:^{
+        
+        [self.chemistryView setAlpha:1.0f];
+        
+    } completion:^(BOOL finished) {
+        
+    }];
+}
+
+-(void)fadeInGeography{
+    [self.geographicView setAlpha:0.0f];
+    
+    //fade in
+    [UIView animateWithDuration:0.5f animations:^{
+        
+        [self.geographicView setAlpha:1.0f];
+        
+    } completion:^(BOOL finished) {
+        
+    }];
+}
+
+-(void)fadeInHistory{
+    [self.historyView setAlpha:0.0f];
+    
+    //fade in
+    [UIView animateWithDuration:0.5f animations:^{
+        
+        [self.historyView setAlpha:1.0f];
+        
+    } completion:^(BOOL finished) {
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
