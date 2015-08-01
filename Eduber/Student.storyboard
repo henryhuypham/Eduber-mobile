@@ -392,11 +392,11 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="148" height="163"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nh3-6O-Iwn" userLabel="Subject">
-                                                                <rect key="frame" x="0.0" y="139" width="148" height="24"/>
+                                                                <rect key="frame" x="0.0" y="133" width="148" height="30"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOEIC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SpP-cR-IhU">
-                                                                        <rect key="frame" x="10" y="0.0" width="128" height="24"/>
-                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                                        <rect key="frame" x="10" y="0.0" width="128" height="30"/>
+                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
@@ -406,12 +406,12 @@
                                                                     <constraint firstItem="SpP-cR-IhU" firstAttribute="leading" secondItem="Nh3-6O-Iwn" secondAttribute="leading" constant="10" id="2vi-Qr-W6q"/>
                                                                     <constraint firstItem="SpP-cR-IhU" firstAttribute="top" secondItem="Nh3-6O-Iwn" secondAttribute="top" id="BhH-dz-BIc"/>
                                                                     <constraint firstAttribute="trailing" secondItem="SpP-cR-IhU" secondAttribute="trailing" constant="10" id="COI-4r-hnc"/>
-                                                                    <constraint firstAttribute="height" constant="24" id="EQM-rN-heA"/>
+                                                                    <constraint firstAttribute="height" constant="30" id="EQM-rN-heA"/>
                                                                     <constraint firstAttribute="bottom" secondItem="SpP-cR-IhU" secondAttribute="bottom" id="uSQ-Tu-7CG"/>
                                                                 </constraints>
                                                             </view>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_toeic" translatesAutoresizingMaskIntoConstraints="NO" id="TXp-f7-481">
-                                                                <rect key="frame" x="0.0" y="0.0" width="148" height="139"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="148" height="133"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             </imageView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xmz-tf-EK5">
@@ -444,18 +444,18 @@
                                                         <rect key="frame" x="156" y="0.0" width="148" height="163"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qfq-SM-T9I" userLabel="Subject">
-                                                                <rect key="frame" x="0.0" y="139" width="148" height="24"/>
+                                                                <rect key="frame" x="0.0" y="133" width="148" height="30"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOEFL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C8v-2i-oUw">
-                                                                        <rect key="frame" x="10" y="0.0" width="128" height="24"/>
-                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                                        <rect key="frame" x="10" y="0.0" width="128" height="30"/>
+                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
                                                                 <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="24" id="JxL-2E-1Ww"/>
+                                                                    <constraint firstAttribute="height" constant="30" id="JxL-2E-1Ww"/>
                                                                     <constraint firstAttribute="bottom" secondItem="C8v-2i-oUw" secondAttribute="bottom" id="LDF-eN-uci"/>
                                                                     <constraint firstItem="C8v-2i-oUw" firstAttribute="top" secondItem="Qfq-SM-T9I" secondAttribute="top" id="ceJ-ow-15l"/>
                                                                     <constraint firstItem="C8v-2i-oUw" firstAttribute="leading" secondItem="Qfq-SM-T9I" secondAttribute="leading" constant="10" id="e0X-iG-b6R"/>
@@ -463,7 +463,7 @@
                                                                 </constraints>
                                                             </view>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_toefl" translatesAutoresizingMaskIntoConstraints="NO" id="oJu-pn-agj">
-                                                                <rect key="frame" x="0.0" y="0.0" width="148" height="139"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="148" height="133"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             </imageView>
                                                         </subviews>
@@ -498,11 +498,11 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="148" height="163"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zjl-mI-VH8" userLabel="Subject">
-                                                                <rect key="frame" x="0.0" y="139" width="148" height="24"/>
+                                                                <rect key="frame" x="0.0" y="133" width="148" height="30"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Physics" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z4j-7d-bFl">
-                                                                        <rect key="frame" x="10" y="0.0" width="128" height="24"/>
-                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                                        <rect key="frame" x="10" y="0.0" width="128" height="30"/>
+                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
@@ -513,11 +513,11 @@
                                                                     <constraint firstAttribute="trailing" secondItem="z4j-7d-bFl" secondAttribute="trailing" constant="10" id="7O9-bJ-hTN"/>
                                                                     <constraint firstItem="z4j-7d-bFl" firstAttribute="top" secondItem="Zjl-mI-VH8" secondAttribute="top" id="82A-ly-AB1"/>
                                                                     <constraint firstItem="z4j-7d-bFl" firstAttribute="leading" secondItem="Zjl-mI-VH8" secondAttribute="leading" constant="10" id="Cdu-ID-bTO"/>
-                                                                    <constraint firstAttribute="height" constant="24" id="Ulj-6f-TNk"/>
+                                                                    <constraint firstAttribute="height" constant="30" id="Ulj-6f-TNk"/>
                                                                 </constraints>
                                                             </view>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_physics" translatesAutoresizingMaskIntoConstraints="NO" id="ux4-4F-Zq7">
-                                                                <rect key="frame" x="0.0" y="0.0" width="148" height="139"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="148" height="133"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             </imageView>
                                                         </subviews>
@@ -537,11 +537,11 @@
                                                         <rect key="frame" x="156" y="0.0" width="148" height="163"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SlC-PK-eVa" userLabel="Subject">
-                                                                <rect key="frame" x="0.0" y="139" width="148" height="24"/>
+                                                                <rect key="frame" x="0.0" y="133" width="148" height="30"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chemistry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KWG-Zd-qvN">
-                                                                        <rect key="frame" x="10" y="0.0" width="128" height="24"/>
-                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                                        <rect key="frame" x="10" y="0.0" width="128" height="30"/>
+                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
@@ -551,12 +551,12 @@
                                                                     <constraint firstItem="KWG-Zd-qvN" firstAttribute="leading" secondItem="SlC-PK-eVa" secondAttribute="leading" constant="10" id="13h-9G-SgI"/>
                                                                     <constraint firstAttribute="trailing" secondItem="KWG-Zd-qvN" secondAttribute="trailing" constant="10" id="6Az-mv-xgC"/>
                                                                     <constraint firstItem="KWG-Zd-qvN" firstAttribute="top" secondItem="SlC-PK-eVa" secondAttribute="top" id="IHr-S1-VEg"/>
-                                                                    <constraint firstAttribute="height" constant="24" id="X1k-9C-gJ1"/>
+                                                                    <constraint firstAttribute="height" constant="30" id="X1k-9C-gJ1"/>
                                                                     <constraint firstAttribute="bottom" secondItem="KWG-Zd-qvN" secondAttribute="bottom" id="teJ-Ib-3Do"/>
                                                                 </constraints>
                                                             </view>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_chemistry" translatesAutoresizingMaskIntoConstraints="NO" id="8uz-Vo-uZg">
-                                                                <rect key="frame" x="0.0" y="0.0" width="148" height="139"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="148" height="133"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             </imageView>
                                                         </subviews>
@@ -591,18 +591,18 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="148" height="163"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MCR-Ya-KeE" userLabel="Subject">
-                                                                <rect key="frame" x="0.0" y="139" width="148" height="24"/>
+                                                                <rect key="frame" x="0.0" y="133" width="148" height="30"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Geography" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xCt-a1-9KR">
-                                                                        <rect key="frame" x="10" y="0.0" width="128" height="24"/>
-                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                                        <rect key="frame" x="10" y="0.0" width="128" height="30"/>
+                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
                                                                 <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="24" id="B4Q-1y-UKL"/>
+                                                                    <constraint firstAttribute="height" constant="30" id="B4Q-1y-UKL"/>
                                                                     <constraint firstItem="xCt-a1-9KR" firstAttribute="leading" secondItem="MCR-Ya-KeE" secondAttribute="leading" constant="10" id="Hga-7W-KCv"/>
                                                                     <constraint firstAttribute="trailing" secondItem="xCt-a1-9KR" secondAttribute="trailing" constant="10" id="Jja-UW-vnO"/>
                                                                     <constraint firstItem="xCt-a1-9KR" firstAttribute="top" secondItem="MCR-Ya-KeE" secondAttribute="top" id="Q9r-J1-C3n"/>
@@ -610,7 +610,7 @@
                                                                 </constraints>
                                                             </view>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_geography" translatesAutoresizingMaskIntoConstraints="NO" id="6oH-v7-Shl">
-                                                                <rect key="frame" x="0.0" y="0.0" width="148" height="139"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="148" height="133"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             </imageView>
                                                         </subviews>
@@ -630,11 +630,11 @@
                                                         <rect key="frame" x="156" y="0.0" width="148" height="163"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oPu-mB-k3W" userLabel="Subject">
-                                                                <rect key="frame" x="0.0" y="139" width="148" height="24"/>
+                                                                <rect key="frame" x="0.0" y="133" width="148" height="30"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="History" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgD-l2-4as">
-                                                                        <rect key="frame" x="10" y="0.0" width="128" height="24"/>
-                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                                        <rect key="frame" x="10" y="0.0" width="128" height="30"/>
+                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
@@ -644,12 +644,12 @@
                                                                     <constraint firstAttribute="trailing" secondItem="cgD-l2-4as" secondAttribute="trailing" constant="10" id="1Ge-Zv-G7i"/>
                                                                     <constraint firstItem="cgD-l2-4as" firstAttribute="top" secondItem="oPu-mB-k3W" secondAttribute="top" id="7KB-iQ-ZVq"/>
                                                                     <constraint firstItem="cgD-l2-4as" firstAttribute="leading" secondItem="oPu-mB-k3W" secondAttribute="leading" constant="10" id="sa4-ld-AEW"/>
-                                                                    <constraint firstAttribute="height" constant="24" id="ux9-cc-hE5"/>
+                                                                    <constraint firstAttribute="height" constant="30" id="ux9-cc-hE5"/>
                                                                     <constraint firstAttribute="bottom" secondItem="cgD-l2-4as" secondAttribute="bottom" id="xfZ-Qh-G1k"/>
                                                                 </constraints>
                                                             </view>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_history" translatesAutoresizingMaskIntoConstraints="NO" id="sgF-oG-QJG">
-                                                                <rect key="frame" x="0.0" y="0.0" width="148" height="139"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="148" height="133"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             </imageView>
                                                         </subviews>
@@ -713,9 +713,15 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="548"/>
                     <connections>
+                        <outlet property="chemistryView" destination="T4i-lO-IST" id="Nnr-zN-fwM"/>
+                        <outlet property="geographicView" destination="Ycq-6o-aXl" id="r1S-77-buV"/>
+                        <outlet property="historyView" destination="Dek-rv-RWy" id="Cjq-rO-QQ7"/>
+                        <outlet property="ieltsView" destination="9AV-Hw-hTe" id="AkI-oz-r4Z"/>
                         <outlet property="scrollView" destination="nW6-Rk-FNK" id="0DE-xe-tan"/>
                         <outlet property="scrollviewSidePadding" destination="s9T-BI-j9M" id="hv5-nF-8o2"/>
                         <outlet property="scrollviewWidth" destination="Jcl-gY-0JC" id="vzV-c9-AWe"/>
+                        <outlet property="toeflView" destination="bRo-uP-Qu6" id="7DD-BH-No3"/>
+                        <outlet property="toeicView" destination="Ye1-SC-rAx" id="cfO-gh-eah"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jfy-K6-w1S" userLabel="First Responder" sceneMemberID="firstResponder"/>
