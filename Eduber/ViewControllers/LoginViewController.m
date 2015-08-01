@@ -9,6 +9,9 @@
 #import "LoginViewController.h"
 #import "StudentStudyFieldsViewController.h"
 #import "TeacherRegisterClassViewController.h"
+#import "LeftMenuViewController.h"
+#import "SWRevealViewController.h"
+#import "CustomNavigationBar.h"
 
 @interface LoginViewController ()
 
@@ -143,9 +146,24 @@
         sb = [UIStoryboard storyboardWithName:@"Teacher" bundle:nil];
         viewController=(TeacherRegisterClassViewController *)[sb instantiateViewControllerWithIdentifier:@"teacherRegisterClassViewController"];
     }
-    if(viewController){
-        [self.navigationController pushViewController:viewController animated:YES];
-    }
+    sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    LeftMenuViewController *leftMenuViewController = (LeftMenuViewController *)[sb instantiateViewControllerWithIdentifier:@"leftMenuViewController"];    UINavigationController *frontNavigationController = [[UINavigationController alloc] initWithNavigationBarClass:[CustomNavigationBar class] toolbarClass:nil];
+    [frontNavigationController setViewControllers:@[viewController] animated:NO];
+      UIViewController *viewController2 =(LoginViewController *)[sb instantiateViewControllerWithIdentifier:@"loginViewController"];
+    SWRevealViewController *mainRevealController = [[SWRevealViewController alloc]
+                                                    initWithRearViewController:leftMenuViewController frontViewController:frontNavigationController];
+    //settup navigation bar touch
+    CustomNavigationBar* navigationBar=(CustomNavigationBar*) frontNavigationController.navigationBar;
+    
+    mainRevealController.rearViewRevealOverdraw=0.0f;
+    [navigationBar.toggleButton addTarget:mainRevealController action: @selector( revealToggle: ) forControlEvents:UIControlEventTouchUpInside];
+    [navigationBar addGestureRecognizer:mainRevealController.panGestureRecognizer];
+    [self.navigationController pushViewController:mainRevealController animated:YES];
+    
+
+    
+    
+    
 }
 
 @end
