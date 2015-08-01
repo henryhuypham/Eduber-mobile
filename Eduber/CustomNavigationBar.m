@@ -116,6 +116,8 @@ const CGFloat VFSNavigationBarHeightIncrease = 8.f;
 }
 -(void)setTitle:(NSString*)title{
     CustomNavigationBar* navigationBar = (CustomNavigationBar*) self.navigationController.navigationBar;
+    navigationBar.titleLabel.textColor = [UIColor whiteColor];
+    navigationBar.titleLabel.font = [UIFont boldSystemFontOfSize:18.0f];
     navigationBar.titleLabel.text = title;
 }
 @end
