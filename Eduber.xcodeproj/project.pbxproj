@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		8708A3C71B6C86860012484E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8708A3C61B6C86860012484E /* main.m */; };
 		8708A3CA1B6C86860012484E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8708A3C91B6C86860012484E /* AppDelegate.m */; };
-		8708A3CD1B6C86860012484E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8708A3CC1B6C86860012484E /* ViewController.m */; };
 		8708A3D01B6C86860012484E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8708A3CE1B6C86860012484E /* Main.storyboard */; };
 		8708A3D21B6C86860012484E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8708A3D11B6C86860012484E /* Images.xcassets */; };
 		8708A3D51B6C86860012484E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8708A3D31B6C86860012484E /* LaunchScreen.xib */; };
 		8708A3E11B6C86860012484E /* EduberTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8708A3E01B6C86860012484E /* EduberTests.m */; };
+		878B3E7C1B6C8DB6006B8710 /* Teacher.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 878B3E7B1B6C8DB6006B8710 /* Teacher.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +32,13 @@
 		8708A3C61B6C86860012484E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8708A3C81B6C86860012484E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8708A3C91B6C86860012484E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8708A3CB1B6C86860012484E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8708A3CC1B6C86860012484E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8708A3CF1B6C86860012484E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8708A3D11B6C86860012484E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8708A3D41B6C86860012484E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		8708A3DA1B6C86860012484E /* EduberTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EduberTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8708A3DF1B6C86860012484E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8708A3E01B6C86860012484E /* EduberTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EduberTests.m; sourceTree = "<group>"; };
+		878B3E7B1B6C8DB6006B8710 /* Teacher.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Teacher.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +82,7 @@
 			children = (
 				8708A3C81B6C86860012484E /* AppDelegate.h */,
 				8708A3C91B6C86860012484E /* AppDelegate.m */,
-				8708A3CB1B6C86860012484E /* ViewController.h */,
-				8708A3CC1B6C86860012484E /* ViewController.m */,
+				878B3E7B1B6C8DB6006B8710 /* Teacher.storyboard */,
 				8708A3CE1B6C86860012484E /* Main.storyboard */,
 				8708A3D31B6C86860012484E /* LaunchScreen.xib */,
 				8708A3D11B6C86860012484E /* Images.xcassets */,
@@ -200,6 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8708A3D01B6C86860012484E /* Main.storyboard in Resources */,
+				878B3E7C1B6C8DB6006B8710 /* Teacher.storyboard in Resources */,
 				8708A3D51B6C86860012484E /* LaunchScreen.xib in Resources */,
 				8708A3D21B6C86860012484E /* Images.xcassets in Resources */,
 			);
@@ -219,7 +218,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8708A3CD1B6C86860012484E /* ViewController.m in Sources */,
 				8708A3CA1B6C86860012484E /* AppDelegate.m in Sources */,
 				8708A3C71B6C86860012484E /* main.m in Sources */,
 			);
@@ -418,6 +416,7 @@
 				8708A3E61B6C86860012484E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8708A3E71B6C86860012484E /* Build configuration list for PBXNativeTarget "EduberTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +425,7 @@
 				8708A3E91B6C86860012484E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
