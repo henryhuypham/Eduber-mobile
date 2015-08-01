@@ -19,6 +19,9 @@
     // Do any additional setup after loading the view.
     [self setupView];
     [self setTitle:@"Subjects"];
+    UIView* view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 20.0)];
+    view.backgroundColor=[UIColor greenColor];
+    [self.view addSubview:view];
 }
 
 -(void)setupView{
