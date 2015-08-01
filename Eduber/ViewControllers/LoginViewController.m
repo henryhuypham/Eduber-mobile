@@ -31,6 +31,19 @@
     [self.linkedinButton applyLinkedInStyle];
     [self.googleButton applyGoogleStyle];
     
+    [self setupLabel];
+    [self setupImageView];
+}
+
+-(void)setupLabel{
+    [self.studentLabel setFont:[UIFont boldSystemFontOfSize:16.0f]];
+    [self.studentLabel setTextColor:[UIColor whiteColor]];
+    
+    [self.profressorLabel setFont:[UIFont boldSystemFontOfSize:16.0f]];
+    [self.profressorLabel setTextColor:[UIColor whiteColor]];
+}
+
+-(void)setupImageView{
     //ImageView
     self.studentImage = [UIImage imageNamed:@"student_login_icon"];
     [self.studentImageView setImage:self.studentImage];
@@ -55,8 +68,6 @@
     UITapGestureRecognizer *profressorTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(teacherButtonTouched:)];
     [self.profressorImageView setUserInteractionEnabled:YES];
     [self.profressorImageView addGestureRecognizer:profressorTap];
-
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -79,7 +90,7 @@
     
     self.backgroundImageView.alpha = 0;
     [UIView beginAnimations:nil context:NULL];
-    [UIView setAnimationDuration:0.5];
+    [UIView setAnimationDuration:1];
     self.backgroundImageView.alpha = 1.0;
     [self.backgroundImageView setImage:[UIImage imageNamed:@"student_login_nocolor_icon"]];
     [UIView commitAnimations];
@@ -91,7 +102,7 @@
     
     self.backgroundImageView.alpha = 0;
     [UIView beginAnimations:nil context:NULL];
-    [UIView setAnimationDuration:0.5];
+    [UIView setAnimationDuration:1];
     self.backgroundImageView.alpha = 1.0;
     [self.backgroundImageView setImage:[UIImage imageNamed:@"profressor_login_nocolor_icon"]];
     [UIView commitAnimations];
