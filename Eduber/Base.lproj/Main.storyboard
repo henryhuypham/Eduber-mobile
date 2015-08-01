@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="mSa-qk-4bD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="mSa-qk-4bD">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -34,8 +34,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="student_login_nocolor_icon" translatesAutoresizingMaskIntoConstraints="NO" id="vj2-nj-sUA">
-                                <rect key="frame" x="16" y="20" width="288" height="548"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="student_login_nocolor_icon" translatesAutoresizingMaskIntoConstraints="NO" id="vj2-nj-sUA">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eduber_text" translatesAutoresizingMaskIntoConstraints="NO" id="0Kn-CO-abf">
                                 <rect key="frame" x="60" y="30" width="200" height="100"/>
@@ -50,8 +50,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NuK-0z-OmR">
                                         <rect key="frame" x="0.0" y="0.0" width="160" height="150"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="student_login_icon" translatesAutoresizingMaskIntoConstraints="NO" id="oco-E4-03y">
-                                                <rect key="frame" x="30" y="7" width="101" height="95"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="student_login_icon" translatesAutoresizingMaskIntoConstraints="NO" id="oco-E4-03y">
+                                                <rect key="frame" x="30" y="7" width="100" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="DCp-si-Ad7"/>
                                                     <constraint firstAttribute="width" constant="100" id="UiC-mc-sMP"/>
@@ -60,7 +60,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Student" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vdl-VF-C5H">
                                                 <rect key="frame" x="10" y="112" width="140" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -84,8 +84,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vh6-tQ-YEn">
                                         <rect key="frame" x="160" y="0.0" width="160" height="150"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="profressor_login_icon" translatesAutoresizingMaskIntoConstraints="NO" id="EKU-07-u3n">
-                                                <rect key="frame" x="30" y="8" width="101" height="95"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profressor_login_icon" translatesAutoresizingMaskIntoConstraints="NO" id="EKU-07-u3n">
+                                                <rect key="frame" x="30" y="8" width="100" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="0cN-Tq-Y3h"/>
                                                     <constraint firstAttribute="height" constant="100" id="MKm-ul-Lki"/>
@@ -94,7 +94,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profressor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2B-KT-P9f">
                                                 <rect key="frame" x="10" y="113" width="140" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -147,24 +147,8 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bG-bO-6aE">
-                                <rect key="frame" x="35" y="395" width="250" height="45"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="Utd-yr-lMK"/>
-                                    <constraint firstAttribute="height" constant="45" id="sFw-Ok-GMb"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Login with LinkedIn">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="loginLinkedlnTouched:" destination="Spf-oD-270" eventType="touchUpInside" id="7dv-1o-YEM"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x7z-aA-6Kp">
-                                <rect key="frame" x="35" y="515" width="250" height="45"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x7z-aA-6Kp">
+                                <rect key="frame" x="35" y="520" width="250" height="45"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="9xb-0J-gkK"/>
@@ -178,8 +162,8 @@
                                     <action selector="loginGoogleTouched:" destination="Spf-oD-270" eventType="touchUpInside" id="NZK-ug-b1m"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJ6-fi-DPt">
-                                <rect key="frame" x="35" y="455" width="250" height="45"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJ6-fi-DPt">
+                                <rect key="frame" x="35" y="460" width="250" height="45"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="z1z-rZ-hTU"/>
@@ -191,6 +175,22 @@
                                 </state>
                                 <connections>
                                     <action selector="loginFacebookTouched:" destination="Spf-oD-270" eventType="touchUpInside" id="bh5-mp-BW0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bG-bO-6aE">
+                                <rect key="frame" x="35" y="400" width="250" height="45"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="Utd-yr-lMK"/>
+                                    <constraint firstAttribute="height" constant="45" id="sFw-Ok-GMb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Login with LinkedIn">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginLinkedlnTouched:" destination="Spf-oD-270" eventType="touchUpInside" id="7dv-1o-YEM"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -216,7 +216,7 @@
                             <constraint firstAttribute="centerX" secondItem="uJ6-fi-DPt" secondAttribute="centerX" id="dW9-M4-PPt"/>
                             <constraint firstItem="xIp-zy-qzC" firstAttribute="leading" secondItem="IY4-or-9ja" secondAttribute="leading" id="gLS-mT-l8B"/>
                             <constraint firstItem="xIp-zy-qzC" firstAttribute="top" secondItem="0Kn-CO-abf" secondAttribute="bottom" constant="20" id="pbS-Fx-mLj"/>
-                            <constraint firstItem="6bG-bO-6aE" firstAttribute="top" secondItem="xIp-zy-qzC" secondAttribute="bottom" constant="150" id="qav-dx-Dqt"/>
+                            <constraint firstItem="6bG-bO-6aE" firstAttribute="top" secondItem="xIp-zy-qzC" secondAttribute="bottom" constant="100" id="qav-dx-Dqt"/>
                             <constraint firstAttribute="centerX" secondItem="0Kn-CO-abf" secondAttribute="centerX" id="tMl-MR-8p2"/>
                             <constraint firstAttribute="centerX" secondItem="6bG-bO-6aE" secondAttribute="centerX" id="w3y-dt-aCH"/>
                         </constraints>

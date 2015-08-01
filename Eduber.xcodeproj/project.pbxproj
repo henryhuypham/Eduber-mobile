@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		08E43F9DDE79A8B733B8B24B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCB3AB03E3CF78806BC3AED2 /* libPods.a */; };
 		4C5DE2201B6CA77100B85BB8 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5DE21F1B6CA77100B85BB8 /* LoginViewController.m */; };
-
+		4C5DE2231B6CB3D900B85BB8 /* TeacherRegisterClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5DE2221B6CB3D900B85BB8 /* TeacherRegisterClassViewController.m */; };
+		4C5DE23B1B6CCE3A00B85BB8 /* LeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5DE23A1B6CCE3A00B85BB8 /* LeftMenuViewController.m */; };
+		4C5DE23E1B6CCE4500B85BB8 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5DE23D1B6CCE4500B85BB8 /* SWRevealViewController.m */; };
+		4C5DE2411B6CCE6000B85BB8 /* LeftMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5DE2401B6CCE6000B85BB8 /* LeftMenuTableViewCell.m */; };
 		842266121B6CB05F00AABFB6 /* UIButton+Style.m in Sources */ = {isa = PBXBuildFile; fileRef = 842266111B6CB05F00AABFB6 /* UIButton+Style.m */; };
 		842266151B6CB12400AABFB6 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 842266141B6CB12400AABFB6 /* UIImage+Color.m */; };
 		842266201B6CC55300AABFB6 /* UIImage+BlurredFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 8422661D1B6CC55300AABFB6 /* UIImage+BlurredFrame.m */; };
 		842266211B6CC55300AABFB6 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 8422661F1B6CC55300AABFB6 /* UIImage+ImageEffects.m */; };
-		4C5DE2231B6CB3D900B85BB8 /* TeacherRegisterClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5DE2221B6CB3D900B85BB8 /* TeacherRegisterClassViewController.m */; };
 		8708A3C71B6C86860012484E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8708A3C61B6C86860012484E /* main.m */; };
 		8708A3CA1B6C86860012484E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8708A3C91B6C86860012484E /* AppDelegate.m */; };
 		8708A3D01B6C86860012484E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8708A3CE1B6C86860012484E /* Main.storyboard */; };
@@ -42,6 +44,15 @@
 		058077DC531D626741DCE35B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		4C5DE21E1B6CA77100B85BB8 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = ViewControllers/LoginViewController.h; sourceTree = "<group>"; };
 		4C5DE21F1B6CA77100B85BB8 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = ViewControllers/LoginViewController.m; sourceTree = "<group>"; };
+		4C5DE2211B6CB3D900B85BB8 /* TeacherRegisterClassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TeacherRegisterClassViewController.h; path = ViewControllers/TeacherRegisterClassViewController.h; sourceTree = "<group>"; };
+		4C5DE2221B6CB3D900B85BB8 /* TeacherRegisterClassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TeacherRegisterClassViewController.m; path = ViewControllers/TeacherRegisterClassViewController.m; sourceTree = "<group>"; };
+		4C5DE2391B6CCE3A00B85BB8 /* LeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeftMenuViewController.h; path = ViewControllers/LeftMenuViewController.h; sourceTree = "<group>"; };
+		4C5DE23A1B6CCE3A00B85BB8 /* LeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LeftMenuViewController.m; path = ViewControllers/LeftMenuViewController.m; sourceTree = "<group>"; };
+		4C5DE23C1B6CCE4500B85BB8 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = ViewControllers/SWRevealViewController/SWRevealViewController.h; sourceTree = "<group>"; };
+		4C5DE23D1B6CCE4500B85BB8 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = ViewControllers/SWRevealViewController/SWRevealViewController.m; sourceTree = "<group>"; };
+		4C5DE23F1B6CCE6000B85BB8 /* LeftMenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMenuTableViewCell.h; sourceTree = "<group>"; };
+		4C5DE2401B6CCE6000B85BB8 /* LeftMenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuTableViewCell.m; sourceTree = "<group>"; };
+		7AAAF699BC1C757B5D3D8778 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		842266101B6CB05F00AABFB6 /* UIButton+Style.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Style.h"; sourceTree = "<group>"; };
 		842266111B6CB05F00AABFB6 /* UIButton+Style.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Style.m"; sourceTree = "<group>"; };
 		842266131B6CB12400AABFB6 /* UIImage+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
@@ -52,9 +63,6 @@
 		8422661D1B6CC55300AABFB6 /* UIImage+BlurredFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BlurredFrame.m"; sourceTree = "<group>"; };
 		8422661E1B6CC55300AABFB6 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
 		8422661F1B6CC55300AABFB6 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
-		4C5DE2211B6CB3D900B85BB8 /* TeacherRegisterClassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TeacherRegisterClassViewController.h; path = ViewControllers/TeacherRegisterClassViewController.h; sourceTree = "<group>"; };
-		4C5DE2221B6CB3D900B85BB8 /* TeacherRegisterClassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TeacherRegisterClassViewController.m; path = ViewControllers/TeacherRegisterClassViewController.m; sourceTree = "<group>"; };
-		7AAAF699BC1C757B5D3D8778 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		8708A3C11B6C86860012484E /* Eduber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eduber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8708A3C51B6C86860012484E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8708A3C61B6C86860012484E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -106,12 +114,16 @@
 		4C5DE21A1B6C994900B85BB8 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				4C5DE2391B6CCE3A00B85BB8 /* LeftMenuViewController.h */,
+				4C5DE23A1B6CCE3A00B85BB8 /* LeftMenuViewController.m */,
 				4C5DE21E1B6CA77100B85BB8 /* LoginViewController.h */,
 				4C5DE21F1B6CA77100B85BB8 /* LoginViewController.m */,
 				878B3E881B6CA3F3006B8710 /* StudentStudyFieldsViewController.h */,
 				878B3E891B6CA3F3006B8710 /* StudentStudyFieldsViewController.m */,
 				4C5DE2211B6CB3D900B85BB8 /* TeacherRegisterClassViewController.h */,
 				4C5DE2221B6CB3D900B85BB8 /* TeacherRegisterClassViewController.m */,
+				4C5DE23C1B6CCE4500B85BB8 /* SWRevealViewController.h */,
+				4C5DE23D1B6CCE4500B85BB8 /* SWRevealViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -200,6 +212,8 @@
 		878B3E8E1B6CA7D0006B8710 /* ViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				4C5DE23F1B6CCE6000B85BB8 /* LeftMenuTableViewCell.h */,
+				4C5DE2401B6CCE6000B85BB8 /* LeftMenuTableViewCell.m */,
 				878B3E8B1B6CA7CC006B8710 /* StudyFieldCellCollectionViewCell.h */,
 				878B3E8C1B6CA7CC006B8710 /* StudyFieldCellCollectionViewCell.m */,
 				878B3E8F1B6CA7FE006B8710 /* StudyFieldCellCollectionViewCell.xib */,
@@ -354,17 +368,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C5DE2411B6CCE6000B85BB8 /* LeftMenuTableViewCell.m in Sources */,
 				842266201B6CC55300AABFB6 /* UIImage+BlurredFrame.m in Sources */,
 				8708A3CA1B6C86860012484E /* AppDelegate.m in Sources */,
 				878B3E8D1B6CA7CC006B8710 /* StudyFieldCellCollectionViewCell.m in Sources */,
 				842266151B6CB12400AABFB6 /* UIImage+Color.m in Sources */,
 				8708A3C71B6C86860012484E /* main.m in Sources */,
 				842266211B6CC55300AABFB6 /* UIImage+ImageEffects.m in Sources */,
-
 				4C5DE2231B6CB3D900B85BB8 /* TeacherRegisterClassViewController.m in Sources */,
 				4C5DE2201B6CA77100B85BB8 /* LoginViewController.m in Sources */,
 				878B3E8A1B6CA3F3006B8710 /* StudentStudyFieldsViewController.m in Sources */,
 				842266121B6CB05F00AABFB6 /* UIButton+Style.m in Sources */,
+				4C5DE23B1B6CCE3A00B85BB8 /* LeftMenuViewController.m in Sources */,
+				4C5DE23E1B6CCE4500B85BB8 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
