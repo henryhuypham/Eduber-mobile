@@ -28,6 +28,7 @@
 		878B3E871B6CA39E006B8710 /* Student.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 878B3E861B6CA39E006B8710 /* Student.storyboard */; };
 		878B3E8A1B6CA3F3006B8710 /* StudentStudyFieldsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 878B3E891B6CA3F3006B8710 /* StudentStudyFieldsViewController.m */; };
 		878B3E8D1B6CA7CC006B8710 /* StudyFieldCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 878B3E8C1B6CA7CC006B8710 /* StudyFieldCollectionViewCell.m */; };
+		878B3E991B6CFB5A006B8710 /* TeacherFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 878B3E981B6CFB5A006B8710 /* TeacherFieldViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,8 @@
 		878B3E891B6CA3F3006B8710 /* StudentStudyFieldsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StudentStudyFieldsViewController.m; path = ViewControllers/StudentStudyFieldsViewController.m; sourceTree = "<group>"; };
 		878B3E8B1B6CA7CC006B8710 /* StudyFieldCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StudyFieldCollectionViewCell.h; path = ViewCells/StudyFieldCollectionViewCell.h; sourceTree = "<group>"; };
 		878B3E8C1B6CA7CC006B8710 /* StudyFieldCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StudyFieldCollectionViewCell.m; path = ViewCells/StudyFieldCollectionViewCell.m; sourceTree = "<group>"; };
+		878B3E971B6CFB5A006B8710 /* TeacherFieldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TeacherFieldViewController.h; path = ViewControllers/TeacherFieldViewController.h; sourceTree = "<group>"; };
+		878B3E981B6CFB5A006B8710 /* TeacherFieldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TeacherFieldViewController.m; path = ViewControllers/TeacherFieldViewController.m; sourceTree = "<group>"; };
 		FCB3AB03E3CF78806BC3AED2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -121,10 +124,12 @@
 				4C5DE21F1B6CA77100B85BB8 /* LoginViewController.m */,
 				878B3E881B6CA3F3006B8710 /* StudentStudyFieldsViewController.h */,
 				878B3E891B6CA3F3006B8710 /* StudentStudyFieldsViewController.m */,
-				4C5DE2211B6CB3D900B85BB8 /* TeacherRegisterClassViewController.h */,
-				4C5DE2221B6CB3D900B85BB8 /* TeacherRegisterClassViewController.m */,
 				4C5DE23C1B6CCE4500B85BB8 /* SWRevealViewController.h */,
 				4C5DE23D1B6CCE4500B85BB8 /* SWRevealViewController.m */,
+				4C5DE2211B6CB3D900B85BB8 /* TeacherRegisterClassViewController.h */,
+				4C5DE2221B6CB3D900B85BB8 /* TeacherRegisterClassViewController.m */,
+				878B3E971B6CFB5A006B8710 /* TeacherFieldViewController.h */,
+				878B3E981B6CFB5A006B8710 /* TeacherFieldViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -378,6 +383,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C5DE2411B6CCE6000B85BB8 /* LeftMenuTableViewCell.m in Sources */,
+				878B3E991B6CFB5A006B8710 /* TeacherFieldViewController.m in Sources */,
 				842266201B6CC55300AABFB6 /* UIImage+BlurredFrame.m in Sources */,
 				8708A3CA1B6C86860012484E /* AppDelegate.m in Sources */,
 				878B3E8D1B6CA7CC006B8710 /* StudyFieldCollectionViewCell.m in Sources */,
