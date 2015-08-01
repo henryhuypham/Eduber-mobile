@@ -132,6 +132,10 @@
         case 2:
                rootViewController =  (StudentClassListViewController *)[sb instantiateViewControllerWithIdentifier:@"studentClassListViewController"];
             break;
+        case 4:
+            sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+            rootViewController =  (StudentClassListViewController *)[sb instantiateViewControllerWithIdentifier:@"loginViewController"];
+            break;
         case 6:
             rootViewController = nil;
             break;

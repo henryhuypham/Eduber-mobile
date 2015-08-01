@@ -25,6 +25,10 @@
     [self setupView];
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    self.navigationController.navigationBar.hidden = YES;
+}
+
 -(void)setupView{
     [self.facebookButton applyFacebookStyle];
     [self.linkedinButton applyLinkedInStyle];
