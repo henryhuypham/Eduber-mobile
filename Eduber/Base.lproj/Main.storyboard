@@ -353,7 +353,7 @@
                                                     </mask>
                                                 </variation>
                                             </tableView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JRZ-1o-YsI" customClass="NZCircularImageView">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="obama" translatesAutoresizingMaskIntoConstraints="NO" id="JRZ-1o-YsI" customClass="NZCircularImageView">
                                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
@@ -404,7 +404,7 @@
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UserName" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l8V-j4-dc0">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Obama" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l8V-j4-dc0">
                                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="140" id="QIF-L0-amZ"/>
@@ -422,7 +422,7 @@
                                                     </mask>
                                                 </variation>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="locnguyen05081991@gmail.com" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXR-u4-a9w">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="obama@gmail.com" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXR-u4-a9w">
                                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
@@ -567,7 +567,7 @@
                         <color key="backgroundColor" red="0.76078431369999999" green="0.76078431369999999" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="QGL-Cf-d6e" firstAttribute="leading" secondItem="aom-IH-Y3r" secondAttribute="leading" id="43I-a0-w0i"/>
-                            <constraint firstItem="QGL-Cf-d6e" firstAttribute="top" secondItem="oY0-a9-kIC" secondAttribute="top" id="VrZ-Bk-cMB"/>
+                            <constraint firstItem="QGL-Cf-d6e" firstAttribute="top" secondItem="oY0-a9-kIC" secondAttribute="top" constant="20" id="VrZ-Bk-cMB"/>
                             <constraint firstItem="dct-pu-5nl" firstAttribute="top" secondItem="QGL-Cf-d6e" secondAttribute="bottom" id="dFJ-c3-e7b"/>
                         </constraints>
                         <variation key="default">
@@ -609,6 +609,7 @@
         <image name="btn_confirm" width="800" height="100"/>
         <image name="eduber_text" width="1300" height="551"/>
         <image name="ico_login" width="31" height="26"/>
+        <image name="obama" width="311" height="311"/>
         <image name="profressor_login_icon" width="258" height="255"/>
         <image name="student_login_icon" width="798" height="836"/>
         <image name="student_login_nocolor_icon" width="798" height="836"/>
