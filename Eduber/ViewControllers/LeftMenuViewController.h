@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "StudentClassListViewController.h"
 
 @interface LeftMenuViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>{
     NSInteger _presentedRow;

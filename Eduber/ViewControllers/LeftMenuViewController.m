@@ -129,6 +129,9 @@
         case 1:
             rootViewController = nil;
             break;
+        case 2:
+               rootViewController =  (StudentClassListViewController *)[sb instantiateViewControllerWithIdentifier:@"studentClassListViewController"];
+            break;
         case 6:
             rootViewController = nil;
             break;
