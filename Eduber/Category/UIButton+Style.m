@@ -32,7 +32,7 @@
     [self addSubview:imageView];
     //----------
 //    [self setBackgroundImage:[[UIImage alloc] initWithSize:self.frame.size andColor:kBlueFacebookColor] forState:UIControlStateNormal];
-//    [self setBackgroundImage:[[UIImage alloc] initWithSize:self.frame.size andColor:kBlueFacebookColor] forState:UIControlStateHighlighted];
+    [self setBackgroundImage:[[UIImage alloc] initWithSize:self.frame.size andColor:kBlueFacebookColor] forState:UIControlStateHighlighted];
     
     CALayer *layer = self.layer;
     layer.backgroundColor = [[UIColor clearColor] CGColor];
@@ -55,7 +55,7 @@
     [self addSubview:imageView];
     //----------
 //    [self setBackgroundImage:[[UIImage alloc] initWithSize:self.frame.size andColor:kRedGoogleColor] forState:UIControlStateNormal];
-//    [self setBackgroundImage:[[UIImage alloc] initWithSize:self.frame.size andColor:kRedGoogleColor] forState:UIControlStateHighlighted];
+    [self setBackgroundImage:[[UIImage alloc] initWithSize:self.frame.size andColor:kRedGoogleColor] forState:UIControlStateHighlighted];
     
     CALayer *layer = self.layer;
     layer.backgroundColor = [[UIColor clearColor] CGColor];
@@ -78,7 +78,7 @@
     [self addSubview:imageView];
     //----------
 //    [self setBackgroundImage:[[UIImage alloc] initWithSize:self.frame.size andColor:kBlueLinkedInColor] forState:UIControlStateNormal];
-//    [self setBackgroundImage:[[UIImage alloc] initWithSize:self.frame.size andColor:kBlueLinkedInColor] forState:UIControlStateHighlighted];
+    [self setBackgroundImage:[[UIImage alloc] initWithSize:self.frame.size andColor:kBlueLinkedInColor] forState:UIControlStateHighlighted];
     
     CALayer *layer = self.layer;
     layer.backgroundColor = [[UIColor clearColor] CGColor];
