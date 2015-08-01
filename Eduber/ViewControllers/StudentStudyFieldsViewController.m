@@ -17,30 +17,8 @@
     [super viewDidLoad];
     
     // Do any additional setup after loading the view.
-    self.studyFields = [[NSMutableArray alloc] initWithObjects: @"English", @"Math", @"Physics", @"Chemistry", @"Economics", nil];
-    
+    self.scrollviewWidth.constant = self.view.bounds.size.width - 2 * self.scrollviewSidePadding.constant;
 }
 
-#pragma collectionview delegate
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return 1;
-}
-
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return self.studyFields.count;
-}
-
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    
-    StudyFieldCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kCollectionViewCell forIndexPath:indexPath];
-    
-    if (!cell) {
-        cell = [[StudyFieldCollectionViewCell alloc] init];
-    }
-    
-    cell.studyFieldName.text = [self.studyFields objectAtIndex:indexPath.row];
-    
-    return cell;
-}
 
 @end

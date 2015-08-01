@@ -31,6 +31,7 @@
 		878B3E8A1B6CA3F3006B8710 /* StudentStudyFieldsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 878B3E891B6CA3F3006B8710 /* StudentStudyFieldsViewController.m */; };
 		878B3E8D1B6CA7CC006B8710 /* StudyFieldCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 878B3E8C1B6CA7CC006B8710 /* StudyFieldCollectionViewCell.m */; };
 		878B3E991B6CFB5A006B8710 /* TeacherFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 878B3E981B6CFB5A006B8710 /* TeacherFieldViewController.m */; };
+		878B3E9C1B6D17D0006B8710 /* StudentClassSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 878B3E9B1B6D17D0006B8710 /* StudentClassSelectViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,8 @@
 		878B3E8C1B6CA7CC006B8710 /* StudyFieldCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StudyFieldCollectionViewCell.m; path = ViewCells/StudyFieldCollectionViewCell.m; sourceTree = "<group>"; };
 		878B3E971B6CFB5A006B8710 /* TeacherFieldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TeacherFieldViewController.h; path = ViewControllers/TeacherFieldViewController.h; sourceTree = "<group>"; };
 		878B3E981B6CFB5A006B8710 /* TeacherFieldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TeacherFieldViewController.m; path = ViewControllers/TeacherFieldViewController.m; sourceTree = "<group>"; };
+		878B3E9A1B6D17D0006B8710 /* StudentClassSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StudentClassSelectViewController.h; path = ViewControllers/StudentClassSelectViewController.h; sourceTree = "<group>"; };
+		878B3E9B1B6D17D0006B8710 /* StudentClassSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StudentClassSelectViewController.m; path = ViewControllers/StudentClassSelectViewController.m; sourceTree = "<group>"; };
 		FCB3AB03E3CF78806BC3AED2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -128,6 +131,8 @@
 				4C5DE21F1B6CA77100B85BB8 /* LoginViewController.m */,
 				878B3E881B6CA3F3006B8710 /* StudentStudyFieldsViewController.h */,
 				878B3E891B6CA3F3006B8710 /* StudentStudyFieldsViewController.m */,
+				878B3E9A1B6D17D0006B8710 /* StudentClassSelectViewController.h */,
+				878B3E9B1B6D17D0006B8710 /* StudentClassSelectViewController.m */,
 				4C5DE23C1B6CCE4500B85BB8 /* SWRevealViewController.h */,
 				4C5DE23D1B6CCE4500B85BB8 /* SWRevealViewController.m */,
 				4C5DE2211B6CB3D900B85BB8 /* TeacherRegisterClassViewController.h */,
@@ -408,6 +413,7 @@
 				842266151B6CB12400AABFB6 /* UIImage+Color.m in Sources */,
 				8708A3C71B6C86860012484E /* main.m in Sources */,
 				842266251B6CE30F00AABFB6 /* CustomNavigationBar.m in Sources */,
+				878B3E9C1B6D17D0006B8710 /* StudentClassSelectViewController.m in Sources */,
 				842266211B6CC55300AABFB6 /* UIImage+ImageEffects.m in Sources */,
 				4C5DE2231B6CB3D900B85BB8 /* TeacherRegisterClassViewController.m in Sources */,
 				4C5DE2201B6CA77100B85BB8 /* LoginViewController.m in Sources */,
