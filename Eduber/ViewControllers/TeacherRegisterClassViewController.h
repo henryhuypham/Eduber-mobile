@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface TeacherRegisterClassViewController : UIViewController
+- (IBAction)toeicSelected:(id)sender;
 
 @end

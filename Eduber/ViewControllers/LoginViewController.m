@@ -147,7 +147,8 @@
         viewController=(TeacherRegisterClassViewController *)[sb instantiateViewControllerWithIdentifier:@"teacherRegisterClassViewController"];
     }
     sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    LeftMenuViewController *leftMenuViewController = (LeftMenuViewController *)[sb instantiateViewControllerWithIdentifier:@"leftMenuViewController"];    UINavigationController *frontNavigationController = [[UINavigationController alloc] initWithNavigationBarClass:[CustomNavigationBar class] toolbarClass:nil];
+    LeftMenuViewController *leftMenuViewController = (LeftMenuViewController *)[sb instantiateViewControllerWithIdentifier:@"leftMenuViewController"];
+    UINavigationController *frontNavigationController = [[UINavigationController alloc] initWithNavigationBarClass:[CustomNavigationBar class] toolbarClass:nil];
     leftMenuViewController.loginModeSelected = loginModeSelected;
     [frontNavigationController setViewControllers:@[viewController] animated:NO];
       UIViewController *viewController2 =(LoginViewController *)[sb instantiateViewControllerWithIdentifier:@"loginViewController"];

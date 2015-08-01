@@ -53,14 +53,27 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="148" height="139"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             </imageView>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82w-Pl-fRp">
+                                                                <rect key="frame" x="0.0" y="0.0" width="148" height="163"/>
+                                                                <state key="normal">
+                                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="toeicSelected:" destination="gIr-bv-Hi8" eventType="touchUpInside" id="n2n-Zb-whY"/>
+                                                                </connections>
+                                                            </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <constraints>
                                                             <constraint firstItem="h4f-yG-96A" firstAttribute="top" secondItem="9BS-T5-cJj" secondAttribute="top" id="4wg-4v-KMe"/>
                                                             <constraint firstItem="Oak-9A-bbF" firstAttribute="top" secondItem="h4f-yG-96A" secondAttribute="bottom" id="D5e-El-z8u"/>
+                                                            <constraint firstAttribute="bottom" secondItem="82w-Pl-fRp" secondAttribute="bottom" id="Da6-aQ-8dG"/>
                                                             <constraint firstAttribute="trailing" secondItem="h4f-yG-96A" secondAttribute="trailing" id="Txc-xG-i9m"/>
                                                             <constraint firstItem="h4f-yG-96A" firstAttribute="leading" secondItem="9BS-T5-cJj" secondAttribute="leading" id="Vx3-TJ-G93"/>
+                                                            <constraint firstItem="82w-Pl-fRp" firstAttribute="leading" secondItem="9BS-T5-cJj" secondAttribute="leading" id="dTm-VG-e45"/>
                                                             <constraint firstAttribute="bottom" secondItem="Oak-9A-bbF" secondAttribute="bottom" id="gLZ-qh-0GW"/>
+                                                            <constraint firstItem="82w-Pl-fRp" firstAttribute="top" secondItem="9BS-T5-cJj" secondAttribute="top" id="lH1-4v-RPj"/>
+                                                            <constraint firstAttribute="trailing" secondItem="82w-Pl-fRp" secondAttribute="trailing" id="n44-zV-YdQ"/>
                                                             <constraint firstAttribute="trailing" secondItem="Oak-9A-bbF" secondAttribute="trailing" id="tTg-Sq-aBA"/>
                                                             <constraint firstAttribute="width" secondItem="9BS-T5-cJj" secondAttribute="height" multiplier="1:1.1" id="vVM-hB-B0m"/>
                                                             <constraint firstItem="Oak-9A-bbF" firstAttribute="leading" secondItem="9BS-T5-cJj" secondAttribute="leading" id="vVT-Tb-nX5"/>
@@ -340,7 +353,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YwK-Q7-3vH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1054" y="234"/>
+            <point key="canvasLocation" x="1142" y="234"/>
         </scene>
         <!--Teacher Field View Controller-->
         <scene sceneID="IOP-At-95E">
@@ -389,15 +402,28 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="148" height="139"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             </imageView>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vpB-20-mL7">
+                                                                <rect key="frame" x="0.0" y="0.0" width="148" height="163"/>
+                                                                <state key="normal">
+                                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="englishFieldSelected:" destination="W40-kf-clm" eventType="touchUpInside" id="1yy-zQ-0kE"/>
+                                                                </connections>
+                                                            </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <constraints>
                                                             <constraint firstItem="gBX-yD-Ph8" firstAttribute="leading" secondItem="Lgz-5p-hFE" secondAttribute="leading" id="8VG-sL-TYi"/>
+                                                            <constraint firstAttribute="bottom" secondItem="vpB-20-mL7" secondAttribute="bottom" id="OHF-t0-idZ"/>
                                                             <constraint firstItem="gBX-yD-Ph8" firstAttribute="top" secondItem="Lgz-5p-hFE" secondAttribute="top" id="RC5-mK-dfr"/>
+                                                            <constraint firstItem="vpB-20-mL7" firstAttribute="top" secondItem="Lgz-5p-hFE" secondAttribute="top" id="UcQ-hR-Y4c"/>
+                                                            <constraint firstAttribute="trailing" secondItem="vpB-20-mL7" secondAttribute="trailing" id="W0Q-Oj-NJH"/>
                                                             <constraint firstAttribute="trailing" secondItem="gBX-yD-Ph8" secondAttribute="trailing" id="abD-9P-RY8"/>
                                                             <constraint firstItem="EhD-4Q-DrK" firstAttribute="leading" secondItem="Lgz-5p-hFE" secondAttribute="leading" id="giG-wZ-Tpq"/>
                                                             <constraint firstItem="EhD-4Q-DrK" firstAttribute="top" secondItem="gBX-yD-Ph8" secondAttribute="bottom" id="h7t-Kc-QU7"/>
                                                             <constraint firstAttribute="bottom" secondItem="EhD-4Q-DrK" secondAttribute="bottom" id="ipK-nt-GMM"/>
+                                                            <constraint firstItem="vpB-20-mL7" firstAttribute="leading" secondItem="Lgz-5p-hFE" secondAttribute="leading" id="n8s-YP-uQ6"/>
                                                             <constraint firstAttribute="trailing" secondItem="EhD-4Q-DrK" secondAttribute="trailing" id="xr7-vN-dZk"/>
                                                             <constraint firstAttribute="width" secondItem="Lgz-5p-hFE" secondAttribute="height" multiplier="1:1.1" id="ycI-vu-reF"/>
                                                         </constraints>
@@ -677,6 +703,7 @@
                     <connections>
                         <outlet property="scrollviewSidePadding" destination="fg1-uG-eEo" id="CEm-2D-ra8"/>
                         <outlet property="scrollviewWidth" destination="PvI-XV-rUR" id="HZy-wP-eYq"/>
+                        <segue destination="gIr-bv-Hi8" kind="show" id="5NA-hp-bHB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c0g-0A-71k" userLabel="First Responder" sceneMemberID="firstResponder"/>

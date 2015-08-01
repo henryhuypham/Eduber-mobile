@@ -21,4 +21,6 @@
 
 
 
+- (IBAction)toeicSelected:(id)sender {
+}
 @end

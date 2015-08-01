@@ -13,4 +13,7 @@
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *scrollviewWidth;
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *scrollviewSidePadding;
 
+- (IBAction)englishFieldSelected:(id)sender;
+
+
 @end
