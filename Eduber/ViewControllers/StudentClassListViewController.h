@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "StudentClassCell.h"
 #import "StudentClassInfo.h"
+#import "WebViewOthersViewController.h"
 
 @interface StudentClassListViewController : UIViewController<UITableViewDataSource, UITableViewDelegate,StudentClassCellDelegate>
 

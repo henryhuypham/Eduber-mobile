@@ -55,6 +55,7 @@
 		8427E0F41B6D88B300EF96D5 /* UITabBar+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 8427E0DE1B6D88B300EF96D5 /* UITabBar+FlatUI.m */; };
 		8427E0F51B6D88B300EF96D5 /* UITableViewCell+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 8427E0E01B6D88B300EF96D5 /* UITableViewCell+FlatUI.m */; };
 		8427E0F61B6D88B300EF96D5 /* UIToolbar+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 8427E0E21B6D88B300EF96D5 /* UIToolbar+FlatUI.m */; };
+		8427E0F91B6D90FC00EF96D5 /* WebViewOthersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8427E0F81B6D90FC00EF96D5 /* WebViewOthersViewController.m */; };
 		8708A3C71B6C86860012484E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8708A3C61B6C86860012484E /* main.m */; };
 		8708A3CA1B6C86860012484E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8708A3C91B6C86860012484E /* AppDelegate.m */; };
 		8708A3D01B6C86860012484E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8708A3CE1B6C86860012484E /* Main.storyboard */; };
@@ -177,6 +178,8 @@
 		8427E0E01B6D88B300EF96D5 /* UITableViewCell+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+FlatUI.m"; sourceTree = "<group>"; };
 		8427E0E11B6D88B300EF96D5 /* UIToolbar+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIToolbar+FlatUI.h"; sourceTree = "<group>"; };
 		8427E0E21B6D88B300EF96D5 /* UIToolbar+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIToolbar+FlatUI.m"; sourceTree = "<group>"; };
+		8427E0F71B6D90FC00EF96D5 /* WebViewOthersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebViewOthersViewController.h; path = ViewControllers/WebViewOthersViewController.h; sourceTree = "<group>"; };
+		8427E0F81B6D90FC00EF96D5 /* WebViewOthersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebViewOthersViewController.m; path = ViewControllers/WebViewOthersViewController.m; sourceTree = "<group>"; };
 		8708A3C11B6C86860012484E /* Eduber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eduber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8708A3C51B6C86860012484E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8708A3C61B6C86860012484E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -238,6 +241,8 @@
 		4C5DE21A1B6C994900B85BB8 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				8427E0F71B6D90FC00EF96D5 /* WebViewOthersViewController.h */,
+				8427E0F81B6D90FC00EF96D5 /* WebViewOthersViewController.m */,
 				8427E0A01B6D726F00EF96D5 /* StudentClassListViewController.h */,
 				8427E0A11B6D726F00EF96D5 /* StudentClassListViewController.m */,
 				8427E0901B6D5A8100EF96D5 /* ProfessorListViewController.h */,
@@ -672,6 +677,7 @@
 				878B3E9C1B6D17D0006B8710 /* StudentClassSelectViewController.m in Sources */,
 				8427E0A21B6D726F00EF96D5 /* StudentClassListViewController.m in Sources */,
 				842266211B6CC55300AABFB6 /* UIImage+ImageEffects.m in Sources */,
+				8427E0F91B6D90FC00EF96D5 /* WebViewOthersViewController.m in Sources */,
 				4C5DE2201B6CA77100B85BB8 /* LoginViewController.m in Sources */,
 				8427E0B61B6D839000EF96D5 /* ChatStyling.m in Sources */,
 				8427E0F11B6D88B300EF96D5 /* UIProgressView+FlatUI.m in Sources */,

@@ -174,4 +174,11 @@
     [self allPreChatFieldsOptional];
 }
 
+-(void)viewClassMap:(NSString *) mapURL{
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Student" bundle:nil];
+    WebViewOthersViewController *viewController = (WebViewOthersViewController *)[sb instantiateViewControllerWithIdentifier:@"WebViewOthersViewController"];
+    viewController.urlString = mapURL;
+    [self.navigationController  pushViewController:viewController animated:YES];
+}
+
 @end

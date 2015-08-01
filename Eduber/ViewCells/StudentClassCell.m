@@ -38,6 +38,9 @@
     [self.chatBT applyAppStyle];
     [self.chatBT setBackgroundImage:[UIImage  imageWithColor:kOrangeContact cornerRadius:0] forState:UIControlStateNormal];
     
+    //button
+    [self.mapBT applyAppStyle];
+    
     //corner
     self.layer.borderColor = [[UIColor whiteColor] CGColor];
     self.layer.borderWidth = 2;
@@ -50,6 +53,10 @@
 
 -(IBAction)chatAction:(id)sender{
     [self.delegate chatWithTeacher];
+}
+
+- (IBAction)mapAction:(id)sender{
+    [self.delegate viewClassMap:@"https://www.google.com/maps/place/1+L%C3%AA+Du%E1%BA%A9n,+B%E1%BA%BFn+Ngh%C3%A9,+Qu%E1%BA%ADn+1,+H%E1%BB%93+Ch%C3%AD+Minh,+Vi%E1%BB%87t+Nam/@10.781613,106.699011,17z/data=!3m1!4b1!4m2!3m1!1s0x31752f3630448cc3:0xefd07452d0fa1062"];
 }
 
 

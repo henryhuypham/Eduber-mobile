@@ -48,9 +48,9 @@
 
 
 //Colors
-#define kBlueLinkedInColor          [UIColor colorWithRed:20/255.0f green:103/255.0f blue:166/255.0f    alpha:1]
-#define kRedGoogleColor             [UIColor colorWithRed:211/255.0f green:47/255.0f blue:30/255.0f    alpha:1]
-#define kBlueFacebookColor          [UIColor colorWithRed:68/255.0f green:90/255.0f blue:159/255.0f    alpha:1]
+#define kBlueLinkedInColor          [UIColor colorWithRed:20/255.0f green:103/255.0f blue:166/255.0f    alpha:0.5]
+#define kRedGoogleColor             [UIColor colorWithRed:211/255.0f green:47/255.0f blue:30/255.0f    alpha:0.5]
+#define kBlueFacebookColor          [UIColor colorWithRed:68/255.0f green:90/255.0f blue:159/255.0f    alpha:0.5]
 #define kLightGray                  [UIColor colorWithRed:0.9 green:0.9 blue:0.9    alpha:1]
 #define kBlueColor                  [UIColor colorWithRed:0 green:0.44 blue:0.66    alpha:1]
 #define kLightBlueColor             [UIColor colorWithRed:0.98 green:0.99 blue:0.99 alpha:1]

@@ -41,6 +41,11 @@
     } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error) {
         
     }];
+    
+    self.avatarView.layer.masksToBounds = YES;
+    self.avatarView.layer.borderWidth = 2;
+    self.avatarView.layer.borderColor = [UIColor whiteColor].CGColor;
+    self.avatarView.contentMode = UIViewContentModeScaleAspectFill;
 }
 
 

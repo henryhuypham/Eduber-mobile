@@ -18,7 +18,7 @@
     //corner
     self.layer.borderColor = [[UIColor whiteColor] CGColor];
     self.layer.borderWidth = 2;
-    self.layer.cornerRadius = 3;
+    self.layer.cornerRadius = 5;
     self.clipsToBounds = YES;
 }
 

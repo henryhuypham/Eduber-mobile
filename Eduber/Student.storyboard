@@ -1544,8 +1544,8 @@ to select your class.</string>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OdH-JB-zQf" id="FNf-rx-eVe">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="09q-f0-S5c">
-                                                    <rect key="frame" x="3" y="3" width="314" height="153.5"/>
+                                                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="09q-f0-S5c">
+                                                    <rect key="frame" x="3" y="2" width="314" height="153.5"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TI8-xq-noO" userLabel="Header">
                                                             <rect key="frame" x="0.0" y="0.0" width="314" height="29.5"/>
@@ -1601,12 +1601,24 @@ to select your class.</string>
                                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                     <nil key="highlightedColor"/>
+                                                                    <variation key="widthClass=compact" ambiguous="YES">
+                                                                        <rect key="frame" x="0.0" y="4" width="57.5" height="16"/>
+                                                                    </variation>
+                                                                    <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                                                        <rect key="frame" x="0.0" y="4" width="57.5" height="16"/>
+                                                                    </variation>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mon, Tue, Wed: 6PM - 9PM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Bm-T8-Kme">
                                                                     <rect key="frame" x="0.0" y="20" width="222" height="14.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
+                                                                    <variation key="widthClass=compact" ambiguous="YES">
+                                                                        <rect key="frame" x="0.0" y="20" width="222" height="14.5"/>
+                                                                    </variation>
+                                                                    <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                                                        <rect key="frame" x="0.0" y="20" width="222" height="14.5"/>
+                                                                    </variation>
                                                                 </label>
                                                             </subviews>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -1618,6 +1630,12 @@ to select your class.</string>
                                                                 <constraint firstItem="3Bm-T8-Kme" firstAttribute="leading" secondItem="cQ0-Ue-5i9" secondAttribute="leading" id="tZ2-QN-e8a"/>
                                                                 <constraint firstItem="RKo-id-zpl" firstAttribute="top" secondItem="cQ0-Ue-5i9" secondAttribute="top" constant="4" id="xhq-rT-wqw"/>
                                                             </constraints>
+                                                            <variation key="widthClass=compact" ambiguous="YES">
+                                                                <rect key="frame" x="87" y="35" width="222" height="34.5"/>
+                                                            </variation>
+                                                            <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                                                <rect key="frame" x="87" y="35" width="222" height="34.5"/>
+                                                            </variation>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hIS-wP-Hhd" userLabel="Location Group">
                                                             <rect key="frame" x="87" y="71" width="222" height="32.5"/>
@@ -1627,12 +1645,24 @@ to select your class.</string>
                                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                     <nil key="highlightedColor"/>
+                                                                    <variation key="widthClass=compact" ambiguous="YES">
+                                                                        <rect key="frame" x="0.0" y="2" width="53.5" height="16"/>
+                                                                    </variation>
+                                                                    <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                                                        <rect key="frame" x="0.0" y="2" width="53.5" height="16"/>
+                                                                    </variation>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123 Nguyen Thi Minh Khai, ward 5, HCM city" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iqf-3A-6jg">
                                                                     <rect key="frame" x="0.0" y="18" width="222" height="14.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
+                                                                    <variation key="widthClass=compact" ambiguous="YES">
+                                                                        <rect key="frame" x="0.0" y="18" width="222" height="14.5"/>
+                                                                    </variation>
+                                                                    <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                                                        <rect key="frame" x="0.0" y="18" width="222" height="14.5"/>
+                                                                    </variation>
                                                                 </label>
                                                             </subviews>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -1644,6 +1674,12 @@ to select your class.</string>
                                                                 <constraint firstAttribute="bottom" secondItem="Iqf-3A-6jg" secondAttribute="bottom" id="YQu-tK-FHQ"/>
                                                                 <constraint firstAttribute="trailing" secondItem="Iqf-3A-6jg" secondAttribute="trailing" id="v0c-8H-jnF"/>
                                                             </constraints>
+                                                            <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                                                <rect key="frame" x="87" y="70" width="222" height="32.5"/>
+                                                            </variation>
+                                                            <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                                                <rect key="frame" x="87" y="70" width="222" height="32.5"/>
+                                                            </variation>
                                                         </view>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="L5w-7q-dpx">
                                                             <rect key="frame" x="10" y="40" width="60" height="60"/>
@@ -1666,6 +1702,20 @@ to select your class.</string>
                                                                 <action selector="chatAction:" destination="OdH-JB-zQf" eventType="touchUpInside" id="xDY-3e-rDs"/>
                                                             </connections>
                                                         </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0mf-5E-a55">
+                                                            <rect key="frame" x="98" y="113" width="100" height="30"/>
+                                                            <color key="backgroundColor" red="0.94212582239999998" green="0.57113486840000005" blue="0.3515625" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="100" id="kd9-xg-p5B"/>
+                                                            </constraints>
+                                                            <state key="normal" title="Map">
+                                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="mapAction:" destination="OdH-JB-zQf" eventType="touchUpInside" id="vnw-Jd-KwU"/>
+                                                            </connections>
+                                                        </button>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
@@ -1680,12 +1730,14 @@ to select your class.</string>
                                                         <constraint firstAttribute="trailing" secondItem="TI8-xq-noO" secondAttribute="trailing" id="OYF-on-98d"/>
                                                         <constraint firstItem="L5w-7q-dpx" firstAttribute="top" secondItem="TI8-xq-noO" secondAttribute="bottom" constant="10" id="PrY-UA-2vH"/>
                                                         <constraint firstAttribute="width" secondItem="TI8-xq-noO" secondAttribute="width" id="TV1-4H-2mv"/>
+                                                        <constraint firstItem="34z-wn-at9" firstAttribute="centerY" secondItem="0mf-5E-a55" secondAttribute="centerY" id="Tds-dV-XXT"/>
                                                         <constraint firstItem="hIS-wP-Hhd" firstAttribute="top" secondItem="cQ0-Ue-5i9" secondAttribute="bottom" constant="1.5" id="Ugc-qM-wj0"/>
                                                         <constraint firstItem="hIS-wP-Hhd" firstAttribute="leading" secondItem="09q-f0-S5c" secondAttribute="leading" constant="5" id="VcT-bD-6Pv"/>
                                                         <constraint firstAttribute="bottom" secondItem="34z-wn-at9" secondAttribute="bottom" constant="10" id="bIf-bj-aar"/>
                                                         <constraint firstAttribute="width" secondItem="hIS-wP-Hhd" secondAttribute="width" id="bj1-Rl-vrc"/>
                                                         <constraint firstAttribute="trailing" secondItem="34z-wn-at9" secondAttribute="trailing" constant="8" id="bww-su-yew"/>
                                                         <constraint firstItem="TI8-xq-noO" firstAttribute="leading" secondItem="09q-f0-S5c" secondAttribute="leading" id="ceY-Vi-2p4"/>
+                                                        <constraint firstItem="34z-wn-at9" firstAttribute="leading" secondItem="0mf-5E-a55" secondAttribute="trailing" constant="8" id="cjB-Oe-uOO"/>
                                                         <constraint firstItem="cQ0-Ue-5i9" firstAttribute="top" secondItem="TI8-xq-noO" secondAttribute="bottom" constant="5" id="exN-GY-CGU"/>
                                                         <constraint firstAttribute="width" secondItem="TI8-xq-noO" secondAttribute="width" id="ftH-lr-1Ed"/>
                                                         <constraint firstItem="L5w-7q-dpx" firstAttribute="leading" secondItem="09q-f0-S5c" secondAttribute="leading" constant="10" id="kM2-EO-zEH"/>
@@ -1730,6 +1782,7 @@ to select your class.</string>
                                             <outlet property="classnameLB" destination="MFy-XS-vSY" id="XtC-7u-by5"/>
                                             <outlet property="containerView" destination="09q-f0-S5c" id="m6X-Ai-w1n"/>
                                             <outlet property="locationLB" destination="Iqf-3A-6jg" id="YCz-dG-0hU"/>
+                                            <outlet property="mapBT" destination="0mf-5E-a55" id="Lp4-jZ-V3l"/>
                                             <outlet property="numberLB" destination="Qsu-fz-ht7" id="iD0-RP-qE8"/>
                                             <outlet property="scheduleLB" destination="3Bm-T8-Kme" id="FbG-7L-3b7"/>
                                             <outlet property="teacherImageView" destination="L5w-7q-dpx" id="FDx-4J-0hI"/>
@@ -1758,7 +1811,62 @@ to select your class.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gjw-j7-XTz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2046" y="274"/>
+            <point key="canvasLocation" x="2193" y="278.25"/>
+        </scene>
+        <!--Web View Others View Controller-->
+        <scene sceneID="PAP-Sc-WPp">
+            <objects>
+                <viewController storyboardIdentifier="WebViewOthersViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8N5-n5-h2G" customClass="WebViewOthersViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="w89-mk-5CN"/>
+                        <viewControllerLayoutGuide type="bottom" id="bsh-if-zca"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FjV-aI-MA6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Z5-z6-mLI">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="6Z5-z6-mLI" secondAttribute="trailing" constant="-16" id="D05-w0-NcM"/>
+                            <constraint firstItem="6Z5-z6-mLI" firstAttribute="top" secondItem="w89-mk-5CN" secondAttribute="bottom" constant="-20" id="Osz-1C-fPj"/>
+                            <constraint firstItem="6Z5-z6-mLI" firstAttribute="leading" secondItem="FjV-aI-MA6" secondAttribute="leadingMargin" constant="-16" id="Pct-i3-cUm"/>
+                            <constraint firstItem="bsh-if-zca" firstAttribute="top" secondItem="6Z5-z6-mLI" secondAttribute="bottom" id="r0h-iB-hcM"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="6Z5-z6-mLI"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="D05-w0-NcM"/>
+                                <exclude reference="Osz-1C-fPj"/>
+                                <exclude reference="Pct-i3-cUm"/>
+                                <exclude reference="r0h-iB-hcM"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="6Z5-z6-mLI"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="D05-w0-NcM"/>
+                                <include reference="Osz-1C-fPj"/>
+                                <include reference="Pct-i3-cUm"/>
+                                <include reference="r0h-iB-hcM"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="6Z5-z6-mLI" id="DCb-2P-9sk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pyA-P9-vpg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2796" y="294"/>
         </scene>
     </scenes>
     <resources>

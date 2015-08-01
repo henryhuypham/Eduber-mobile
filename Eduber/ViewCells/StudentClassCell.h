@@ -12,6 +12,7 @@
 @protocol StudentClassCellDelegate <NSObject>
 @required
 - (void) chatWithTeacher;
+-(void)viewClassMap:(NSString *) mapURL;
 @end
 
 @interface StudentClassCell : UITableViewCell
@@ -25,6 +26,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *locationLB;
 
 @property (weak, nonatomic) IBOutlet UIButton *chatBT;
+@property (weak, nonatomic) IBOutlet UIButton *mapBT;
 
 @property(nonatomic,retain)id<StudentClassCellDelegate>delegate;
 

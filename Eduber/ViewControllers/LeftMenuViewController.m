@@ -65,7 +65,7 @@
     }else{
         user.name = @"Ngọc Trinh";
         user.email = @"ngoctrinh@gmail.com";
-        user.imageLink = @"http://motthegioi.vn/Uploaded/hoachopmua/2015_03_11/ngoc-trinh-hinh-anh_IHYY.jpg";
+        user.imageLink = @"http://bdeducationnews24.com/wp-content/uploads/2015/06/Medical-College.jpg";
     }
     
     [headerView setInfo:user];
