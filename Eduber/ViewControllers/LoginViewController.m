@@ -98,7 +98,7 @@
     if(loginModeSelected == 1){
         self.studentBackgroundImageView.alpha = 0.0;
         [UIView beginAnimations:nil context:NULL];
-        [UIView setAnimationDuration:1];
+        [UIView setAnimationDuration:0.5];
         self.studentBackgroundImageView.alpha = 1.0;
         [UIView commitAnimations];
     }
@@ -116,13 +116,13 @@
     if(loginModeSelected == 0){
         self.professorBackgroundImageView.alpha = 0;
         [UIView beginAnimations:nil context:NULL];
-        [UIView setAnimationDuration:1];
+        [UIView setAnimationDuration:0.5];
         self.professorBackgroundImageView.alpha = 1.0;
         [UIView commitAnimations];
         
         self.studentBackgroundImageView.alpha = 1.0;
         [UIView beginAnimations:nil context:NULL];
-        [UIView setAnimationDuration:1];
+        [UIView setAnimationDuration:0.5];
         self.studentBackgroundImageView.alpha = 0;
         [UIView commitAnimations];
         [self updateLayouToCurrentLoginMode];
