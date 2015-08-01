@@ -8,6 +8,7 @@
 
 #import "StudentStudyFieldsViewController.h"
 #import "StudyFieldCollectionViewCell.h"
+#import "CustomNavigationBar.h"
 
 #define kCollectionViewCell @"StudyFieldCollectionViewCell"
 
@@ -18,7 +19,7 @@
     
     // Do any additional setup after loading the view.
     self.studyFields = [[NSMutableArray alloc] initWithObjects: @"English", @"Math", @"Physics", @"Chemistry", @"Economics", nil];
-    
+    [self setTitle:@"Subjects"];
 }
 
 #pragma collectionview delegate
