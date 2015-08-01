@@ -41,9 +41,18 @@
 -(void)setupLabel{
     [self.studentLabel setFont:[UIFont boldSystemFontOfSize:16.0f]];
     [self.studentLabel setTextColor:[UIColor whiteColor]];
+    self.studentLabel.layer.borderWidth = 2;
+    self.studentLabel.layer.borderColor = [UIColor whiteColor].CGColor;
     
     [self.profressorLabel setFont:[UIFont boldSystemFontOfSize:16.0f]];
     [self.profressorLabel setTextColor:[UIColor whiteColor]];
+    self.profressorLabel.layer.borderWidth = 2;
+    self.profressorLabel.layer.borderColor = [UIColor whiteColor].CGColor;
+    
+    //set default
+    //label
+    self.studentLabel.backgroundColor = [UIColor orangeColor];
+    self.profressorLabel.backgroundColor = [UIColor clearColor];
 }
 
 -(void)setupImageView{
@@ -90,26 +99,36 @@
 
 - (IBAction)studentButtonTouched:(id)sender {
     loginModeSelected = 0;
-    
-    self.backgroundImageView.alpha = 0;
+    self.studentBackgroundImageView.alpha = 0.0;
     [UIView beginAnimations:nil context:NULL];
     [UIView setAnimationDuration:1];
-    self.backgroundImageView.alpha = 1.0;
-    [self.backgroundImageView setImage:[UIImage imageNamed:@"student_login_nocolor_icon"]];
+    self.studentBackgroundImageView.alpha = 1.0;
     [UIView commitAnimations];
     [self updateLayouToCurrentLoginMode];
+    
+    //label
+    self.studentLabel.backgroundColor = [UIColor orangeColor];
+    self.profressorLabel.backgroundColor = [UIColor clearColor];
 }
 
 - (IBAction)teacherButtonTouched:(id)sender {
     loginModeSelected = 1;
-    
-    self.backgroundImageView.alpha = 0;
+    self.professorBackgroundImageView.alpha = 0;
     [UIView beginAnimations:nil context:NULL];
     [UIView setAnimationDuration:1];
-    self.backgroundImageView.alpha = 1.0;
-    [self.backgroundImageView setImage:[UIImage imageNamed:@"profressor_login_nocolor_icon"]];
+    self.professorBackgroundImageView.alpha = 1.0;
+    [UIView commitAnimations];
+    
+    self.studentBackgroundImageView.alpha = 1.0;
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:1];
+    self.studentBackgroundImageView.alpha = 0;
     [UIView commitAnimations];
     [self updateLayouToCurrentLoginMode];
+    
+    //label
+    self.studentLabel.backgroundColor = [UIColor clearColor];
+    self.profressorLabel.backgroundColor = [UIColor orangeColor];
 }
 
 -(void)updateLayouToCurrentLoginMode{
