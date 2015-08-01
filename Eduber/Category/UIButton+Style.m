@@ -31,11 +31,11 @@
     imageView.image = [UIImage imageNamed:@"fb_icon.png"];
     [self addSubview:imageView];
     //----------
-//    [self setBackgroundImage:[[UIImage alloc] initWithSize:self.frame.size andColor:kBlueFacebookColor] forState:UIControlStateNormal];
+    [self setBackgroundImage:[[UIImage alloc] initWithSize:self.frame.size andColor:kBlueFacebookColor] forState:UIControlStateNormal];
     [self setBackgroundImage:[[UIImage alloc] initWithSize:self.frame.size andColor:kBlueFacebookColor] forState:UIControlStateHighlighted];
     
     CALayer *layer = self.layer;
-    layer.backgroundColor = [[UIColor clearColor] CGColor];
+//    layer.backgroundColor = [[UIColor clearColor] CGColor];
     layer.borderColor = [[UIColor whiteColor] CGColor];
     layer.cornerRadius = 8.0f;
     layer.borderWidth = 1.0f;
@@ -54,11 +54,11 @@
     imageView.image = [UIImage imageNamed:@"google_icon"];
     [self addSubview:imageView];
     //----------
-//    [self setBackgroundImage:[[UIImage alloc] initWithSize:self.frame.size andColor:kRedGoogleColor] forState:UIControlStateNormal];
+    [self setBackgroundImage:[[UIImage alloc] initWithSize:self.frame.size andColor:kRedGoogleColor] forState:UIControlStateNormal];
     [self setBackgroundImage:[[UIImage alloc] initWithSize:self.frame.size andColor:kRedGoogleColor] forState:UIControlStateHighlighted];
     
     CALayer *layer = self.layer;
-    layer.backgroundColor = [[UIColor clearColor] CGColor];
+//    layer.backgroundColor = [[UIColor clearColor] CGColor];
     layer.borderColor = [[UIColor whiteColor] CGColor];
     layer.cornerRadius = 8.0f;
     layer.borderWidth = 1.0f;
@@ -77,11 +77,11 @@
     imageView.image = [UIImage imageNamed:@"linkedin_icon"];
     [self addSubview:imageView];
     //----------
-//    [self setBackgroundImage:[[UIImage alloc] initWithSize:self.frame.size andColor:kBlueLinkedInColor] forState:UIControlStateNormal];
+    [self setBackgroundImage:[[UIImage alloc] initWithSize:self.frame.size andColor:kBlueLinkedInColor] forState:UIControlStateNormal];
     [self setBackgroundImage:[[UIImage alloc] initWithSize:self.frame.size andColor:kBlueLinkedInColor] forState:UIControlStateHighlighted];
     
     CALayer *layer = self.layer;
-    layer.backgroundColor = [[UIColor clearColor] CGColor];
+//    layer.backgroundColor = [[UIColor clearColor] CGColor];
     layer.borderColor = [[UIColor whiteColor] CGColor];
     layer.cornerRadius = 8.0f;
     layer.borderWidth = 1.0f;
