@@ -43,7 +43,7 @@
                                                         <constraint firstAttribute="height" constant="25" id="c73-kN-h3k"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -78,12 +78,10 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
-
                                 <connections>
                                     <outlet property="dataSource" destination="Nl1-D2-HQF" id="y24-qN-BiB"/>
                                     <outlet property="delegate" destination="Nl1-D2-HQF" id="OXv-w1-qB2"/>
                                 </connections>
-
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

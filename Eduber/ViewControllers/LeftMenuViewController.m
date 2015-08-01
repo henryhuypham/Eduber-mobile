@@ -9,6 +9,8 @@
 #import "LeftMenuViewController.h"
 #import "LeftMenuTableViewCell.h"
 #import "SWRevealViewController.h"
+#import "TeacherRegisterClassViewController.h"
+#import "StudentStudyFieldsViewController.h"
 
 @interface LeftMenuViewController ()
 
@@ -19,19 +21,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.tableView.dataSource = self;
-    self.tableView.delegate = self;
     _presentedRow = -1;
-
+    
 }
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-
+    
 }
 
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -80,6 +81,9 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     SWRevealViewController *revealController = self.revealViewController;
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Student" bundle:nil];
+    if(_loginModeSelected == 1){
+        sb = [UIStoryboard storyboardWithName:@"Teacher" bundle:nil];
+    }
     if ( [indexPath row] == _presentedRow )
     {
         [revealController setFrontViewPosition:FrontViewPositionLeft animated:YES];
@@ -88,7 +92,11 @@
     UIViewController *rootViewController = nil;
     switch ([indexPath row]) {
         case 0:
-            rootViewController = nil;
+            if(_loginModeSelected == 0){
+                rootViewController =  (StudentStudyFieldsViewController *)[sb instantiateViewControllerWithIdentifier:@"studentStudyFieldsViewController"];
+            }else{
+                rootViewController =  (TeacherRegisterClassViewController *)[sb instantiateViewControllerWithIdentifier:@"teacherRegisterClassViewController"];
+            }
             break;
         case 1:
             rootViewController = nil;
