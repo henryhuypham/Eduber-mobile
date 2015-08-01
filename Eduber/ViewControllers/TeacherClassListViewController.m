@@ -70,6 +70,7 @@
     
     //table view
     self.tableView.separatorColor = [UIColor clearColor];
+    [self.view bringSubviewToFront:self.addNewButton];
     
 }
 
