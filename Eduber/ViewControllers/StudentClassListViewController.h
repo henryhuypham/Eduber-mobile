@@ -10,6 +10,9 @@
 #import "StudentClassCell.h"
 #import "StudentClassInfo.h"
 #import "WebViewOthersViewController.h"
+#import "NetworkEngine.h"
+#import "Courses.h"
+#import "Course.h"
 
 @interface StudentClassListViewController : UIViewController<UITableViewDataSource, UITableViewDelegate,StudentClassCellDelegate>
 

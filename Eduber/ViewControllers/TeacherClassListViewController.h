@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "TeacherClassCell.h"
-#import "ClassInfo.h"
+#import "NetworkEngine.h"
+#import "Course.h"
 
 @interface TeacherClassListViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 

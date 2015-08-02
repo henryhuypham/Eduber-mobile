@@ -4,6 +4,7 @@
 //
 
 #import "TeacherClassCell.h"
+#import "Courses.h"
 
 @implementation TeacherClassCell
 
@@ -28,10 +29,10 @@
     // Configure the view for the selected state
 }
 
--(void)setInfo:(ClassInfo *)info{
-    self.classnameLB.text = info.className;
-    self.numberLB.text = info.numberStudent;
-    self.scheduleLB.text = info.schedule;
+-(void)setInfo:(Courses *)info{
+    self.classnameLB.text = info.title;
+    self.numberLB.text = [@(info.quantity) stringValue];
+    self.scheduleLB.text = info.courseTimeToS;
     self.locationLB.text = info.location;
 }
 

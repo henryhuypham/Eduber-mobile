@@ -8,6 +8,8 @@
 #import "UIView+Shadow.h"
 #import "UIButton+Style.h"
 #import "UIImage+Color.h"
+#import "Course.h"
+#import "Courses.h"
 
 @protocol StudentClassCellDelegate <NSObject>
 @required

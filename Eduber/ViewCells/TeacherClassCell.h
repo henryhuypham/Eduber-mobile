@@ -4,8 +4,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ClassInfo.h"
 #import "UIView+Shadow.h"
+#import "Courses.h"
 
 @interface TeacherClassCell : UITableViewCell
 
@@ -15,6 +15,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *scheduleLB;
 @property (weak, nonatomic) IBOutlet UILabel *locationLB;
 
--(void)setInfo:(ClassInfo *)info;
+-(void)setInfo:(Courses *)info;
 
 @end
