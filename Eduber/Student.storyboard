@@ -1415,7 +1415,7 @@ to select your class.</string>
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="JEd-WS-LNf">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="JEd-WS-LNf">
                                 <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -1428,34 +1428,35 @@ to select your class.</string>
                                                     <rect key="frame" x="3" y="3" width="314" height="113.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CqD-3V-F83">
-                                                            <rect key="frame" x="96" y="15" width="210" height="16"/>
+                                                            <rect key="frame" x="96" y="10" width="210" height="16"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="obama" translatesAutoresizingMaskIntoConstraints="NO" id="yO8-Nh-M9a">
-                                                            <rect key="frame" x="8" y="17" width="80" height="80"/>
+                                                            <rect key="frame" x="8" y="6" width="80" height="80"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="80" id="fKP-3Z-et4"/>
                                                                 <constraint firstAttribute="width" constant="80" id="yDO-c4-gZ1"/>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone: 617-496-4547" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="06D-SN-hkZ">
-                                                            <rect key="frame" x="96" y="31" width="121.5" height="14.5"/>
+                                                            <rect key="frame" x="96" y="26" width="121.5" height="14.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email: alberto_abadie@harvard.edu" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nxu-2X-eQ7">
-                                                            <rect key="frame" x="96" y="45" width="210" height="14.5"/>
+                                                            <rect key="frame" x="96" y="40" width="210" height="14.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rcw-60-Nfc">
-                                                            <rect key="frame" x="96" y="74.5" width="120" height="36"/>
+                                                            <rect key="frame" x="96" y="66.5" width="120" height="34.5"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="120" id="N4j-tW-A0T"/>
+                                                                <constraint firstAttribute="height" constant="34" id="V7H-93-OuT"/>
                                                             </constraints>
                                                             <state key="normal" title="Join">
                                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1464,6 +1465,20 @@ to select your class.</string>
                                                                 <action selector="joinAction:" destination="9Wd-ZZ-gVe" eventType="touchUpInside" id="k9l-iH-OZ9"/>
                                                             </connections>
                                                         </button>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_like" translatesAutoresizingMaskIntoConstraints="NO" id="5qX-2C-fay">
+                                                            <rect key="frame" x="21" y="91" width="13" height="15"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="15" id="XMf-Xt-teo"/>
+                                                                <constraint firstAttribute="width" constant="13" id="vJe-7A-mMR"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="423" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yuP-q2-IeG">
+                                                            <rect key="frame" x="42" y="91" width="22" height="15.5"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
@@ -1472,14 +1487,17 @@ to select your class.</string>
                                                         <constraint firstItem="06D-SN-hkZ" firstAttribute="top" secondItem="CqD-3V-F83" secondAttribute="bottom" id="HdH-hM-zpL"/>
                                                         <constraint firstItem="yO8-Nh-M9a" firstAttribute="leading" secondItem="pUD-Xg-5lG" secondAttribute="leading" constant="8" id="Hlf-u9-CN3"/>
                                                         <constraint firstItem="06D-SN-hkZ" firstAttribute="leading" secondItem="yO8-Nh-M9a" secondAttribute="trailing" constant="8" id="Iv4-zP-sug"/>
-                                                        <constraint firstAttribute="centerY" secondItem="yO8-Nh-M9a" secondAttribute="centerY" id="JPW-OS-trW"/>
-                                                        <constraint firstAttribute="bottom" secondItem="rcw-60-Nfc" secondAttribute="bottom" constant="3" id="N7B-bE-gzA"/>
                                                         <constraint firstItem="Nxu-2X-eQ7" firstAttribute="top" secondItem="06D-SN-hkZ" secondAttribute="bottom" id="QsZ-te-RwI"/>
-                                                        <constraint firstItem="rcw-60-Nfc" firstAttribute="top" secondItem="Nxu-2X-eQ7" secondAttribute="bottom" constant="15" id="UJb-2t-8SV"/>
-                                                        <constraint firstItem="CqD-3V-F83" firstAttribute="top" secondItem="pUD-Xg-5lG" secondAttribute="top" constant="15" id="g8a-ye-0Pu"/>
+                                                        <constraint firstItem="yuP-q2-IeG" firstAttribute="centerY" secondItem="5qX-2C-fay" secondAttribute="centerY" id="SlW-xw-k0B"/>
+                                                        <constraint firstItem="rcw-60-Nfc" firstAttribute="top" secondItem="Nxu-2X-eQ7" secondAttribute="bottom" constant="12" id="UJb-2t-8SV"/>
+                                                        <constraint firstItem="5qX-2C-fay" firstAttribute="leading" secondItem="pUD-Xg-5lG" secondAttribute="leading" constant="21" id="YvB-3B-5aN"/>
+                                                        <constraint firstItem="CqD-3V-F83" firstAttribute="top" secondItem="yO8-Nh-M9a" secondAttribute="top" constant="4" id="bBu-Fq-vdC"/>
+                                                        <constraint firstItem="CqD-3V-F83" firstAttribute="top" secondItem="pUD-Xg-5lG" secondAttribute="top" constant="10" id="g8a-ye-0Pu"/>
                                                         <constraint firstItem="CqD-3V-F83" firstAttribute="leading" secondItem="yO8-Nh-M9a" secondAttribute="trailing" constant="8" id="mby-sX-ORO"/>
                                                         <constraint firstItem="Nxu-2X-eQ7" firstAttribute="leading" secondItem="yO8-Nh-M9a" secondAttribute="trailing" constant="8" id="mqm-ai-xpN"/>
                                                         <constraint firstAttribute="trailing" secondItem="Nxu-2X-eQ7" secondAttribute="trailing" constant="8" id="nYj-V1-zAe"/>
+                                                        <constraint firstItem="5qX-2C-fay" firstAttribute="top" secondItem="yO8-Nh-M9a" secondAttribute="bottom" constant="5" id="ru1-D8-wsj"/>
+                                                        <constraint firstItem="yuP-q2-IeG" firstAttribute="leading" secondItem="5qX-2C-fay" secondAttribute="trailing" constant="8" id="swT-rQ-sUh"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
@@ -1954,6 +1972,7 @@ to select your class.</string>
         <image name="ico_history" width="1600" height="1100"/>
         <image name="ico_ielts" width="800" height="313"/>
         <image name="ico_itep" width="327" height="217"/>
+        <image name="ico_like" width="40" height="40"/>
         <image name="ico_math" width="691" height="596"/>
         <image name="ico_physics" width="1600" height="891"/>
         <image name="ico_slep" width="491" height="316"/>

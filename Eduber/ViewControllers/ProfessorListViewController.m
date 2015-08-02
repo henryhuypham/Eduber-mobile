@@ -175,7 +175,11 @@
     [SVProgressHUD show];
     [NetworkEngine createUserCourse:[@(pro.coursesIdentifier) stringValue] onSuccess:^(NSDictionary *data) {
         [SVProgressHUD dismiss];
-         [self.navigationController popViewControllerAnimated:YES];
+        
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Student" bundle:nil];
+        StudentStudyFieldsViewController *viewController = (StudentStudyFieldsViewController *)[sb instantiateViewControllerWithIdentifier:@"studentStudyFieldsViewController"];
+        [self.navigationController  pushViewController:viewController animated:YES];
+        
     } onError:^(NSError *error, NSDictionary *data) {
          [SVProgressHUD dismiss];
     }];
