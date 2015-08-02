@@ -56,6 +56,10 @@
 		8427E0F51B6D88B300EF96D5 /* UITableViewCell+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 8427E0E01B6D88B300EF96D5 /* UITableViewCell+FlatUI.m */; };
 		8427E0F61B6D88B300EF96D5 /* UIToolbar+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 8427E0E21B6D88B300EF96D5 /* UIToolbar+FlatUI.m */; };
 		8427E0F91B6D90FC00EF96D5 /* WebViewOthersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8427E0F81B6D90FC00EF96D5 /* WebViewOthersViewController.m */; };
+		846793FC1B6DAAFB00121723 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 846793F51B6DAAFB00121723 /* TPKeyboardAvoidingCollectionView.m */; };
+		846793FD1B6DAAFB00121723 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 846793F71B6DAAFB00121723 /* TPKeyboardAvoidingScrollView.m */; };
+		846793FE1B6DAAFB00121723 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 846793F91B6DAAFB00121723 /* TPKeyboardAvoidingTableView.m */; };
+		846793FF1B6DAAFB00121723 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 846793FB1B6DAAFB00121723 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
 		8708A3C71B6C86860012484E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8708A3C61B6C86860012484E /* main.m */; };
 		8708A3CA1B6C86860012484E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8708A3C91B6C86860012484E /* AppDelegate.m */; };
 		8708A3D01B6C86860012484E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8708A3CE1B6C86860012484E /* Main.storyboard */; };
@@ -181,6 +185,14 @@
 		8427E0E21B6D88B300EF96D5 /* UIToolbar+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIToolbar+FlatUI.m"; sourceTree = "<group>"; };
 		8427E0F71B6D90FC00EF96D5 /* WebViewOthersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebViewOthersViewController.h; path = ViewControllers/WebViewOthersViewController.h; sourceTree = "<group>"; };
 		8427E0F81B6D90FC00EF96D5 /* WebViewOthersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebViewOthersViewController.m; path = ViewControllers/WebViewOthersViewController.m; sourceTree = "<group>"; };
+		846793F41B6DAAFB00121723 /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
+		846793F51B6DAAFB00121723 /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
+		846793F61B6DAAFB00121723 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		846793F71B6DAAFB00121723 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		846793F81B6DAAFB00121723 /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
+		846793F91B6DAAFB00121723 /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
+		846793FA1B6DAAFB00121723 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		846793FB1B6DAAFB00121723 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
 		8708A3C11B6C86860012484E /* Eduber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eduber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8708A3C51B6C86860012484E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8708A3C61B6C86860012484E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -314,6 +326,7 @@
 		8427E0AC1B6D839000EF96D5 /* External */ = {
 			isa = PBXGroup;
 			children = (
+				846793F31B6DAAFB00121723 /* TPKeyboardAvoiding */,
 				8427E0B81B6D88B300EF96D5 /* FlatUI */,
 				8427E0AD1B6D839000EF96D5 /* Zopim */,
 			);
@@ -394,6 +407,21 @@
 				8427E0E21B6D88B300EF96D5 /* UIToolbar+FlatUI.m */,
 			);
 			path = ios;
+			sourceTree = "<group>";
+		};
+		846793F31B6DAAFB00121723 /* TPKeyboardAvoiding */ = {
+			isa = PBXGroup;
+			children = (
+				846793F41B6DAAFB00121723 /* TPKeyboardAvoidingCollectionView.h */,
+				846793F51B6DAAFB00121723 /* TPKeyboardAvoidingCollectionView.m */,
+				846793F61B6DAAFB00121723 /* TPKeyboardAvoidingScrollView.h */,
+				846793F71B6DAAFB00121723 /* TPKeyboardAvoidingScrollView.m */,
+				846793F81B6DAAFB00121723 /* TPKeyboardAvoidingTableView.h */,
+				846793F91B6DAAFB00121723 /* TPKeyboardAvoidingTableView.m */,
+				846793FA1B6DAAFB00121723 /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				846793FB1B6DAAFB00121723 /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+			);
+			path = TPKeyboardAvoiding;
 			sourceTree = "<group>";
 		};
 		8708A3B81B6C86860012484E = {
@@ -659,6 +687,7 @@
 				878B3EBC1B6D6D3C006B8710 /* ClassRecommendationViewController.m in Sources */,
 				4C76DEF31B6D0C870052FD48 /* TestResultViewController.m in Sources */,
 				842266201B6CC55300AABFB6 /* UIImage+BlurredFrame.m in Sources */,
+				846793FE1B6DAAFB00121723 /* TPKeyboardAvoidingTableView.m in Sources */,
 				8708A3CA1B6C86860012484E /* AppDelegate.m in Sources */,
 				8427E0E51B6D88B300EF96D5 /* FUICellBackgroundView.m in Sources */,
 				8427E08C1B6D3EF500EF96D5 /* TeacherClassCell.m in Sources */,
@@ -666,6 +695,7 @@
 				8427E0A51B6D741000EF96D5 /* StudentClassCell.m in Sources */,
 				8427E0EE1B6D88B300EF96D5 /* UIImage+FlatUI.m in Sources */,
 				8427E0E91B6D88B300EF96D5 /* FUITextField.m in Sources */,
+				846793FD1B6DAAFB00121723 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				8427E0A81B6D746B00EF96D5 /* StudentClassInfo.m in Sources */,
 				878B3E8D1B6CA7CC006B8710 /* StudyFieldCollectionViewCell.m in Sources */,
 				8427E0E61B6D88B300EF96D5 /* FUIPopoverBackgroundView.m in Sources */,
@@ -694,8 +724,10 @@
 				842266121B6CB05F00AABFB6 /* UIButton+Style.m in Sources */,
 				878B3EB21B6D3D23006B8710 /* TeacherClassListViewController.m in Sources */,
 				4C5DE23B1B6CCE3A00B85BB8 /* LeftMenuViewController.m in Sources */,
+				846793FF1B6DAAFB00121723 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				4C5DE23E1B6CCE4500B85BB8 /* SWRevealViewController.m in Sources */,
 				8427E0AB1B6D7A1B00EF96D5 /* UserInfo.m in Sources */,
+				846793FC1B6DAAFB00121723 /* TPKeyboardAvoidingCollectionView.m in Sources */,
 				8427E0E81B6D88B300EF96D5 /* FUISwitch.m in Sources */,
 				8427E0F41B6D88B300EF96D5 /* UITabBar+FlatUI.m in Sources */,
 				8427E0E71B6D88B300EF96D5 /* FUISegmentedControl.m in Sources */,
