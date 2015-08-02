@@ -12,7 +12,7 @@
 #import "NetworkEngine.h"
 #import "Course.h"
 #import "Courses.h"
-#import "StudentStudyFieldsViewController.h"
+#import "StudentClassListViewController.h"
 
 
 @interface ProfessorListViewController : UIViewController<UITableViewDataSource, UITableViewDelegate,ProfressorCellDelegate>{

@@ -177,6 +177,16 @@
     [alertView show];
 }
 
+-(void)showalertViewWithNoButton:(NSString *)title Description:(NSString *)description{
+    SIAlertView *alertView = [[SIAlertView alloc] initWithTitle:title andMessage:description];
+    alertView.transitionStyle = SIAlertViewTransitionStyleBounce;
+    [alertView show];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+        [alertView dismissAnimated:YES];
+    });
+}
+
 -(void)join{
     [SVProgressHUD setBackgroundColor:[UIColor colorWithRed:0.7f green:0.7f blue:0.7f alpha:0.65f]];
     [SVProgressHUD show];
@@ -184,8 +194,9 @@
         [SVProgressHUD dismiss];
         
         UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Student" bundle:nil];
-        StudentStudyFieldsViewController *viewController = (StudentStudyFieldsViewController *)[sb instantiateViewControllerWithIdentifier:@"studentStudyFieldsViewController"];
+        StudentClassListViewController *viewController = (StudentClassListViewController *)[sb instantiateViewControllerWithIdentifier:@"studentClassListViewController"];
         [self.navigationController  pushViewController:viewController animated:YES];
+        [self showalertView:@"" Description:@"Joined"];
         
     } onError:^(NSError *error, NSDictionary *data) {
          [SVProgressHUD dismiss];
