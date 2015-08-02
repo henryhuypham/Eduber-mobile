@@ -36,7 +36,7 @@
 }
 
 -(void)viewWillAppear:(BOOL)animated{
-    [self setTitle:@"Field"];
+    [self setTitle:@"Fields"];
 }
 
 -(void)setupView{
