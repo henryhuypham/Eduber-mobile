@@ -131,8 +131,8 @@
             break;
         case 3:
             if(_loginModeSelected == 0){
-                sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-                rootViewController =  (StudentClassListViewController *)[sb instantiateViewControllerWithIdentifier:@"loginViewController"];
+                sb = [UIStoryboard storyboardWithName:@"Student" bundle:nil];
+                rootViewController =  (UIViewController *)[sb instantiateViewControllerWithIdentifier:@"testResultViewController"];
             }else{
                 if(revealController){
                     [revealController.navigationController popViewControllerAnimated:YES];
