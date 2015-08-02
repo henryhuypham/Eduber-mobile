@@ -24,6 +24,19 @@
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.scrollView.contentInset = UIEdgeInsetsMake(0,0,0,0);
     self.scrollviewHeight.constant = self.view.bounds.size.width;
+    
+    //text field
+    [self setTextField];
+}
+
+-(void)setTextField{
+   self.className.placeholder = @"Class Name";
+    self.capacity.placeholder = @"ex : 30";
+   self.location.placeholder = @"ex : 1 Lê Duẩn, Phường 1 ,Quận 1";
+    self.schedule.placeholder = @"8h30 thứ 2-4-6";
+   self.duration.placeholder = @"2h30";
+    self.startDate.placeholder = @"26-05-2015";
+    self.notes.placeholder = @"Đi học đông đủ";
 }
 
 - (IBAction)createClass:(id)sender {
