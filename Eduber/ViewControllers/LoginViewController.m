@@ -25,6 +25,10 @@
     [self setupView];
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    self.navigationController.navigationBar.hidden = YES;
+}
+
 -(void)setupView{
     [self.facebookButton applyFacebookStyle];
     [self.linkedinButton applyLinkedInStyle];
@@ -36,16 +40,22 @@
 
 -(void)setupLabel{
     [self.studentLabel setFont:[UIFont boldSystemFontOfSize:16.0f]];
-    [self.studentLabel setTextColor:[UIColor whiteColor]];
+    [self.studentLabel setTextColor:[UIColor colorWithRed:234.0/255.0 green:76.0/255.0f blue:137.0/255.0f alpha:1.0]];
     self.studentLabel.layer.borderWidth = 2;
     self.studentLabel.layer.cornerRadius = 5;
     self.studentLabel.layer.borderColor = [UIColor whiteColor].CGColor;
+        self.studentLabel.layer.backgroundColor = [[UIColor whiteColor] CGColor];
     
     [self.profressorLabel setFont:[UIFont boldSystemFontOfSize:16.0f]];
-    [self.profressorLabel setTextColor:[UIColor whiteColor]];
+     [self.profressorLabel setTextColor:[UIColor colorWithRed:234.0/255.0 green:76.0/255.0f blue:137.0/255.0f alpha:1.0]];
     self.profressorLabel.layer.borderWidth = 0;
     self.profressorLabel.layer.cornerRadius = 5;
     self.profressorLabel.layer.borderColor = [UIColor whiteColor].CGColor;
+        self.profressorLabel.layer.backgroundColor = [[UIColor whiteColor] CGColor];
+    
+    //label
+    self.studentLabel.hidden = NO;
+    self.profressorLabel.hidden = YES;
 }
 
 -(void)setupImageView{
@@ -103,9 +113,8 @@
     [self updateLayouToCurrentLoginMode];
     
     //label
-    self.studentLabel.layer.borderWidth = 2;
-    self.profressorLabel.layer.borderWidth = 0;
-    
+    self.studentLabel.hidden = NO;
+    self.profressorLabel.hidden = YES;
 }
 
 - (IBAction)teacherButtonTouched:(id)sender {
@@ -128,8 +137,8 @@
     
     
     //label
-    self.studentLabel.layer.borderWidth = 0;
-    self.profressorLabel.layer.borderWidth = 2;
+    self.studentLabel.hidden = YES;
+    self.profressorLabel.hidden = NO;
 }
 
 -(void)updateLayouToCurrentLoginMode{

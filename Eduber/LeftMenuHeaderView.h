@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
 #import "UIImage+BlurredFrame.h"
+#import "UserInfo.h"
 
 @interface LeftMenuHeaderView : UIView
 
@@ -16,5 +17,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *avatarView;
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *emailLabel;
+
+-(void)setInfo:(UserInfo *)user;
 
 @end

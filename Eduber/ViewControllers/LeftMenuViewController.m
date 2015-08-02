@@ -13,10 +13,6 @@
 
 #define kHeaderView @"LeftMenuHeaderView"
 
-@interface LeftMenuViewController ()
-
-@end
-
 @implementation LeftMenuViewController
 
 
@@ -29,6 +25,12 @@
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     
+    //default value
+    data = @[ @[ @"Home", @"Profile", @"Class",@"Exam",@"Signout"], @[ @"home_icon", @"user_icon", @"news_icon",@"exam_icon",@"signout_icon"] ];
+    if(_loginModeSelected == 1){
+       data = @[ @[ @"Home", @"Profile", @"Class",@"Signout"], @[ @"home_icon", @"user_icon", @"news_icon",@"signout_icon"] ];
+    }
+
 }
 
 -(void)viewDidAppear:(BOOL)animated{
@@ -53,7 +55,20 @@
 
 #pragma mark - UITableView Delegate
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-   UIView *headerView = [[[NSBundle mainBundle] loadNibNamed:kHeaderView owner:self options:nil] lastObject];
+   LeftMenuHeaderView *headerView = [[[NSBundle mainBundle] loadNibNamed:kHeaderView owner:self options:nil] lastObject];
+    
+    UserInfo *user = [[UserInfo alloc] init];
+    if(_loginModeSelected == 1){
+      user.name = @"Einstein";
+        user.email = @"einstein@gmail.com";
+        user.imageLink = @"https://www.danluan.org/files/timgs/einstein1_7.jpg";
+    }else{
+        user.name = @"Ngọc Trinh";
+        user.email = @"ngoctrinh@gmail.com";
+        user.imageLink = @"http://bdeducationnews24.com/wp-content/uploads/2015/06/Medical-College.jpg";
+    }
+    
+    [headerView setInfo:user];
     return headerView;
 }
 
@@ -68,7 +83,8 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 5;
+    NSArray *arr = data[0];
+    return arr.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -79,30 +95,11 @@
     }
     cell.titleLabel.textColor = [UIColor darkGrayColor];
     
-    switch ([indexPath row]) {
-        case 0:
-            cell.titleLabel.text = @"Home";
-            [cell.imgView setImage:[UIImage imageNamed:@"home_icon"]];
-            break;
-        case 1:
-            cell.titleLabel.text = @"Profile";
-            [cell.imgView setImage:[UIImage imageNamed:@"user_icon"]];
-            break;
-        case 2:
-            cell.titleLabel.text = @"Class";
-            [cell.imgView setImage:[UIImage imageNamed:@"news_icon"]];
-            break;
-        case 3:
-            cell.titleLabel.text = @"Exam";
-            [cell.imgView setImage:[UIImage imageNamed:@"exam_icon"]];
-            break;
-        case 4:
-            cell.titleLabel.text = @"Sign Out";
-            [cell.imgView setImage:[UIImage imageNamed:@"signout_icon"]];
-            break;
-        default:
-            break;
-    }
+    //set data
+    cell.titleLabel.text = data[0][indexPath.row];
+    cell.imgView.image = [UIImage imageNamed:data[1][indexPath.row]];
+
+    
     return cell;
 }
 
@@ -128,6 +125,13 @@
             break;
         case 1:
             rootViewController = nil;
+            break;
+        case 2:
+               rootViewController =  (StudentClassListViewController *)[sb instantiateViewControllerWithIdentifier:@"studentClassListViewController"];
+            break;
+        case 4:
+            sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+            rootViewController =  (StudentClassListViewController *)[sb instantiateViewControllerWithIdentifier:@"loginViewController"];
             break;
         case 6:
             rootViewController = nil;

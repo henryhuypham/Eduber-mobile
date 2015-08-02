@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "StudentClassListViewController.h"
+#import "LeftMenuHeaderView.h"
 
 @interface LeftMenuViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>{
     NSInteger _presentedRow;
+    NSArray *data;
 }
 
 @property (weak, nonatomic) IBOutlet UITableView *menuTableView;

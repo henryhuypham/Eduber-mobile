@@ -28,7 +28,7 @@
         ClassInfo *info = [[ClassInfo alloc] init];
         info.identify = 0;
         info.className = [NSString stringWithFormat:@"English %d",i];
-        info.numberStudent = arc4random_uniform(20);
+        info.numberStudent = @(arc4random_uniform(20)).stringValue;
         info.className = [NSString stringWithFormat:@"English %d",i];
         
         //random date

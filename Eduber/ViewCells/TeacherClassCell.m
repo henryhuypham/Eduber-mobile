@@ -30,7 +30,7 @@
 
 -(void)setInfo:(ClassInfo *)info{
     self.classnameLB.text = info.className;
-    self.numberLB.text = [@(info.numberStudent) stringValue];
+    self.numberLB.text = info.numberStudent;
     self.scheduleLB.text = info.schedule;
     self.locationLB.text = info.location;
 }

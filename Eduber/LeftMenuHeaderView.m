@@ -11,30 +11,7 @@
 @implementation LeftMenuHeaderView
 
 -(void)awakeFromNib{
-    [self setupAvatar];
     [self setupLabel];
-    [self setupData];
-}
-
--(void)setupData{
-    self.nameLabel.text = @"Ngọc Trinh";
-    self.emailLabel.text = @"ngoctrinh@gmail.com";
-}
-
--(void)setupAvatar{
-    UIImage *image = [UIImage imageNamed:@"ngoctrinh"];
-    [self.avatarView setImage:image];
-    self.avatarView.layer.cornerRadius = 10;
-    self.avatarView.layer.masksToBounds = YES;
-    self.avatarView.layer.borderWidth = 2;
-    self.avatarView.layer.borderColor = [UIColor whiteColor].CGColor;
-    
-    //background imageview
-    UIImage *backgroundImage = [UIImage imageNamed:@"ngoctrinh"];
-        CGRect frame = CGRectMake(0,0, backgroundImage.size.width,backgroundImage.size.height);
-    backgroundImage = [backgroundImage applyLightEffectAtFrame:frame];
-    [self.backgroundView setImage:backgroundImage];
-    self.backgroundView.layer.masksToBounds = YES;
 }
 
 -(void)setupLabel{
@@ -46,12 +23,30 @@
 
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+-(void)setInfo:(UserInfo *)user{
+    self.nameLabel.text = user.name;
+    self.emailLabel.text = user.email;
+    
+    //avatar
+    [self.avatarView setImageWithURL:[NSURL URLWithString:user.imageLink] placeholderImage:[UIImage imageNamed:@"placeholder"]];
+    
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:[user.imageLink stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]]];
+    [self.avatarView setImageWithURLRequest:request placeholderImage:[UIImage imageNamed:@"placeholder"] success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image) {
+        //background image
+        UIImage *backgroundImage = image;
+        CGRect frame = CGRectMake(0,0, backgroundImage.size.width,backgroundImage.size.height);
+        backgroundImage = [backgroundImage applyLightEffectAtFrame:frame];
+        [self.backgroundView setImage:backgroundImage];
+        self.backgroundView.layer.masksToBounds = YES;
+    } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error) {
+        
+    }];
+    
+    self.avatarView.layer.masksToBounds = YES;
+    self.avatarView.layer.borderWidth = 2;
+    self.avatarView.layer.borderColor = [UIColor whiteColor].CGColor;
+    self.avatarView.contentMode = UIViewContentModeScaleAspectFill;
 }
-*/
+
 
 @end

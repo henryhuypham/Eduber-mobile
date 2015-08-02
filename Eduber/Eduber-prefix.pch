@@ -14,6 +14,11 @@
 #import <AFNetworking/AFNetworking.h>
 #import "UIImageView+AFNetworking.h"
 #import "SIAlertView.h"
+#import <ZDCChat/ZDCChat.h>
+
+//Flat UI
+#import "FUITextField.h"
+#import "FlatUIKit.h"
 
 
 // Include any system framework and library headers here that should be included in all compilation units.
