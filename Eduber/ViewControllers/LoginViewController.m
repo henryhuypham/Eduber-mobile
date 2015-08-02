@@ -44,14 +44,14 @@
     self.studentLabel.layer.borderWidth = 0;
     self.studentLabel.layer.cornerRadius = 5;
     self.studentLabel.layer.borderColor = [UIColor whiteColor].CGColor;
-        self.studentLabel.layer.backgroundColor = [[UIColor colorWithRed:1.0f green:1.0f blue:1.0f alpha:0.8f] CGColor];
+    self.studentLabel.layer.backgroundColor = [[UIColor colorWithRed:1.0f green:1.0f blue:1.0f alpha:0.8f] CGColor];
     
     [self.profressorLabel setFont:[UIFont boldSystemFontOfSize:16.0f]];
-     [self.profressorLabel setTextColor:[UIColor colorWithRed:234.0/255.0 green:76.0/255.0f blue:137.0/255.0f alpha:1.0]];
+    [self.profressorLabel setTextColor:[UIColor colorWithRed:234.0/255.0 green:76.0/255.0f blue:137.0/255.0f alpha:1.0]];
     self.profressorLabel.layer.borderWidth = 0;
     self.profressorLabel.layer.cornerRadius = 5;
     self.profressorLabel.layer.borderColor = [UIColor whiteColor].CGColor;
-        self.profressorLabel.layer.backgroundColor = [[UIColor colorWithRed:1.0f green:1.0f blue:1.0f alpha:0.8f] CGColor];
+    self.profressorLabel.layer.backgroundColor = [[UIColor colorWithRed:1.0f green:1.0f blue:1.0f alpha:0.8f] CGColor];
     
     //label
     self.studentLabel.hidden = NO;
@@ -78,7 +78,7 @@
     self.profressorImageView.layer.masksToBounds = YES;
     self.profressorImageView.layer.borderWidth = 2;
     self.profressorImageView.layer.borderColor = [UIColor whiteColor].CGColor;
-    
+    self.profressorImageView.alpha = 0.3f;
     //action
     UITapGestureRecognizer *profressorTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(teacherButtonTouched:)];
     [self.profressorImageView setUserInteractionEnabled:YES];
@@ -115,6 +115,8 @@
     //label
     self.studentLabel.hidden = NO;
     self.profressorLabel.hidden = YES;
+    self.profressorImageView.alpha = 0.3f;
+    self.studentImageView.alpha = 1.0f;
 }
 
 - (IBAction)teacherButtonTouched:(id)sender {
@@ -139,6 +141,8 @@
     //label
     self.studentLabel.hidden = YES;
     self.profressorLabel.hidden = NO;
+    self.profressorImageView.alpha = 1.0f;
+    self.studentImageView.alpha = 0.3f;
 }
 
 -(void)updateLayouToCurrentLoginMode{
@@ -172,8 +176,8 @@
         sb = [UIStoryboard storyboardWithName:@"Student" bundle:nil];
         viewController=(StudentStudyFieldsViewController *)[sb instantiateViewControllerWithIdentifier:@"studentStudyFieldsViewController"];
     }else{
-                sb = [UIStoryboard storyboardWithName:@"Teacher" bundle:nil];
-                viewController=(TeacherClassListViewController *)[sb instantiateViewControllerWithIdentifier:@"teacherClassListViewController"];
+        sb = [UIStoryboard storyboardWithName:@"Teacher" bundle:nil];
+        viewController=(TeacherClassListViewController *)[sb instantiateViewControllerWithIdentifier:@"teacherClassListViewController"];
     }
     
     sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];

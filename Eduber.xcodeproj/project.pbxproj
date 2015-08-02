@@ -12,7 +12,6 @@
 		4C5DE23B1B6CCE3A00B85BB8 /* LeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5DE23A1B6CCE3A00B85BB8 /* LeftMenuViewController.m */; };
 		4C5DE23E1B6CCE4500B85BB8 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5DE23D1B6CCE4500B85BB8 /* SWRevealViewController.m */; };
 		4C5DE2411B6CCE6000B85BB8 /* LeftMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5DE2401B6CCE6000B85BB8 /* LeftMenuTableViewCell.m */; };
-		4C76DEF01B6D06840052FD48 /* temp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C76DEEF1B6D06840052FD48 /* temp.storyboard */; };
 		4C76DEF31B6D0C870052FD48 /* TestResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C76DEF21B6D0C870052FD48 /* TestResultViewController.m */; };
 		4C76DEF61B6D110D0052FD48 /* TestResultTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C76DEF51B6D110D0052FD48 /* TestResultTableViewCell.m */; };
 		842266121B6CB05F00AABFB6 /* UIButton+Style.m in Sources */ = {isa = PBXBuildFile; fileRef = 842266111B6CB05F00AABFB6 /* UIButton+Style.m */; };
@@ -101,7 +100,6 @@
 		4C5DE23D1B6CCE4500B85BB8 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = ViewControllers/SWRevealViewController/SWRevealViewController.m; sourceTree = "<group>"; };
 		4C5DE23F1B6CCE6000B85BB8 /* LeftMenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMenuTableViewCell.h; sourceTree = "<group>"; };
 		4C5DE2401B6CCE6000B85BB8 /* LeftMenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuTableViewCell.m; sourceTree = "<group>"; };
-		4C76DEEF1B6D06840052FD48 /* temp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = temp.storyboard; sourceTree = "<group>"; };
 		4C76DEF11B6D0C870052FD48 /* TestResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestResultViewController.h; path = ViewControllers/TestResultViewController.h; sourceTree = "<group>"; };
 		4C76DEF21B6D0C870052FD48 /* TestResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestResultViewController.m; path = ViewControllers/TestResultViewController.m; sourceTree = "<group>"; };
 		4C76DEF41B6D110D0052FD48 /* TestResultTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestResultTableViewCell.h; path = ViewCells/TestResultTableViewCell.h; sourceTree = "<group>"; };
@@ -488,7 +486,6 @@
 				8708A3C91B6C86860012484E /* AppDelegate.m */,
 				878B3E7B1B6C8DB6006B8710 /* Teacher.storyboard */,
 				878B3E861B6CA39E006B8710 /* Student.storyboard */,
-				4C76DEEF1B6D06840052FD48 /* temp.storyboard */,
 				8708A3CE1B6C86860012484E /* Main.storyboard */,
 				8708A3D31B6C86860012484E /* LaunchScreen.xib */,
 				8708A3D11B6C86860012484E /* Images.xcassets */,
@@ -653,7 +650,6 @@
 			files = (
 				8708A3D01B6C86860012484E /* Main.storyboard in Resources */,
 				878B3E7C1B6C8DB6006B8710 /* Teacher.storyboard in Resources */,
-				4C76DEF01B6D06840052FD48 /* temp.storyboard in Resources */,
 				8427E0B51B6D839000EF96D5 /* ZDCChatStrings.bundle in Resources */,
 				8708A3D51B6C86860012484E /* LaunchScreen.xib in Resources */,
 				8708A3D21B6C86860012484E /* Images.xcassets in Resources */,
