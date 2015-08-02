@@ -28,6 +28,8 @@
         Course *couse = [[Course alloc] initWithDictionary:data];
         self.professorList = couse.courses;
         [SVProgressHUD dismiss];
+        [self.tableView.pullToRefreshView stopAnimating];
+        
         [self.tableView reloadData];
     } onError:^(NSError *error, NSDictionary *data) {
         [SVProgressHUD dismiss];
@@ -52,6 +54,11 @@
     //table view
     self.tableView.separatorColor = [UIColor clearColor];
     
+    //Add refresh control
+    [self.tableView addPullToRefreshWithActionHandler:^{
+        [self setupData];
+    }];
+
 }
 
 #pragma mark - TableView Delegate
@@ -167,7 +174,6 @@
     alertView.transitionStyle = SIAlertViewTransitionStyleBounce;
     
     [alertView show];
-
 }
 
 -(void)join{

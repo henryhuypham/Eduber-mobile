@@ -50,6 +50,11 @@
     
     //load data
     [self loadData];
+    
+    //Add refresh control
+    [self.tableView addPullToRefreshWithActionHandler:^{
+         [self loadData];
+    }];
 }
 
 -(void)loadData{//show loading
@@ -59,6 +64,8 @@
         [SVProgressHUD dismiss];
         Course *co = [[Course alloc] initWithDictionary:data];
         self.classList = co.courses;
+        [self.tableView.pullToRefreshView stopAnimating];
+        
         [self.tableView reloadData];
     } onError:^(NSError *error, NSDictionary *data) {
         

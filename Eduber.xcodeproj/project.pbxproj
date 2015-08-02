@@ -62,6 +62,8 @@
 		846794031B6DB3F900121723 /* NetworkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 846794021B6DB3F900121723 /* NetworkEngine.m */; };
 		8467940F1B6DC95600121723 /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = 8467940C1B6DC95600121723 /* Course.m */; };
 		846794101B6DC95600121723 /* Courses.m in Sources */ = {isa = PBXBuildFile; fileRef = 8467940E1B6DC95600121723 /* Courses.m */; };
+		846794171B6DF3C800121723 /* UIScrollView+SVInfiniteScrolling.m in Sources */ = {isa = PBXBuildFile; fileRef = 846794141B6DF3C800121723 /* UIScrollView+SVInfiniteScrolling.m */; };
+		846794181B6DF3C800121723 /* UIScrollView+SVPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 846794161B6DF3C800121723 /* UIScrollView+SVPullToRefresh.m */; };
 		8708A3C71B6C86860012484E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8708A3C61B6C86860012484E /* main.m */; };
 		8708A3CA1B6C86860012484E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8708A3C91B6C86860012484E /* AppDelegate.m */; };
 		8708A3D01B6C86860012484E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8708A3CE1B6C86860012484E /* Main.storyboard */; };
@@ -200,6 +202,11 @@
 		8467940C1B6DC95600121723 /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
 		8467940D1B6DC95600121723 /* Courses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Courses.h; sourceTree = "<group>"; };
 		8467940E1B6DC95600121723 /* Courses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Courses.m; sourceTree = "<group>"; };
+		846794121B6DF3C800121723 /* SVPullToRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVPullToRefresh.h; sourceTree = "<group>"; };
+		846794131B6DF3C800121723 /* UIScrollView+SVInfiniteScrolling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+SVInfiniteScrolling.h"; sourceTree = "<group>"; };
+		846794141B6DF3C800121723 /* UIScrollView+SVInfiniteScrolling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SVInfiniteScrolling.m"; sourceTree = "<group>"; };
+		846794151B6DF3C800121723 /* UIScrollView+SVPullToRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+SVPullToRefresh.h"; sourceTree = "<group>"; };
+		846794161B6DF3C800121723 /* UIScrollView+SVPullToRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SVPullToRefresh.m"; sourceTree = "<group>"; };
 		8708A3C11B6C86860012484E /* Eduber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eduber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8708A3C51B6C86860012484E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8708A3C61B6C86860012484E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -333,6 +340,7 @@
 		8427E0AC1B6D839000EF96D5 /* External */ = {
 			isa = PBXGroup;
 			children = (
+				846794111B6DF3C800121723 /* SVPullToRefresh */,
 				846793F31B6DAAFB00121723 /* TPKeyboardAvoiding */,
 				8427E0B81B6D88B300EF96D5 /* FlatUI */,
 				8427E0AD1B6D839000EF96D5 /* Zopim */,
@@ -450,6 +458,18 @@
 			);
 			name = courses;
 			path = Models/courses;
+			sourceTree = "<group>";
+		};
+		846794111B6DF3C800121723 /* SVPullToRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				846794121B6DF3C800121723 /* SVPullToRefresh.h */,
+				846794131B6DF3C800121723 /* UIScrollView+SVInfiniteScrolling.h */,
+				846794141B6DF3C800121723 /* UIScrollView+SVInfiniteScrolling.m */,
+				846794151B6DF3C800121723 /* UIScrollView+SVPullToRefresh.h */,
+				846794161B6DF3C800121723 /* UIScrollView+SVPullToRefresh.m */,
+			);
+			path = SVPullToRefresh;
 			sourceTree = "<group>";
 		};
 		8708A3B81B6C86860012484E = {
@@ -712,6 +732,7 @@
 				8427E0F51B6D88B300EF96D5 /* UITableViewCell+FlatUI.m in Sources */,
 				842266291B6CFDA500AABFB6 /* LeftMenuHeaderView.m in Sources */,
 				4C5DE2411B6CCE6000B85BB8 /* LeftMenuTableViewCell.m in Sources */,
+				846794171B6DF3C800121723 /* UIScrollView+SVInfiniteScrolling.m in Sources */,
 				8427E0F01B6D88B300EF96D5 /* UIPopoverController+FlatUI.m in Sources */,
 				878B3EBC1B6D6D3C006B8710 /* ClassRecommendationViewController.m in Sources */,
 				4C76DEF31B6D0C870052FD48 /* TestResultViewController.m in Sources */,
@@ -741,6 +762,7 @@
 				878B3EB31B6D3D23006B8710 /* TestInfoViewController.m in Sources */,
 				878B3E9C1B6D17D0006B8710 /* StudentClassSelectViewController.m in Sources */,
 				8427E0A21B6D726F00EF96D5 /* StudentClassListViewController.m in Sources */,
+				846794181B6DF3C800121723 /* UIScrollView+SVPullToRefresh.m in Sources */,
 				842266211B6CC55300AABFB6 /* UIImage+ImageEffects.m in Sources */,
 				8427E0F91B6D90FC00EF96D5 /* WebViewOthersViewController.m in Sources */,
 				4C5DE2201B6CA77100B85BB8 /* LoginViewController.m in Sources */,

@@ -31,6 +31,12 @@
     
     //load data
     [self loadData];
+    
+    
+    //Add refresh control
+    [self.tableView addPullToRefreshWithActionHandler:^{
+        [self loadData];
+    }];
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -43,6 +49,8 @@
     [SVProgressHUD show];
     [NetworkEngine getJoinedCourse:^(NSDictionary *data) {
         [SVProgressHUD dismiss];
+        [self.tableView.pullToRefreshView stopAnimating];
+        
         Course *co = [[Course alloc] initWithDictionary:data];
         self.classList = co.courses;
         [self.tableView reloadData];
