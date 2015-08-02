@@ -9,7 +9,7 @@
 #import "StudentClassSelectViewController.h"
 #import "TestInfoViewController.h"
 #import "ClassRecommendationViewController.h"
-#import "CustomNavigationBar.h"
+#import "SWRevealViewController.h"
 
 @implementation StudentClassSelectViewController
 

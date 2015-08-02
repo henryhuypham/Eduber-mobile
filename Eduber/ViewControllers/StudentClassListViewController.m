@@ -7,6 +7,7 @@
 //
 
 #import "StudentClassListViewController.h"
+#import "SWRevealViewController.h"
 #define kCellID @"studentClassCell"
 
 @implementation StudentClassListViewController
@@ -19,6 +20,20 @@
     
     //setup data
     [self setupData];
+    SWRevealViewController* revealController = self.revealViewController;
+    if(revealController){
+        UIButton *toggleButton=[[UIButton alloc]initWithFrame:CGRectMake(0, 0, 35, 22)];
+        [toggleButton setImage:[UIImage imageNamed:@"btn_toggle"] forState:UIControlStateNormal];
+        [toggleButton addTarget:revealController action: @selector( revealToggle: ) forControlEvents:UIControlEventTouchUpInside];
+        UIBarButtonItem *   revealButtonItem=[[UIBarButtonItem alloc] initWithCustomView:toggleButton];
+        self.navigationItem.leftBarButtonItem = revealButtonItem;
+        //[self.view addGestureRecognizer: self.revealViewController.panGestureRecognizer];
+    }
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+        [self setTitle:@"Class"];
 }
 
 -(void)setupData{
@@ -58,7 +73,6 @@
 -(void)setupView{
 
     //title
-    [self setTitle:@"Class"];
     
     //scrollView
     self.automaticallyAdjustsScrollViewInsets = NO;
