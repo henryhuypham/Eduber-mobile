@@ -23,6 +23,7 @@
     //scrollView
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.scrollView.contentInset = UIEdgeInsetsMake(0,0,0,0);
+    self.scrollviewHeight.constant = self.view.bounds.size.width;
 }
 
 - (IBAction)createClass:(id)sender {
