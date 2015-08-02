@@ -1513,6 +1513,7 @@ to select your class.</string>
                                             <outlet property="containerView" destination="pUD-Xg-5lG" id="Zdc-9i-1Pa"/>
                                             <outlet property="emailLB" destination="Nxu-2X-eQ7" id="l7V-22-57i"/>
                                             <outlet property="joinButton" destination="rcw-60-Nfc" id="lnY-ki-4Zv"/>
+                                            <outlet property="likeNumberLabel" destination="yuP-q2-IeG" id="epF-uE-eig"/>
                                             <outlet property="nameLB" destination="CqD-3V-F83" id="7uO-Ea-wvJ"/>
                                             <outlet property="phoneLB" destination="06D-SN-hkZ" id="cp7-ig-ZCX"/>
                                         </connections>

@@ -106,7 +106,8 @@
          cell = [[ProfressorCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kCellID];
     }
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    
+    NSString *likeNumberString = [NSString stringWithFormat:@"%d", arc4random_uniform(500)];
+    [cell.likeNumberLabel setText:likeNumberString];
     Courses *info = self.professorList[indexPath.row];
     [cell setInfo:info];
     cell.delegate = self;
