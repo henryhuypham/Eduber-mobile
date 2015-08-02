@@ -45,6 +45,22 @@
     info.numberStudent = self.capacity.text;
     info.schedule = self.schedule.text;
     info.location = self.location.text;
+    
+    [self createAPI:info.className];
+}
+
+
+-(void)createAPI:(NSString *)title{
+    [SVProgressHUD setBackgroundColor:[UIColor colorWithRed:0.7f green:0.7f blue:0.7f alpha:0.65f]];
+    [SVProgressHUD show];
+    [NetworkEngine createTeacherCourse:title onSuccess:^(NSDictionary *data) {
+          [SVProgressHUD dismiss];
+        
+        [self.navigationController popViewControllerAnimated:YES];
+        [self.delegate callBackToTeacherClass];
+    } onError:^(NSError *error, NSDictionary *data) {
+        [SVProgressHUD dismiss];
+    }];
 }
 
 @end

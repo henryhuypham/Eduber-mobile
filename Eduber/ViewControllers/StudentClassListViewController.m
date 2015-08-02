@@ -41,7 +41,7 @@
 -(void)loadData{//show loading
     [SVProgressHUD setBackgroundColor:[UIColor colorWithRed:0.7f green:0.7f blue:0.7f alpha:0.65f]];
     [SVProgressHUD show];
-    [NetworkEngine getTeacherCourse:^(NSDictionary *data) {
+    [NetworkEngine getJoinedCourse:^(NSDictionary *data) {
         [SVProgressHUD dismiss];
         Course *co = [[Course alloc] initWithDictionary:data];
         self.classList = co.courses;

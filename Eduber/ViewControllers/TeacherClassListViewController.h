@@ -10,8 +10,9 @@
 #import "TeacherClassCell.h"
 #import "NetworkEngine.h"
 #import "Course.h"
+#import "ClassCreatingViewController.h"
 
-@interface TeacherClassListViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
+@interface TeacherClassListViewController : UIViewController<UITableViewDataSource, UITableViewDelegate,ClassCreatingViewDelegate>
 
 @property (nonatomic,retain)NSMutableArray *classList;
 

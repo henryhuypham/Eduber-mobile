@@ -139,7 +139,13 @@
     NSLog(@"Add New Action");
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Teacher" bundle:nil];
     ClassCreatingViewController *viewController = (ClassCreatingViewController *)[sb instantiateViewControllerWithIdentifier:@"classCreatingViewController"];
+    viewController.delegate = self;
     [self.navigationController pushViewController:viewController animated:YES];
+}
+
+#pragma mark - create class delegate
+-(void)callBackToTeacherClass{
+    [self loadData];
 }
 
 @end

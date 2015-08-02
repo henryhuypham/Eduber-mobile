@@ -20,9 +20,19 @@ typedef void (^FailureBlock)(NSError *error, NSDictionary *data);
                  onError:(FailureBlock)failure;
 
 #pragma  - get teacher list
-+ (void)getTeacherCourse:(CompletionBlockObject)completion
++ (void)getJoinedCourse:(CompletionBlockObject)completion
                  onError:(FailureBlock)failure;
 
+
++ (void)getTeacherCourse:(CompletionBlockObject)completion
+                onError:(FailureBlock)failure;
+
++ (void)getJoinedCourse:(CompletionBlockObject)completion
+                onError:(FailureBlock)failure;
+
 + (void)createTeacherCourse:(NSString *)title onSuccess:(CompletionBlockObject)completion
+                    onError:(FailureBlock)failure;
+
++ (void)getNewTeacherCourse:(CompletionBlockObject)completion
                     onError:(FailureBlock)failure;
 @end

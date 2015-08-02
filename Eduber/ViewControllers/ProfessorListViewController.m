@@ -22,71 +22,16 @@
 }
 
 -(void)setupData{
-    self.professorList = [[NSMutableArray alloc] init];
-    
-    Professor *pro1 = [[Professor alloc] init];
-    pro1.name = @"Alberto Abadie";
-    pro1.imageLink = @"http://apps.hks.harvard.edu/faculty/images/bio/76.jpg";
-    pro1.school = @"Harvard Kennedy School";
-    pro1.phone = @"Phone: 617-496-4547";
-    pro1.email = @"Email: alberto_abadie@harvard.edu";
-    pro1.address = @"Office Address: Rubenstein-316";
-    
-    Professor *pro2 = [[Professor alloc] init];
-    pro2.name = @"Alberto Abadie";
-    pro2.imageLink = @"http://universe.byu.edu/wp-content/uploads/2014/03/RobertDarnton_06.jpg";
-    pro2.school = @"Harvard Kennedy School";
-    pro2.phone = @"Phone: 617-496-4547";
-    pro2.email = @"Email: alberto_abadie@harvard.edu";
-    pro2.address = @"Office Address: Rubenstein-316";
-    
-    Professor *pro3 = [[Professor alloc] init];
-    pro3.name = @"Pham Vu Thanh Thong";
-    pro3.imageLink = @"http://cache.boston.com/bonzai-fba/Third_Party_Photo/2009/06/29/ryanmccann10__1246309912_8938.jpg";
-    pro3.school = @"Harvard Kennedy School";
-    pro3.phone = @"Phone: 617-496-4547";
-    pro3.email = @"Email: alberto_abadie@harvard.edu";
-    pro3.address = @"Office Address: Rubenstein-316";
-    
-    Professor *pro4 = [[Professor alloc] init];
-    pro4.name = @"Alberto Abadie";
-    pro4.imageLink = @"https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTLwJ8wPBVm0-j4YG7Q8F29pVdFHZXCYmm9Xo5RDSHG2EZCXMGT";
-    pro4.school = @"Harvard Kennedy School";
-    pro4.phone = @"Phone: 617-496-4547";
-    pro4.email = @"Email: alberto_abadie@harvard.edu";
-    pro4.address = @"Office Address: Rubenstein-316";
-    
-    Professor *pro5 = [[Professor alloc] init];
-    pro5.name = @"Alberto Abadie";
-    pro5.imageLink = @"http://www.hks.harvard.edu/var/ezp_site/storage/images/news-events/news/testimonies/testimony-chandra-jun09/455777-1-eng-US/amitabh-chandra-before-the-us-civil-rights-commission_ksgarticlefeature.jpg";
-    pro5.school = @"Harvard Kennedy School";
-    pro5.phone = @"Phone: 617-496-4547";
-    pro5.email = @"Email: alberto_abadie@harvard.edu";
-    pro5.address = @"Office Address: Rubenstein-316";
-    
-    Professor *pro6 = [[Professor alloc] init];
-    pro6.name = @"Alberto Abadie";
-    pro6.imageLink = @"http://www.unl.edu/classics/images/faculty/john.jpg";
-    pro6.school = @"Harvard Kennedy School";
-    pro6.phone = @"Phone: 617-496-4547";
-    pro6.email = @"Email: alberto_abadie@harvard.edu";
-    pro6.address = @"Office Address: Rubenstein-316";
-    
-    Professor *pro7 = [[Professor alloc] init];
-    pro7.name = @"Alberto Abadie";
-    pro7.imageLink = @"http://citizensvoice.com/polopoly_fs/1.1475460!/fileImage/httpImage/image.jpg_gen/derivatives/landscape_490/image.jpg";
-    pro7.school = @"Harvard Kennedy School";
-    pro7.phone = @"Phone: 617-496-4547";
-    pro7.email = @"Email: alberto_abadie@harvard.edu";
-    pro7.address = @"Office Address: Rubenstein-316";
-    
-    [self.professorList addObject:pro1];
-    [self.professorList addObject:pro2];
-    [self.professorList addObject:pro3];
-    [self.professorList addObject:pro4];
-    [self.professorList addObject:pro5];
-    [self.professorList addObject:pro6];
-    [self.professorList addObject:pro7];
+    [SVProgressHUD setBackgroundColor:[UIColor colorWithRed:0.7f green:0.7f blue:0.7f alpha:0.65f]];
+    [SVProgressHUD show];
+    [NetworkEngine getNewTeacherCourse:^(NSDictionary *data) {
+        Course *couse = [[Course alloc] initWithDictionary:data];
+        self.professorList = couse.courses;
+        [SVProgressHUD dismiss];
+        [self.tableView reloadData];
+    } onError:^(NSError *error, NSDictionary *data) {
+        [SVProgressHUD dismiss];
+    }];
     
 }
 
@@ -162,7 +107,7 @@
     }
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
-    Professor *info = self.professorList[indexPath.row];
+    Courses *info = self.professorList[indexPath.row];
     [cell setInfo:info];
     cell.delegate = self;
     return cell;
@@ -179,8 +124,9 @@
 }
 
 #pragma mark - ProfessorCell Delegate
-- (void) joinClass:(Professor *)professor{
-    NSString *body = [NSString stringWithFormat:@"Are you sure to join this class : %@?",professor.name];
+- (void) joinClass:(Courses *)cou{
+    NSString *body = [NSString stringWithFormat:@"Are you sure to join this class : %@?",cou.title];
+    pro = cou;
     [self showalertView:@"Confirm" Description:body];
 }
 
@@ -197,6 +143,7 @@
                              type:SIAlertViewButtonTypeDestructive
                           handler:^(SIAlertView *alert) {
                               NSLog(@"Button1 Clicked");
+                              [self join];
                           }];
     [alertView addButtonWithTitle:@"Cancel"
                              type:SIAlertViewButtonTypeCancel
@@ -221,6 +168,17 @@
     
     [alertView show];
 
+}
+
+-(void)join{
+    [SVProgressHUD setBackgroundColor:[UIColor colorWithRed:0.7f green:0.7f blue:0.7f alpha:0.65f]];
+    [SVProgressHUD show];
+    [NetworkEngine createUserCourse:[@(pro.coursesIdentifier) stringValue] onSuccess:^(NSDictionary *data) {
+        [SVProgressHUD dismiss];
+         [self.navigationController popViewControllerAnimated:YES];
+    } onError:^(NSError *error, NSDictionary *data) {
+         [SVProgressHUD dismiss];
+    }];
 }
 
 

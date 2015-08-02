@@ -9,8 +9,13 @@
 #import <UIKit/UIKit.h>
 #import "ProfressorCell.h"
 #import "Professor.h"
+#import "NetworkEngine.h"
+#import "Course.h"
+#import "Courses.h"
 
-@interface ProfessorListViewController : UIViewController<UITableViewDataSource, UITableViewDelegate,ProfressorCellDelegate>
+@interface ProfessorListViewController : UIViewController<UITableViewDataSource, UITableViewDelegate,ProfressorCellDelegate>{
+    Courses *pro;
+}
 
 @property (nonatomic,retain)NSMutableArray *professorList;
 

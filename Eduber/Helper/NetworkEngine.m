@@ -43,17 +43,29 @@ static AFHTTPRequestOperationManager *manager;
     NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys:@"1",@"user_id",courseID,@"course_id",nil];
     
     AFHTTPRequestOperationManager *manager = [self getManager];
-    [manager GET:urlString parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [manager POST:urlString parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
         completion(responseObject);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         failure(error, operation.responseObject);
     }];
 }
 
-#pragma  - get teacher list
+#pragma
 + (void)getTeacherCourse:(CompletionBlockObject)completion
                  onError:(FailureBlock)failure{
-    NSString *urlString = [NSString stringWithFormat:@"%@/courses.json",kHost];
+    NSString *urlString = [NSString stringWithFormat:@"%@/users/courses.json?user_id=2",kHost];
+    
+    AFHTTPRequestOperationManager *manager = [self getManager];
+    [manager GET:urlString parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        completion(responseObject);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        failure(error, operation.responseObject);
+    }];
+}
+
++ (void)getJoinedCourse:(CompletionBlockObject)completion
+                 onError:(FailureBlock)failure{
+    NSString *urlString = [NSString stringWithFormat:@"%@/users/courses.json?user_id=1",kHost];
     
     AFHTTPRequestOperationManager *manager = [self getManager];
     [manager GET:urlString parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
@@ -70,6 +82,19 @@ static AFHTTPRequestOperationManager *manager;
     
     AFHTTPRequestOperationManager *manager = [self getManager];
     [manager POST:urlString parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        completion(responseObject);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        failure(error, operation.responseObject);
+    }];
+}
+
++ (void)getNewTeacherCourse:(CompletionBlockObject)completion
+              onError:(FailureBlock)failure{
+    NSString *urlString = [NSString stringWithFormat:@"%@/courses.json",kHost];
+    NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys:nil];
+    
+    AFHTTPRequestOperationManager *manager = [self getManager];
+    [manager GET:urlString parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
         completion(responseObject);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         failure(error, operation.responseObject);

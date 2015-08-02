@@ -8,15 +8,16 @@
 #import "UIView+Shadow.h"
 #import "UIButton+Style.h"
 #import "Professor.h"
+#import "Courses.h"
 #import <AFNetworking/AFNetworking.h>
 
 @protocol ProfressorCellDelegate <NSObject>
 @required
-- (void) joinClass:(Professor *)professor;
+- (void) joinClass:(Courses *)professor;
 @end
 
 @interface ProfressorCell : UITableViewCell{
-    Professor *professor;
+    Courses *co;
 }
 
 @property(weak,nonatomic)IBOutlet UIView *containerView;
@@ -32,6 +33,6 @@
 
 @property (nonatomic,retain)id<ProfressorCellDelegate> delegate;
 
--(void)setInfo:(Professor *)info;
+-(void)setInfo:(Courses *)info;
 
 @end

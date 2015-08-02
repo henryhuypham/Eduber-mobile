@@ -7,6 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NetworkEngine.h"
+
+@protocol ClassCreatingViewDelegate <NSObject>
+@required
+- (void) callBackToTeacherClass;
+@end
 
 @interface ClassCreatingViewController : UIViewController
 
@@ -20,6 +26,8 @@
 
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *scrollviewHeight;
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
+
+@property(strong,nonatomic) id<ClassCreatingViewDelegate>delegate;
 
 - (IBAction)createClass:(id)sender;
 
