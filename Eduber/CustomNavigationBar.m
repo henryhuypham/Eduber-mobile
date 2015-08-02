@@ -7,7 +7,7 @@
 //
 
 #import "CustomNavigationBar.h"
-const CGFloat VFSNavigationBarHeightIncrease = 8.f;
+const CGFloat VFSNavigationBarHeightIncrease = 0.f;
 @implementation CustomNavigationBar
 
 
@@ -72,7 +72,7 @@ const CGFloat VFSNavigationBarHeightIncrease = 8.f;
     self.backButton.frame = CGRectMake(0, 0, 12, 20);
     self.backButton.center = self.toggleButton.center;
     self.titleLabel.frame = CGRectMake(0, 0, 120, 30);
-    self.titleLabel.center = CGPointMake(self.frame.size.width/2, self.frame.size.height/2+3);
+    self.titleLabel.center = CGPointMake(self.frame.size.width/2, self.frame.size.height/2);
     appLogo.frame = CGRectMake(0, 0, 160, self.frame.size.height-20);
     appLogo.center = CGPointMake(self.frame.size.width/2, self.frame.size.height/2);
     borderView.frame = CGRectMake(0, self.frame.size.height-2.5f, self.frame.size.width, 2.5f);
