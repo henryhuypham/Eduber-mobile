@@ -1,0 +1,10 @@
+*Library used:*
+- Zopim
+- AFNetworking
+- CocoaSecurity
+- NZCircularImageView
+- SDWebImage
+- SIAlertView
+- SVProgressHUD
+- SecureNSUserDefaults
+- UIActivityIndicator-for-SDWebImage
