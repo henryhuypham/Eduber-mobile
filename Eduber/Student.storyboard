@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -500,7 +501,7 @@
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zjl-mI-VH8" userLabel="Subject">
                                                                 <rect key="frame" x="0.0" y="133" width="148" height="30"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Physics" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z4j-7d-bFl">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GMAT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z4j-7d-bFl">
                                                                         <rect key="frame" x="10" y="0.0" width="128" height="30"/>
                                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -516,7 +517,7 @@
                                                                     <constraint firstAttribute="height" constant="30" id="Ulj-6f-TNk"/>
                                                                 </constraints>
                                                             </view>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_physics" translatesAutoresizingMaskIntoConstraints="NO" id="ux4-4F-Zq7">
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_gmat" translatesAutoresizingMaskIntoConstraints="NO" id="ux4-4F-Zq7">
                                                                 <rect key="frame" x="0.0" y="0.0" width="148" height="133"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             </imageView>
@@ -539,7 +540,7 @@
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SlC-PK-eVa" userLabel="Subject">
                                                                 <rect key="frame" x="0.0" y="133" width="148" height="30"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chemistry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KWG-Zd-qvN">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SLEP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KWG-Zd-qvN">
                                                                         <rect key="frame" x="10" y="0.0" width="128" height="30"/>
                                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -555,7 +556,7 @@
                                                                     <constraint firstAttribute="bottom" secondItem="KWG-Zd-qvN" secondAttribute="bottom" id="teJ-Ib-3Do"/>
                                                                 </constraints>
                                                             </view>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_chemistry" translatesAutoresizingMaskIntoConstraints="NO" id="8uz-Vo-uZg">
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_slep" translatesAutoresizingMaskIntoConstraints="NO" id="8uz-Vo-uZg">
                                                                 <rect key="frame" x="0.0" y="0.0" width="148" height="133"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             </imageView>
@@ -593,7 +594,7 @@
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MCR-Ya-KeE" userLabel="Subject">
                                                                 <rect key="frame" x="0.0" y="133" width="148" height="30"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Geography" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xCt-a1-9KR">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IELTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xCt-a1-9KR">
                                                                         <rect key="frame" x="10" y="0.0" width="128" height="30"/>
                                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -609,7 +610,7 @@
                                                                     <constraint firstAttribute="bottom" secondItem="xCt-a1-9KR" secondAttribute="bottom" id="fnC-D7-e9K"/>
                                                                 </constraints>
                                                             </view>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_geography" translatesAutoresizingMaskIntoConstraints="NO" id="6oH-v7-Shl">
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_ielts" translatesAutoresizingMaskIntoConstraints="NO" id="6oH-v7-Shl">
                                                                 <rect key="frame" x="0.0" y="0.0" width="148" height="133"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             </imageView>
@@ -632,7 +633,7 @@
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oPu-mB-k3W" userLabel="Subject">
                                                                 <rect key="frame" x="0.0" y="133" width="148" height="30"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="History" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgD-l2-4as">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iTEP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgD-l2-4as">
                                                                         <rect key="frame" x="10" y="0.0" width="128" height="30"/>
                                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -648,7 +649,7 @@
                                                                     <constraint firstAttribute="bottom" secondItem="cgD-l2-4as" secondAttribute="bottom" id="xfZ-Qh-G1k"/>
                                                                 </constraints>
                                                             </view>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_history" translatesAutoresizingMaskIntoConstraints="NO" id="sgF-oG-QJG">
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_itep" translatesAutoresizingMaskIntoConstraints="NO" id="sgF-oG-QJG">
                                                                 <rect key="frame" x="0.0" y="0.0" width="148" height="133"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             </imageView>
@@ -1544,8 +1545,8 @@ to select your class.</string>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OdH-JB-zQf" id="FNf-rx-eVe">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="09q-f0-S5c">
-                                                    <rect key="frame" x="3" y="2" width="314" height="153.5"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="09q-f0-S5c">
+                                                    <rect key="frame" x="3" y="3" width="314" height="153.5"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TI8-xq-noO" userLabel="Header">
                                                             <rect key="frame" x="0.0" y="0.0" width="314" height="29.5"/>
@@ -1842,10 +1843,10 @@ to select your class.</string>
                                 <exclude reference="6Z5-z6-mLI"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="r0h-iB-hcM"/>
                                 <exclude reference="D05-w0-NcM"/>
                                 <exclude reference="Osz-1C-fPj"/>
                                 <exclude reference="Pct-i3-cUm"/>
-                                <exclude reference="r0h-iB-hcM"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -1853,10 +1854,10 @@ to select your class.</string>
                                 <include reference="6Z5-z6-mLI"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="r0h-iB-hcM"/>
                                 <include reference="D05-w0-NcM"/>
                                 <include reference="Osz-1C-fPj"/>
                                 <include reference="Pct-i3-cUm"/>
-                                <include reference="r0h-iB-hcM"/>
                             </mask>
                         </variation>
                     </view>
@@ -1876,9 +1877,13 @@ to select your class.</string>
         <image name="ico_chemistry" width="400" height="302"/>
         <image name="ico_english" width="1000" height="664"/>
         <image name="ico_geography" width="392" height="400"/>
+        <image name="ico_gmat" width="400" height="104"/>
         <image name="ico_history" width="1600" height="1100"/>
+        <image name="ico_ielts" width="800" height="313"/>
+        <image name="ico_itep" width="327" height="217"/>
         <image name="ico_math" width="691" height="596"/>
         <image name="ico_physics" width="1600" height="891"/>
+        <image name="ico_slep" width="491" height="316"/>
         <image name="ico_toefl" width="593" height="230"/>
         <image name="ico_toeic" width="745" height="745"/>
         <image name="ico_user_white" width="48" height="48"/>
