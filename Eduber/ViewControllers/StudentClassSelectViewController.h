@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "CustomNavigationBar.h"
+#import "NetworkEngine.h"
+#import "Course.h"
+#import "Courses.h"
 
 @interface StudentClassSelectViewController : UIViewController
 

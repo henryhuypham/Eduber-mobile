@@ -28,11 +28,12 @@
     // Configure the view for the selected state
 }
 
--(void)setInfo:(StudentClassInfo *)info{
-    self.classnameLB.text = info.className;
-    self.numberLB.text = [@(info.numberStudent) stringValue];
-    self.scheduleLB.text = info.schedule;
+-(void)setInfo:(Courses *)info{
+    self.classnameLB.text = info.title;
+    self.numberLB.text = [@(info.quantity) stringValue];
+    self.scheduleLB.text = info.courseTimeToS;
     self.locationLB.text = info.location;
+    [self.teacherImageView setImageWithURL:[NSURL URLWithString:info.avatarUrl] placeholderImage:[UIImage imageNamed:@"placeholder"]];
     
     //button
     [self.chatBT applyAppStyle];
@@ -47,8 +48,14 @@
     self.layer.cornerRadius = 3;
     self.clipsToBounds = YES;
     
-    [self.teacherImageView setImageWithURL:[NSURL URLWithString:info.teacherImageLink] placeholderImage:[UIImage imageNamed:@"placeholder"]];
+    [self.teacherImageView setImageWithURL:[NSURL URLWithString:info.avatarUrl] placeholderImage:[UIImage imageNamed:@"placeholder"]];
     self.teacherImageView.contentMode = UIViewContentModeScaleAspectFill;
+
+    self.teacherImageView.clipsToBounds = YES;
+    self.teacherImageView.layer.cornerRadius = self.teacherImageView.frame.size.width / 2;
+    self.teacherImageView.clipsToBounds = YES;
+    self.teacherImageView.layer.borderWidth = 2;
+    self.teacherImageView.layer.borderColor = [UIColor whiteColor].CGColor;
 }
 
 -(IBAction)chatAction:(id)sender{

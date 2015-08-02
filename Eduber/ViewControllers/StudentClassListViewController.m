@@ -19,7 +19,6 @@
     [self setupView];
     
     //setup data
-    [self setupData];
     SWRevealViewController* revealController = self.revealViewController;
     if(revealController){
         UIButton *toggleButton=[[UIButton alloc]initWithFrame:CGRectMake(0, 0, 35, 22)];
@@ -29,6 +28,9 @@
         self.navigationItem.leftBarButtonItem = revealButtonItem;
         //[self.view addGestureRecognizer: self.revealViewController.panGestureRecognizer];
     }
+    
+    //load data
+    [self loadData];
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -36,39 +38,18 @@
         [self setTitle:@"Class"];
 }
 
--(void)setupData{
-    self.classList = [[NSMutableArray alloc] init];
-    
-    for( int i=0;i<10;i++){
-        StudentClassInfo *info = [[StudentClassInfo alloc] init];
-        info.identify = 0;
-        info.className = [NSString stringWithFormat:@"English %d",i];
-        info.numberStudent = arc4random_uniform(20);
-        info.className = [NSString stringWithFormat:@"English %d",i];
+-(void)loadData{//show loading
+    [SVProgressHUD setBackgroundColor:[UIColor colorWithRed:0.7f green:0.7f blue:0.7f alpha:0.65f]];
+    [SVProgressHUD show];
+    [NetworkEngine getJoinedCourse:^(NSDictionary *data) {
+        [SVProgressHUD dismiss];
+        Course *co = [[Course alloc] initWithDictionary:data];
+        self.classList = co.courses;
+        [self.tableView reloadData];
+    } onError:^(NSError *error, NSDictionary *data) {
         
-        //random date
-        NSDate *today = [NSDate date];
-        NSCalendar *calendar = [NSCalendar currentCalendar];
-        NSCalendarUnit unitFlags = NSYearCalendarUnit | NSMonthCalendarUnit |  NSDayCalendarUnit;
-        NSDateComponents *dateComponents = [calendar components:unitFlags fromDate:today];
-        NSRange days = [calendar rangeOfUnit:NSDayCalendarUnit
-                                      inUnit:NSMonthCalendarUnit
-                                     forDate:today];
-        int r = arc4random() % days.length;
-        [dateComponents setDay:r];
-        NSDate *startDate = [calendar dateFromComponents:dateComponents];
-        NSString *dateString = [NSDateFormatter localizedStringFromDate:startDate
-                                                              dateStyle:NSDateFormatterShortStyle
-                                                              timeStyle:NSDateFormatterFullStyle];
-
-        info.schedule = [NSString stringWithFormat:@"%@",dateString];
-        info.location = [NSString stringWithFormat:@"176 Nguyễn Huệ, Phường ĐaKao, Quận 1"];
-        
-        //add list
-        [self.classList addObject:info];
-    }
+    }];
 }
-
 
 -(void)setupView{
 
@@ -141,8 +122,8 @@
     }
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
-    StudentClassInfo *info = self.classList[indexPath.row];
-    [cell setInfo:info];
+    Courses *co = self.classList[indexPath.row];
+    [cell setInfo:co];
     cell.delegate = self;
     
     return cell;

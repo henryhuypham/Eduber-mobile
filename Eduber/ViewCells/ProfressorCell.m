@@ -40,20 +40,18 @@
     // Configure the view for the selected state
 }
 
--(void)setInfo:(Professor *)info{
+-(void)setInfo:(Courses *)info{
     //select professor
-    professor = info;
+    co = info;
     
-    self.nameLB.text = info.name;
-    self.phoneLB.text = info.phone;
-    self.schoolLB.text = info.school;
-    self.addressLB.text = info.address;
-    [self.avatarView setImageWithURL:[NSURL URLWithString:info.imageLink] placeholderImage:[UIImage imageNamed:@"placeholder"]];
+    self.nameLB.text = info.title;
+    self.addressLB.text = info.location;
+    [self.avatarView setImageWithURL:[NSURL URLWithString:info.avatarUrl] placeholderImage:[UIImage imageNamed:@"placeholder"]];
     self.avatarView.contentMode = UIViewContentModeScaleAspectFill;
 }
 
 -(IBAction)joinAction:(id)sender{
-    [self.delegate joinClass:professor];
+    [self.delegate joinClass:co];
 }
 
 @end
