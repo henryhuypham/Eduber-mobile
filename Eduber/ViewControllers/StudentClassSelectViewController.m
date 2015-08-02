@@ -10,6 +10,7 @@
 #import "TestInfoViewController.h"
 #import "ClassRecommendationViewController.h"
 #import "SWRevealViewController.h"
+#import "NetworkEngine.h"
 
 @implementation StudentClassSelectViewController
 
@@ -136,9 +137,24 @@
 
 -(IBAction)toeicAction:(id)sender {
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Student" bundle:nil];
-    //    TestInfoViewController *viewController = (TestInfoViewController *)[sb instantiateViewControllerWithIdentifier:@"testInfoViewController"];
-    ClassRecommendationViewController *viewController = (ClassRecommendationViewController *)[sb instantiateViewControllerWithIdentifier:@"classRecommendationViewController"];
-    [self.navigationController  pushViewController:viewController animated:YES];
+    
+    [[NetworkEngine getManager] GET:@"http://10.0.239.38:3000/users/can_do_test.json" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSDictionary *dict = (NSDictionary *)responseObject;
+        NSString *tookTheTest = [[dict valueForKey:@"result"] stringValue];
+        
+        if ([tookTheTest isEqualToString:@"1"]) {
+            ClassRecommendationViewController *viewController = (ClassRecommendationViewController *)[sb instantiateViewControllerWithIdentifier:@"classRecommendationViewController"];
+            [self.navigationController  pushViewController:viewController animated:YES];
+        } else {
+            TestInfoViewController *viewController = (TestInfoViewController *)[sb instantiateViewControllerWithIdentifier:@"testInfoViewController"];
+            [self.navigationController  pushViewController:viewController animated:YES];
+        }
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        ClassRecommendationViewController *viewController = (ClassRecommendationViewController *)[sb instantiateViewControllerWithIdentifier:@"classRecommendationViewController"];
+        [self.navigationController  pushViewController:viewController animated:YES];
+    }];
+    
+    
 }
 
 @end
