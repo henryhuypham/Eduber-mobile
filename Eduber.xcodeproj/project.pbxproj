@@ -71,6 +71,7 @@
 		878B3EB31B6D3D23006B8710 /* TestInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 878B3EB11B6D3D23006B8710 /* TestInfoViewController.m */; };
 		878B3EB71B6D3D38006B8710 /* ClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 878B3EB61B6D3D38006B8710 /* ClassInfo.m */; };
 		878B3EBC1B6D6D3C006B8710 /* ClassRecommendationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 878B3EBB1B6D6D3C006B8710 /* ClassRecommendationViewController.m */; };
+		878B3EC21B6DA1CA006B8710 /* ClassCreatingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 878B3EC11B6DA1CA006B8710 /* ClassCreatingViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -207,6 +208,8 @@
 		878B3EB61B6D3D38006B8710 /* ClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClassInfo.m; path = Models/ClassInfo.m; sourceTree = "<group>"; };
 		878B3EBA1B6D6D3C006B8710 /* ClassRecommendationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClassRecommendationViewController.h; path = ViewControllers/ClassRecommendationViewController.h; sourceTree = "<group>"; };
 		878B3EBB1B6D6D3C006B8710 /* ClassRecommendationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClassRecommendationViewController.m; path = ViewControllers/ClassRecommendationViewController.m; sourceTree = "<group>"; };
+		878B3EC01B6DA1CA006B8710 /* ClassCreatingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClassCreatingViewController.h; path = ViewControllers/ClassCreatingViewController.h; sourceTree = "<group>"; };
+		878B3EC11B6DA1CA006B8710 /* ClassCreatingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClassCreatingViewController.m; path = ViewControllers/ClassCreatingViewController.m; sourceTree = "<group>"; };
 		FCB3AB03E3CF78806BC3AED2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -241,6 +244,8 @@
 		4C5DE21A1B6C994900B85BB8 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				878B3EC01B6DA1CA006B8710 /* ClassCreatingViewController.h */,
+				878B3EC11B6DA1CA006B8710 /* ClassCreatingViewController.m */,
 				8427E0F71B6D90FC00EF96D5 /* WebViewOthersViewController.h */,
 				8427E0F81B6D90FC00EF96D5 /* WebViewOthersViewController.m */,
 				8427E0A01B6D726F00EF96D5 /* StudentClassListViewController.h */,
@@ -668,6 +673,7 @@
 				8427E0EF1B6D88B300EF96D5 /* UINavigationBar+FlatUI.m in Sources */,
 				4C76DEF61B6D110D0052FD48 /* TestResultTableViewCell.m in Sources */,
 				8708A3C71B6C86860012484E /* main.m in Sources */,
+				878B3EC21B6DA1CA006B8710 /* ClassCreatingViewController.m in Sources */,
 				878B3EB71B6D3D38006B8710 /* ClassInfo.m in Sources */,
 				8427E0EA1B6D88B300EF96D5 /* NSString+Icons.m in Sources */,
 				8427E0951B6D5F1700EF96D5 /* Professor.m in Sources */,

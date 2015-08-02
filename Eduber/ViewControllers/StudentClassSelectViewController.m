@@ -9,6 +9,7 @@
 #import "StudentClassSelectViewController.h"
 #import "TestInfoViewController.h"
 #import "ClassRecommendationViewController.h"
+#import "CustomNavigationBar.h"
 
 @implementation StudentClassSelectViewController
 
@@ -17,8 +18,11 @@
     
     // Do any additional setup after loading the view.
     [self setupView];
+    
+    self.navigationItem.hidesBackButton = true;
+    [self showBackButton];
+    [self.backButton addTarget:self action:@selector( handleBack )  forControlEvents:UIControlEventTouchUpInside];
 }
-
 
 -(void)viewWillAppear:(BOOL)animated{
     [self setTitle:@"Subjects"];
@@ -136,7 +140,7 @@
 
 -(IBAction)toeicAction:(id)sender {
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Student" bundle:nil];
-//    TestInfoViewController *viewController = (TestInfoViewController *)[sb instantiateViewControllerWithIdentifier:@"testInfoViewController"];
+    //    TestInfoViewController *viewController = (TestInfoViewController *)[sb instantiateViewControllerWithIdentifier:@"testInfoViewController"];
     ClassRecommendationViewController *viewController = (ClassRecommendationViewController *)[sb instantiateViewControllerWithIdentifier:@"classRecommendationViewController"];
     [self.navigationController  pushViewController:viewController animated:YES];
 }

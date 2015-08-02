@@ -112,6 +112,10 @@ const CGFloat VFSNavigationBarHeightIncrease = 8.f;
 
 @implementation UIViewController(CustomNavigationBar)
 
+-(UIButton*)backButton{
+    CustomNavigationBar* navigationBar = (CustomNavigationBar*) self.navigationController.navigationBar;
+    return navigationBar.backButton;
+}
 -(void)showBackButton{
     CustomNavigationBar* navigationBar = (CustomNavigationBar*) self.navigationController.navigationBar;
     [navigationBar showBackButton];
@@ -131,6 +135,13 @@ const CGFloat VFSNavigationBarHeightIncrease = 8.f;
     navigationBar.titleLabel.textColor = [UIColor whiteColor];
     navigationBar.titleLabel.font = [UIFont boldSystemFontOfSize:18.0f];
     navigationBar.titleLabel.text = title;
+}
+
+-(void) handleBack
+{
+    [self hideBackButton];
+    [self.backButton removeTarget:self action:@selector( handleBack )  forControlEvents:UIControlEventTouchUpInside];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end

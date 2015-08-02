@@ -22,8 +22,9 @@
 @end
 
 @interface UIViewController(CustomNavigationBar)
-
+-(UIButton*)backButton;
 -(void)showBackButton;
 -(void)hideBackButton;
 -(void)setTitle:(NSString*)title;
+-(void) handleBack;
 @end

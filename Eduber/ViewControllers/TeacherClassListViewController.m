@@ -7,6 +7,7 @@
 //
 
 #import "TeacherClassListViewController.h"
+#import "ClassCreatingViewController.h"
 #define kCellID @"TeacherClassCell"
 
 @implementation TeacherClassListViewController
@@ -146,6 +147,9 @@
 #pragma mark - add new action
 -(IBAction)addNewActon:(id)sender{
     NSLog(@"Add New Action");
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Teacher" bundle:nil];
+    ClassCreatingViewController *viewController = (ClassCreatingViewController *)[sb instantiateViewControllerWithIdentifier:@"classCreatingViewController"];
+    [self.navigationController pushViewController:viewController animated:YES];
 }
 
 @end
