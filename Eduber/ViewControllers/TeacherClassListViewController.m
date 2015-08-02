@@ -8,6 +8,8 @@
 
 #import "TeacherClassListViewController.h"
 #import "SWRevealViewController.h"
+#import "ClassCreatingViewController.h"
+
 #define kCellID @"TeacherClassCell"
 
 @implementation TeacherClassListViewController
@@ -37,7 +39,7 @@
         ClassInfo *info = [[ClassInfo alloc] init];
         info.identify = 0;
         info.className = [NSString stringWithFormat:@"English %d",i];
-        info.numberStudent = arc4random_uniform(20);
+        info.numberStudent = @(arc4random_uniform(20)).stringValue;
         info.className = [NSString stringWithFormat:@"English %d",i];
         
         //random date
@@ -155,6 +157,9 @@
 #pragma mark - add new action
 -(IBAction)addNewActon:(id)sender{
     NSLog(@"Add New Action");
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Teacher" bundle:nil];
+    ClassCreatingViewController *viewController = (ClassCreatingViewController *)[sb instantiateViewControllerWithIdentifier:@"classCreatingViewController"];
+    [self.navigationController pushViewController:viewController animated:YES];
 }
 
 @end

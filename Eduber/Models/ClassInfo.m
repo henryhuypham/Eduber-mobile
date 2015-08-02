@@ -16,7 +16,7 @@
     if (self) {
         _identify = 0;
         _className = @"";
-        _numberStudent = 0;
+        _numberStudent = @"0";
         _schedule = @"";
         _location = @"";
     }
