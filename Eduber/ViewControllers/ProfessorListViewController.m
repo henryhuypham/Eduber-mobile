@@ -196,7 +196,7 @@
         UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Student" bundle:nil];
         StudentClassListViewController *viewController = (StudentClassListViewController *)[sb instantiateViewControllerWithIdentifier:@"studentClassListViewController"];
         [self.navigationController  pushViewController:viewController animated:YES];
-        [self showalertView:@"" Description:@"Joined"];
+        [self showalertViewWithNoButton:@"" Description:@"Joined"];
         
     } onError:^(NSError *error, NSDictionary *data) {
          [SVProgressHUD dismiss];
