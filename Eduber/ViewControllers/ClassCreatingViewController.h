@@ -18,6 +18,8 @@
 @property (strong, nonatomic) IBOutlet UITextField *startDate;
 @property (strong, nonatomic) IBOutlet UITextField *notes;
 
+@property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
+
 - (IBAction)createClass:(id)sender;
 
 @end
