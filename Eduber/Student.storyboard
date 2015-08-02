@@ -1884,7 +1884,7 @@ to select your class.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="61" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="2v2-jc-2R7">
-                                <rect key="frame" x="0.0" y="10" width="320" height="558"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="testResultTableViewCell" rowHeight="61" id="lre-Vy-ebV" customClass="TestResultTableViewCell">
@@ -1932,7 +1932,7 @@ to select your class.</string>
                         <constraints>
                             <constraint firstItem="2v2-jc-2R7" firstAttribute="leading" secondItem="AC0-oZ-vXA" secondAttribute="leading" id="AIu-pX-IeG"/>
                             <constraint firstItem="xeP-tU-E8D" firstAttribute="top" secondItem="2v2-jc-2R7" secondAttribute="bottom" id="Win-3i-1a9"/>
-                            <constraint firstItem="2v2-jc-2R7" firstAttribute="top" secondItem="AC0-oZ-vXA" secondAttribute="top" constant="10" id="gdo-sC-vVZ"/>
+                            <constraint firstItem="2v2-jc-2R7" firstAttribute="top" secondItem="AC0-oZ-vXA" secondAttribute="top" id="gdo-sC-vVZ"/>
                             <constraint firstAttribute="trailing" secondItem="2v2-jc-2R7" secondAttribute="trailing" id="uWM-VO-UoW"/>
                         </constraints>
                     </view>
