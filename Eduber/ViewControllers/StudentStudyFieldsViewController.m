@@ -9,6 +9,7 @@
 #import "StudentStudyFieldsViewController.h"
 #import "StudyFieldCollectionViewCell.h"
 #import "CustomNavigationBar.h"
+#import "SWRevealViewController.h"
 
 #define kCollectionViewCell @"StudyFieldCollectionViewCell"
 
@@ -23,6 +24,15 @@
     UIView* view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 20.0)];
     view.backgroundColor= [UIColor colorWithRed:234.0/255.0f green:76.0/255.0f blue:137.0/255.0f alpha:1.0];
     [self.view addSubview:view];
+    SWRevealViewController* revealController = self.revealViewController;
+    if(revealController){
+        UIButton *toggleButton=[[UIButton alloc]initWithFrame:CGRectMake(0, 0, 35, 22)];
+        [toggleButton setImage:[UIImage imageNamed:@"btn_toggle"] forState:UIControlStateNormal];
+        [toggleButton addTarget:revealController action: @selector( revealToggle: ) forControlEvents:UIControlEventTouchUpInside];
+        UIBarButtonItem *   revealButtonItem=[[UIBarButtonItem alloc] initWithCustomView:toggleButton];
+        self.navigationItem.leftBarButtonItem = revealButtonItem;
+        //[self.view addGestureRecognizer: self.revealViewController.panGestureRecognizer];
+    }
 }
 
 -(void)viewWillAppear:(BOOL)animated{

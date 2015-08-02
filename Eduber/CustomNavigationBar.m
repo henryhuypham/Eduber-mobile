@@ -42,7 +42,7 @@ const CGFloat VFSNavigationBarHeightIncrease = 8.f;
     
     self.toggleButton = [[UIButton alloc] init];
     [self.toggleButton setImage:[UIImage imageNamed:@"btn_toggle.png"] forState:UIControlStateNormal];
-    [self addSubview:self.toggleButton];
+   // [self addSubview:self.toggleButton];
     
     self.backButton = [[UIButton alloc] init];
     [self.backButton setImage:[UIImage imageNamed:@"btn_back.png"] forState:UIControlStateNormal];
@@ -72,7 +72,7 @@ const CGFloat VFSNavigationBarHeightIncrease = 8.f;
     self.backButton.frame = CGRectMake(0, 0, 12, 20);
     self.backButton.center = self.toggleButton.center;
     self.titleLabel.frame = CGRectMake(0, 0, 120, 30);
-    self.titleLabel.center = CGPointMake(self.frame.size.width/2, self.frame.size.height/2);
+    self.titleLabel.center = CGPointMake(self.frame.size.width/2, self.frame.size.height/2+3);
     appLogo.frame = CGRectMake(0, 0, 160, self.frame.size.height-20);
     appLogo.center = CGPointMake(self.frame.size.width/2, self.frame.size.height/2);
     borderView.frame = CGRectMake(0, self.frame.size.height-2.5f, self.frame.size.width, 2.5f);

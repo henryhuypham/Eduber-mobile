@@ -7,6 +7,7 @@
 //
 
 #import "TeacherClassListViewController.h"
+#import "SWRevealViewController.h"
 #define kCellID @"TeacherClassCell"
 
 @implementation TeacherClassListViewController
@@ -16,7 +17,15 @@
     
     // Do any additional setup after loading the view.
     [self setupView];
-    
+    SWRevealViewController* revealController = self.revealViewController;
+    if(revealController){
+        UIButton *toggleButton=[[UIButton alloc]initWithFrame:CGRectMake(0, 0, 35, 22)];
+        [toggleButton setImage:[UIImage imageNamed:@"btn_toggle"] forState:UIControlStateNormal];
+        [toggleButton addTarget:revealController action: @selector( revealToggle: ) forControlEvents:UIControlEventTouchUpInside];
+        UIBarButtonItem *   revealButtonItem=[[UIBarButtonItem alloc] initWithCustomView:toggleButton];
+        self.navigationItem.leftBarButtonItem = revealButtonItem;
+        //[self.view addGestureRecognizer: self.revealViewController.panGestureRecognizer];
+    }
     //setup data
     [self setupData];
 }

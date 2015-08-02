@@ -18,10 +18,6 @@
     
     // Do any additional setup after loading the view.
     [self setupView];
-    
-    self.navigationItem.hidesBackButton = true;
-    [self showBackButton];
-    [self.backButton addTarget:self action:@selector( handleBack )  forControlEvents:UIControlEventTouchUpInside];
 }
 
 -(void)viewWillAppear:(BOOL)animated{

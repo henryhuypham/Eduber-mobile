@@ -181,16 +181,8 @@
     UINavigationController *frontNavigationController = [[UINavigationController alloc] initWithNavigationBarClass:[CustomNavigationBar class] toolbarClass:nil];
     leftMenuViewController.loginModeSelected = loginModeSelected;
     [frontNavigationController setViewControllers:@[viewController] animated:NO];
-    
-    UIViewController *viewController2 =(LoginViewController *)[sb instantiateViewControllerWithIdentifier:@"loginViewController"];
     SWRevealViewController *mainRevealController = [[SWRevealViewController alloc]
                                                     initWithRearViewController:leftMenuViewController frontViewController:frontNavigationController];
-    //settup navigation bar touch
-    CustomNavigationBar* navigationBar=(CustomNavigationBar*) frontNavigationController.navigationBar;
-    
-    mainRevealController.rearViewRevealOverdraw=0.0f;
-    [navigationBar.toggleButton addTarget:mainRevealController action: @selector( revealToggle: ) forControlEvents:UIControlEventTouchUpInside];
-    [navigationBar addGestureRecognizer:mainRevealController.panGestureRecognizer];
     self.navigationController.navigationBar.translucent = NO;
     [self.navigationController pushViewController:mainRevealController animated:YES];
     
