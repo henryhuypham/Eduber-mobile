@@ -60,6 +60,7 @@
 		846793FD1B6DAAFB00121723 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 846793F71B6DAAFB00121723 /* TPKeyboardAvoidingScrollView.m */; };
 		846793FE1B6DAAFB00121723 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 846793F91B6DAAFB00121723 /* TPKeyboardAvoidingTableView.m */; };
 		846793FF1B6DAAFB00121723 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 846793FB1B6DAAFB00121723 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
+		846794031B6DB3F900121723 /* NetworkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 846794021B6DB3F900121723 /* NetworkEngine.m */; };
 		8708A3C71B6C86860012484E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8708A3C61B6C86860012484E /* main.m */; };
 		8708A3CA1B6C86860012484E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8708A3C91B6C86860012484E /* AppDelegate.m */; };
 		8708A3D01B6C86860012484E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8708A3CE1B6C86860012484E /* Main.storyboard */; };
@@ -193,6 +194,8 @@
 		846793F91B6DAAFB00121723 /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
 		846793FA1B6DAAFB00121723 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
 		846793FB1B6DAAFB00121723 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		846794011B6DB3F900121723 /* NetworkEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkEngine.h; sourceTree = "<group>"; };
+		846794021B6DB3F900121723 /* NetworkEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkEngine.m; sourceTree = "<group>"; };
 		8708A3C11B6C86860012484E /* Eduber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eduber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8708A3C51B6C86860012484E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8708A3C61B6C86860012484E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -424,6 +427,15 @@
 			path = TPKeyboardAvoiding;
 			sourceTree = "<group>";
 		};
+		846794001B6DB3F900121723 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				846794011B6DB3F900121723 /* NetworkEngine.h */,
+				846794021B6DB3F900121723 /* NetworkEngine.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		8708A3B81B6C86860012484E = {
 			isa = PBXGroup;
 			children = (
@@ -447,6 +459,7 @@
 		8708A3C31B6C86860012484E /* Eduber */ = {
 			isa = PBXGroup;
 			children = (
+				846794001B6DB3F900121723 /* Helper */,
 				8427E0AC1B6D839000EF96D5 /* External */,
 				878B3EB41B6D3D2D006B8710 /* Models */,
 				842266221B6CE30200AABFB6 /* CustomView */,
@@ -733,6 +746,7 @@
 				8427E0E71B6D88B300EF96D5 /* FUISegmentedControl.m in Sources */,
 				8427E08F1B6D59D400EF96D5 /* ProfressorCell.m in Sources */,
 				8427E0F31B6D88B300EF96D5 /* UIStepper+FlatUI.m in Sources */,
+				846794031B6DB3F900121723 /* NetworkEngine.m in Sources */,
 				8427E0E41B6D88B300EF96D5 /* FUIButton.m in Sources */,
 				8427E0F61B6D88B300EF96D5 /* UIToolbar+FlatUI.m in Sources */,
 			);
