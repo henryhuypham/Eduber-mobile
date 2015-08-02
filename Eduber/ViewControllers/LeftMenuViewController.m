@@ -130,14 +130,20 @@
             rootViewController =  (StudentClassListViewController *)[sb instantiateViewControllerWithIdentifier:@"studentClassListViewController"];
             break;
         case 3:
-            if(_loginModeSelected == 1){
+            if(_loginModeSelected == 0){
                 sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
                 rootViewController =  (StudentClassListViewController *)[sb instantiateViewControllerWithIdentifier:@"loginViewController"];
+            }else{
+                if(revealController){
+                    [revealController.navigationController popViewControllerAnimated:YES];
+                };
             }
             break;
         case 4:
-            sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-            rootViewController =  (StudentClassListViewController *)[sb instantiateViewControllerWithIdentifier:@"loginViewController"];
+            //signout
+            if(revealController){
+                [revealController.navigationController popViewControllerAnimated:YES];
+            };
             break;
         case 6:
             rootViewController = nil;
