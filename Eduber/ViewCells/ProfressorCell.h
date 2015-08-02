@@ -19,6 +19,7 @@
 @interface ProfressorCell : UITableViewCell{
     Courses *co;
 }
+@property (weak, nonatomic) IBOutlet UILabel *likeNumberLabel;
 
 @property(weak,nonatomic)IBOutlet UIView *containerView;
 @property(weak,nonatomic)IBOutlet UIImageView *avatarView;
