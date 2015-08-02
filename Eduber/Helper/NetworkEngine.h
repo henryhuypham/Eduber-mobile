@@ -13,14 +13,14 @@ typedef void (^FailureBlock)(NSError *error, NSDictionary *data);
 
 + (id)getManager;
 
-+ (void)getUserCourse:(CompletionBlockArray)completion
++ (void)getUserCourse:(CompletionBlockObject)completion
               onError:(FailureBlock)failure;
 
 + (void)createUserCourse:(NSString *)courseID onSuccess:(CompletionBlockObject)completion
                  onError:(FailureBlock)failure;
 
 #pragma  - get teacher list
-+ (void)getTeacherCourse:(CompletionBlockArray)completion
++ (void)getTeacherCourse:(CompletionBlockObject)completion
                  onError:(FailureBlock)failure;
 
 + (void)createTeacherCourse:(NSString *)title onSuccess:(CompletionBlockObject)completion

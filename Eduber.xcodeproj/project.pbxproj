@@ -61,6 +61,8 @@
 		846793FE1B6DAAFB00121723 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 846793F91B6DAAFB00121723 /* TPKeyboardAvoidingTableView.m */; };
 		846793FF1B6DAAFB00121723 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 846793FB1B6DAAFB00121723 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
 		846794031B6DB3F900121723 /* NetworkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 846794021B6DB3F900121723 /* NetworkEngine.m */; };
+		8467940F1B6DC95600121723 /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = 8467940C1B6DC95600121723 /* Course.m */; };
+		846794101B6DC95600121723 /* Courses.m in Sources */ = {isa = PBXBuildFile; fileRef = 8467940E1B6DC95600121723 /* Courses.m */; };
 		8708A3C71B6C86860012484E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8708A3C61B6C86860012484E /* main.m */; };
 		8708A3CA1B6C86860012484E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8708A3C91B6C86860012484E /* AppDelegate.m */; };
 		8708A3D01B6C86860012484E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8708A3CE1B6C86860012484E /* Main.storyboard */; };
@@ -196,6 +198,10 @@
 		846793FB1B6DAAFB00121723 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
 		846794011B6DB3F900121723 /* NetworkEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkEngine.h; sourceTree = "<group>"; };
 		846794021B6DB3F900121723 /* NetworkEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkEngine.m; sourceTree = "<group>"; };
+		8467940B1B6DC95600121723 /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
+		8467940C1B6DC95600121723 /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
+		8467940D1B6DC95600121723 /* Courses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Courses.h; sourceTree = "<group>"; };
+		8467940E1B6DC95600121723 /* Courses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Courses.m; sourceTree = "<group>"; };
 		8708A3C11B6C86860012484E /* Eduber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eduber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8708A3C51B6C86860012484E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8708A3C61B6C86860012484E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -436,6 +442,18 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
+		846794041B6DC66C00121723 /* courses */ = {
+			isa = PBXGroup;
+			children = (
+				8467940B1B6DC95600121723 /* Course.h */,
+				8467940C1B6DC95600121723 /* Course.m */,
+				8467940D1B6DC95600121723 /* Courses.h */,
+				8467940E1B6DC95600121723 /* Courses.m */,
+			);
+			name = courses;
+			path = Models/courses;
+			sourceTree = "<group>";
+		};
 		8708A3B81B6C86860012484E = {
 			isa = PBXGroup;
 			children = (
@@ -529,6 +547,7 @@
 		878B3EB41B6D3D2D006B8710 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				846794041B6DC66C00121723 /* courses */,
 				8427E0A91B6D7A1B00EF96D5 /* UserInfo.h */,
 				8427E0AA1B6D7A1B00EF96D5 /* UserInfo.m */,
 				8427E0A61B6D746B00EF96D5 /* StudentClassInfo.h */,
@@ -692,6 +711,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8427E0E31B6D88B300EF96D5 /* FUIAlertView.m in Sources */,
+				8467940F1B6DC95600121723 /* Course.m in Sources */,
 				8427E0EC1B6D88B300EF96D5 /* UIColor+FlatUI.m in Sources */,
 				8427E0F51B6D88B300EF96D5 /* UITableViewCell+FlatUI.m in Sources */,
 				842266291B6CFDA500AABFB6 /* LeftMenuHeaderView.m in Sources */,
@@ -742,6 +762,7 @@
 				8427E0AB1B6D7A1B00EF96D5 /* UserInfo.m in Sources */,
 				846793FC1B6DAAFB00121723 /* TPKeyboardAvoidingCollectionView.m in Sources */,
 				8427E0E81B6D88B300EF96D5 /* FUISwitch.m in Sources */,
+				846794101B6DC95600121723 /* Courses.m in Sources */,
 				8427E0F41B6D88B300EF96D5 /* UITabBar+FlatUI.m in Sources */,
 				8427E0E71B6D88B300EF96D5 /* FUISegmentedControl.m in Sources */,
 				8427E08F1B6D59D400EF96D5 /* ProfressorCell.m in Sources */,
